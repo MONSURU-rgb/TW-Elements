@@ -63,7 +63,7 @@
         {{< twsnippet/code active=true lang="html" >}}
         <button
           type="button"
-          class="rounded bg-red-600 px-7 py-3 text-sm font-medium uppercase leading-snug text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg"
+          class="inline-block rounded bg-danger px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-danger-3 transition duration-150 ease-in-out hover:bg-danger-accent-300 hover:shadow-danger-2 focus:bg-danger-accent-300 focus:shadow-danger-2 focus:outline-none focus:ring-0 active:bg-danger-600 active:shadow-danger-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
           data-te-toggle="popover"
           data-te-title="Popover title"
           data-te-content="And here's some amazing content. It's very engaging. Right?">
@@ -160,7 +160,7 @@
       </p>
 
       <div
-        class="my-6 rounded-lg bg-yellow-100 px-6 py-5 text-base text-yellow-700"
+        class="my-6 rounded-lg bg-warning-100 px-6 py-5 text-base text-warning-800 dark:bg-[#2e2005] dark:text-warning-500"
         role="alert">
         <p>
           <strong>Note:</strong> For security reasons the <code>sanitize</code>,
@@ -324,17 +324,17 @@
                         ` &lt;div class="opacity-0 transition-opacity
                         duration-150 ease-in-out absolute top-0 left-0 z-[1070]
                         block max-w-[267px] break-words bg-white bg-clip-padding
-                        border border-neutral-100 rounded-lg
-                        shadow-[0_0px_3px_0_rgba(0,0,0,0.07),0_2px_2px_0_rgba(0,0,0,0.04)]
-                        text-sm not-italic font-normal text-left no-underline
+                        border border-neutral-100 rounded-lg shadow-2 text-sm
+                        not-italic font-normal text-left no-underline
                         underline-offset-auto normal-case leading-6
                         tracking-normal break-normal whitespace-normal
-                        dark:bg-neutral-700 dark:border-0 dark:text-white
-                        data-[popper-reference-hidden]:hidden" role="tooltip">
-                        &lt;h3 data-te-popover-header-ref class="py-2 px-4 mb-0
-                        border-b-2 border-neutral-100 rounded-t-lg font-medium
-                        empty:hidden dark:border-neutral-500">&lt;/h3> &lt;div
-                        data-te-popover-body-ref class="p-4 text-[#212529]
+                        dark:border-white/10 dark:bg-surface-dark
+                        dark:text-white data-[popper-reference-hidden]:hidden"
+                        role="tooltip"> &lt;h3 data-te-popover-header-ref
+                        class="py-2 px-4 mb-0 border-b-2 border-neutral-100
+                        rounded-t-lg font-medium empty:hidden
+                        dark:border-white/10">&lt;/h3> &lt;div
+                        data-te-popover-body-ref class="p-4 text-surface
                         dark:text-white">&lt;/div> &lt;/div> `
                       </code>
                     </td>
@@ -558,7 +558,7 @@
       </div>
 
       <div
-        class="my-6 rounded-lg bg-primary-100 p-6 text-base text-primary-600"
+        class="my-6 rounded-lg bg-primary-100 p-6 text-base text-primary-700 dark:bg-slate-950 dark:text-primary-500"
         role="alert">
         <p>
           <strong>Data attributes for individual popovers:</strong>
@@ -587,7 +587,7 @@
       </h2>
 
       <div
-        class="my-6 rounded-lg bg-red-100 px-6 py-5 text-base text-red-700"
+        class="my-6 rounded-lg bg-danger-100 px-6 py-5 text-base text-danger-700 dark:bg-[#2c0f14] dark:text-danger-500"
         role="alert">
         <p>
           <strong>Asynchronous methods and transitions:</strong>
