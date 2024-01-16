@@ -175,7 +175,7 @@ module.exports = plugin(
           "switch-1":
             "0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12)",
           "switch-2":
-            "0 0px 3px 0 rgb(0,0,0 / 7%), 0 2px 2px 0 rgb(0,0,0 / 4%)",
+            "0 0px 3px 0 rgba(0,0,0,0.07), 0 2px 2px 0 rgba(0,0,0,0.04)",
           "switch-3": "3px -1px 0px 13px #3b71ca",
           "notch-1": "-1px 0 0 #3b71ca, 0 1px 0 0 #3b71ca, 0 -1px 0 0 #3b71ca",
           "notch-2": "0 1px 0 0 #3b71ca",
