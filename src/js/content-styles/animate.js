@@ -88,6 +88,10 @@ class Animate {
   }
 
   // Public
+  init() {
+    this._init();
+  }
+
   startAnimation() {
     this._startAnimation();
   }
