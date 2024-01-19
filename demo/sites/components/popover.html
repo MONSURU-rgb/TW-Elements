@@ -51,91 +51,127 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
   </head>
 
   <body class="dark:bg-neutral-800">
-    <div class="xl:mx-96">
+    <div class="mx-6 md:mx-16 lg:mx-44 xl:mx-96">
       <br />
       <br />
       <br />
 
-      <!-- Start your project here-->
-      <button
-        type="button"
-        class="rounded bg-red-600 px-7 py-3 text-sm font-medium uppercase leading-snug text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg"
-        data-te-toggle="popover"
-        data-te-title="Popover title"
-        data-te-content="And here's some amazing content. It's very engaging. Right?">
-        Click to toggle popover
-      </button>
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        Basic example
+      </h3>
 
-      <br />
-      <br />
-      <br />
-
-      <button
-        type="button"
-        class="rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
-        data-te-toggle="popover"
-        data-te-placement="top"
-        data-te-content="Top popover">
-        Popover on top
-      </button>
-      <button
-        type="button"
-        class="rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
-        data-te-toggle="popover"
-        data-te-placement="right"
-        data-te-content="Right popover">
-        Popover on right
-      </button>
-      <button
-        type="button"
-        class="rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
-        data-te-toggle="popover"
-        data-te-placement="bottom"
-        data-te-content="Bottom popover">
-        Popover on bottom
-      </button>
-      <button
-        type="button"
-        class="rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
-        data-te-toggle="popover"
-        data-te-placement="left"
-        data-te-content="Left popover">
-        Popover on left
-      </button>
-
-      <br />
-      <br />
-      <br />
-
-      <a
-        tabindex="0"
-        class="rounded bg-red-600 px-7 py-3 text-sm font-medium uppercase leading-snug text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg"
-        role="button"
-        data-te-toggle="popover"
-        data-te-trigger="focus"
-        title="Dismissible popover"
-        data-te-content="And here's some amazing content. It's very engaging. Right?"
-        >Dismissible popover</a
-      >
-
-      <br />
-      <br />
-      <br />
-
-      <span
-        class="inline-block"
-        tabindex="0"
-        data-te-toggle="popover"
-        data-te-trigger="hover focus"
-        data-te-content="Disabled popover">
+      <div class="flex flex-wrap justify-center">
         <button
-          class="pointer-events-none rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white opacity-60 shadow-md transition duration-150 ease-in-out focus:outline-none focus:ring-0"
           type="button"
-          disabled>
-          Disabled button
+          class="inline-block rounded bg-danger px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-danger-3 transition duration-150 ease-in-out hover:bg-danger-accent-300 hover:shadow-danger-2 focus:bg-danger-accent-300 focus:shadow-danger-2 focus:outline-none focus:ring-0 active:bg-danger-600 active:shadow-danger-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+          data-te-toggle="popover"
+          data-te-title="Popover title"
+          data-te-content="And here's some amazing content. It's very engaging. Right?"
+          data-te-ripple-init
+          data-te-ripple-color="light">
+          Click to toggle popover
         </button>
-      </span>
+      </div>
 
+      <br />
+      <br />
+      <br />
+
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        Four directions
+      </h3>
+
+      <div class="flex flex-wrap justify-center space-x-2">
+        <div class="space-y-2">
+          <button
+            type="button"
+            class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-200 focus:bg-primary-accent-200 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:bg-primary-300 dark:hover:bg-primary-400 dark:focus:bg-primary-400 dark:active:bg-primary-400"
+            data-te-toggle="popover"
+            data-te-placement="top"
+            data-te-content="Top popover"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            Popover on top
+          </button>
+          <button
+            type="button"
+            class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-200 focus:bg-primary-accent-200 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:bg-primary-300 dark:hover:bg-primary-400 dark:focus:bg-primary-400 dark:active:bg-primary-400"
+            data-te-toggle="popover"
+            data-te-placement="right"
+            data-te-content="Right popover"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            Popover on right
+          </button>
+          <button
+            type="button"
+            class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-200 focus:bg-primary-accent-200 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:bg-primary-300 dark:hover:bg-primary-400 dark:focus:bg-primary-400 dark:active:bg-primary-400"
+            data-te-toggle="popover"
+            data-te-placement="bottom"
+            data-te-content="Bottom popover"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            Popover on bottom
+          </button>
+          <button
+            type="button"
+            class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-200 focus:bg-primary-accent-200 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:bg-primary-300 dark:hover:bg-primary-400 dark:focus:bg-primary-400 dark:active:bg-primary-400"
+            data-te-toggle="popover"
+            data-te-placement="left"
+            data-te-content="Left popover"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            Popover on left
+          </button>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        Dismiss on next click
+      </h3>
+
+      <div class="flex flex-wrap justify-center">
+        <a
+          tabindex="0"
+          class="inline-block rounded bg-danger px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-danger-3 transition duration-150 ease-in-out hover:bg-danger-accent-300 hover:shadow-danger-2 focus:bg-danger-accent-300 focus:shadow-danger-2 focus:outline-none focus:ring-0 active:bg-danger-600 active:shadow-danger-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+          role="button"
+          data-te-toggle="popover"
+          data-te-trigger="focus"
+          title="Dismissible popover"
+          data-te-content="And here's some amazing content. It's very engaging. Right?"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+          >Dismissible popover</a
+        >
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        Disabled elements
+      </h3>
+
+      <div class="flex flex-wrap justify-center">
+        <span
+          class="inline-block focus:outline-none"
+          tabindex="0"
+          data-te-toggle="popover"
+          data-te-trigger="hover focus"
+          data-te-content="Disabled popover">
+          <button
+            class="pointer-events-none rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white opacity-60 shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-0 focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+            type="button"
+            disabled>
+            Disabled button
+          </button>
+        </span>
+      </div>
       <br />
       <br />
       <br />
