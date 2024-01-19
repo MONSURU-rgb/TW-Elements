@@ -43,7 +43,7 @@ export const getTimepickerTemplate = (
               <span class="${classes.timepickerCurrentButtonWrapper}">
                 <button type='button' class='${
                   classes.timepickerCurrentButton
-                }' tabindex="0" data-te-timepicker-active data-te-timepicker-current data-te-timepicker-hour data-te-ripple-init>21</button>
+                }' tabindex="0" data-te-timepicker-active data-te-timepicker-current data-te-timepicker-hour>21</button>
               </span>
               <button type='button' class='${
                 classes.timepickerDot
@@ -51,14 +51,14 @@ export const getTimepickerTemplate = (
             <span class="${classes.timepickerCurrentButtonWrapper}">
               <button type='button' class='${
                 classes.timepickerCurrentButton
-              }' tabindex="0" data-te-timepicker-current data-te-timepicker-minute data-te-ripple-init>21</button>
+              }' tabindex="0" data-te-timepicker-current data-te-timepicker-minute>21</button>
             </span>
             </div>
             ${
               !format24
                 ? `<div class="${classes.timepickerModeWrapper}">
-                  <button type='button' class="${classes.timepickerModeAm}" tabindex="0" data-te-timepicker-am data-te-timepicker-hour-mode data-te-ripple-init>${amLabel}</button>
-                  <button class="${classes.timepickerModePm}" tabindex="0" data-te-timepicker-pm data-te-timepicker-hour-mode data-te-ripple-init>${pmLabel}</button>
+                  <button type='button' class="${classes.timepickerModeAm}" tabindex="0" data-te-timepicker-am data-te-timepicker-hour-mode>${amLabel}</button>
+                  <button class="${classes.timepickerModePm}" tabindex="0" data-te-timepicker-pm data-te-timepicker-hour-mode>${pmLabel}</button>
                 </div>`
                 : ""
             }
@@ -96,15 +96,15 @@ export const getTimepickerTemplate = (
       <div class="${classes.timepickerFooter}">
         ${
           showClearBtn
-            ? `<button type='button' class='${classes.timepickerFooterButton}' data-te-timepicker-clear tabindex="0" data-te-ripple-init>${clearLabel}</button>`
+            ? `<button type='button' class='${classes.timepickerFooterButton}' data-te-timepicker-clear tabindex="0">${clearLabel}</button>`
             : ""
         }
         <button type='button' class='${
           classes.timepickerFooterButton
-        }' data-te-timepicker-cancel tabindex="0" data-te-ripple-init>${cancelLabel}</button>
+        }' data-te-timepicker-cancel tabindex="0">${cancelLabel}</button>
         <button type='button' class='${
           classes.timepickerFooterButton
-        }' data-te-timepicker-submit tabindex="0" data-te-ripple-init>${okLabel}</button>
+        }' data-te-timepicker-submit tabindex="0">${okLabel}</button>
       </div>
     </div>
   </div>
@@ -135,7 +135,7 @@ export const getTimepickerTemplate = (
                   </span>
                   <button type='button' class='${
                     classes.timepickerInlineCurrentButton
-                  }' data-te-timepicker-hour data-te-timepicker-current data-te-timepicker-current-inline tabindex="0" data-te-ripple-init>21</button>
+                  }' data-te-timepicker-hour data-te-timepicker-current data-te-timepicker-current-inline tabindex="0">21</button>
                   <span class="${
                     classes.timepickerInlineIconDown
                   }" data-te-timepicker-icon-inline-hour data-te-timepicker-icon-down>
@@ -161,7 +161,7 @@ export const getTimepickerTemplate = (
                 </span>
                 <button type='button' class='${
                   classes.timepickerInlineCurrentButton
-                }' data-te-timepicker-minute data-te-timepicker-current data-te-timepicker-current-inline tabindex="0" data-te-ripple-init>21</button>
+                }' data-te-timepicker-minute data-te-timepicker-current data-te-timepicker-current-inline tabindex="0">21</button>
                 <span class="${
                   classes.timepickerInlineIconDown
                 }" data-te-timepicker-icon-inline-minute data-te-timepicker-icon-down>
@@ -176,15 +176,15 @@ export const getTimepickerTemplate = (
               ${
                 !format24
                   ? `<div class="${classes.timepickerInlineModeWrapper}">
-                      <button type='button' class="${classes.timepickerInlineModeAm}" data-te-timepicker-am data-te-timepicker-hour-mode tabindex="0" data-te-ripple-init>${amLabel}</button>
-                      <button class="${classes.timepickerInlineModePm}" data-te-timepicker-hour-mode data-te-timepicker-pm tabindex="0" data-te-ripple-init>${pmLabel}</button>
-                      <button type='button' class='${classes.timepickerInlineSubmitButton}' data-te-timepicker-submit tabindex="0" data-te-ripple-init>${okLabel}</button>
+                      <button type='button' class="${classes.timepickerInlineModeAm}" data-te-timepicker-am data-te-timepicker-hour-mode tabindex="0">${amLabel}</button>
+                      <button class="${classes.timepickerInlineModePm}" data-te-timepicker-hour-mode data-te-timepicker-pm tabindex="0">${pmLabel}</button>
+                      <button type='button' class='${classes.timepickerInlineSubmitButton}' data-te-timepicker-submit tabindex="0">${okLabel}</button>
                     </div>`
                   : ""
               }
               ${
                 format24
-                  ? `<button class='${classes.timepickerInlineSubmitButton}' data-te-timepicker-submit tabindex="0" data-te-ripple-init>${okLabel}</button>`
+                  ? `<button class='${classes.timepickerInlineSubmitButton}' data-te-timepicker-submit tabindex="0">${okLabel}</button>`
                   : ""
               }
           </div>

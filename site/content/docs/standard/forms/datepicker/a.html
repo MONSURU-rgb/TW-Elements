@@ -78,11 +78,11 @@
             data-te-input-wrapper-init>
             <input
               type="text"
-              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-gray-200 dark:placeholder:text-gray-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
               placeholder="Select a date" />
             <label
               for="floatingInput"
-              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-gray-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-gray-200 dark:peer-focus:text-gray-200"
+              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
               >Select a date</label
             >
           </div>
@@ -1036,7 +1036,7 @@
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
                     text-center
-                    data-[te-datepicker-cell-disabled]:text-neutral-300
+                    data-[te-datepicker-cell-disabled]:text-surface/50
                     data-[te-datepicker-cell-disabled]:cursor-default
                     data-[te-datepicker-cell-disabled]:pointer-events-none
                     data-[te-datepicker-cell-disabled]:hover:cursor-default
@@ -1056,19 +1056,19 @@
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
                     mx-auto
-                    group-[:not([data-te-datepicker-cell-disabled]):not([data-te-datepicker-cell-selected]):hover]:bg-neutral-300
-                    group-[[data-te-datepicker-cell-selected]]:bg-blue-500
+                    group-[:not([data-te-datepicker-cell-disabled]):not([data-te-datepicker-cell-selected]):hover]:bg-black/5
+                    group-[[data-te-datepicker-cell-selected]]:bg-primary
                     group-[[data-te-datepicker-cell-selected]]:text-white
-                    group-[:not([data-te-datepicker-cell-selected])[data-te-datepicker-cell-focused]]:bg-neutral-100
-                    group-[[data-te-datepicker-cell-focused]]:data-[te-datepicker-cell-selected]:bg-blue-500
+                    group-[:not([data-te-datepicker-cell-selected])[data-te-datepicker-cell-focused]]:bg-black/5
+                    group-[[data-te-datepicker-cell-focused]]:data-[te-datepicker-cell-selected]:bg-primary
                     group-[[data-te-datepicker-cell-current]]:border-solid
                     group-[[data-te-datepicker-cell-current]]:border-black
                     group-[[data-te-datepicker-cell-current]]:border
-                    dark:group-[:not([data-te-datepicker-cell-disabled]):not([data-te-datepicker-cell-selected]):hover]:bg-white/10
+                    dark:group-[:not([data-te-datepicker-cell-disabled]):not([data-te-datepicker-cell-selected]):hover]:bg-black/10
                     dark:group-[[data-te-datepicker-cell-current]]:border-white
-                    dark:group-[:not([data-te-datepicker-cell-selected])[data-te-datepicker-cell-focused]]:bg-white/10
                     dark:text-white
-                    dark:group-[[data-te-datepicker-cell-disabled]]:text-neutral-500
+                    dark:group-[:not([data-te-datepicker-cell-selected])[data-te-datepicker-cell-focused]]:bg-black/10
+                    dark:group-[[data-te-datepicker-cell-disabled]]:text-white/50
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Main colors for different cell states (hover, focus, current
@@ -1226,9 +1226,8 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    w-[328px] h-[380px] bg-white rounded-lg
-                    shadow-[0px_2px_15px_-3px_rgba(0,0,0,.07),_0px_10px_20px_-2px_rgba(0,0,0,.04)]
-                    z-[1066] dark:bg-zinc-700
+                    w-[328px] h-[380px] bg-white rounded-lg shadow-4 z-[1066]
+                    dark:bg-surface-dark
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Size, position, shadow and colors for datepicker dropdown
@@ -1243,12 +1242,12 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    outline-none bg-white text-blue-500 border-none
+                    outline-none bg-white text-surface border-none
                     cursor-pointer py-0 px-2.5 uppercase text-[0.8rem]
                     leading-10 font-medium h-10 tracking-[.1rem] rounded-[10px]
-                    mb-2.5 hover:bg-neutral-200 focus:bg-neutral-200
-                    dark:bg-transparent dark:text-white dark:hover:bg-white/10
-                    dark:focus:bg-white/10
+                    mb-2.5 hover:bg-black/5 focus:bg-black/5 dark:bg-transparent
+                    dark:text-white dark:hover:bg-black/10
+                    dark:focus:bg-black/10
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Styles for buttons that are placed inside the footer.
@@ -1262,8 +1261,8 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    xs:max-md:landscape:h-full h-[120px] px-6 bg-blue-500 flex
-                    flex-col rounded-t-lg dark:bg-zinc-800
+                    xs:max-md:landscape:h-full h-[120px] px-6 bg-primary flex
+                    flex-col rounded-t-lg dark:bg-body-dark
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Size, paddings, background and other styles for header
@@ -1279,10 +1278,10 @@
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
                     p-0 w-10 h-10 leading-10 border-none outline-none m-0
-                    text-gray-600 bg-transparent hover:bg-neutral-200
-                    hover:rounded-[50%] focus:bg-neutral-200 focus:rounded-[50%]
-                    dark:text-white dark:hover:bg-white/10
-                    dark:focus:bg-white/10 [&>svg]:w-4 [&>svg]:h-4
+                    text-surface bg-transparent hover:bg-black/5
+                    hover:rounded-[50%] focus:bg-black/5 focus:rounded-[50%]
+                    dark:text-white dark:hover:bg-black/10
+                    dark:focus:bg-black/10 [&>svg]:w-4 [&>svg]:h-4
                     [&>svg]:rotate-180 [&>svg]:mx-auto
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
@@ -1298,10 +1297,10 @@
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
                     p-0 w-10 h-10 leading-10 border-none outline-none m-0
-                    text-gray-600 bg-transparent mr-6 hover:bg-neutral-200
-                    hover:rounded-[50%] focus:bg-neutral-200 focus:rounded-[50%]
-                    dark:text-white dark:hover:bg-white/10
-                    dark:focus:bg-white/10 [&>svg]:w-4 [&>svg]:h-4
+                    text-surface bg-transparent mr-6 hover:bg-black/5
+                    hover:rounded-[50%] focus:bg-black/5 focus:rounded-[50%]
+                    dark:text-white dark:hover:bg-black/10
+                    dark:focus:bg-black/10 [&>svg]:w-4 [&>svg]:h-4
                     [&>svg]:mx-auto
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
@@ -1363,8 +1362,8 @@
                     [&>svg]:h-5 absolute outline-none border-none bg-transparent
                     right-0.5 top-1/2 -translate-x-1/2 -translate-y-1/2
                     hover:text-primary focus:text-primary
-                    dark:hover:text-primary-400 dark:focus:text-primary-400
-                    dark:text-neutral-200
+                    dark:hover:text-primary dark:focus:text-primary
+                    dark:text-white
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Styling for datepicker toggle button (inside input)
@@ -1421,11 +1420,11 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    flex items-center outline-none p-2.5 text-neutral-500
+                    flex items-center outline-none p-2.5 text-surface
                     font-medium text-[0.9rem] rounded-xl shadow-none
-                    bg-transparent m-0 border-none hover:bg-neutral-200
-                    focus:bg-neutral-200 dark:text-white dark:hover:bg-white/10
-                    dark:focus:bg-white/10
+                    bg-transparent m-0 border-none hover:bg-black/5
+                    focus:bg-black/5 dark:text-white dark:hover:bg-black/10
+                    dark:focus:bg-black/10
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Styling for datepicker change view button.
@@ -1501,9 +1500,9 @@
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
                     flex flex-col fixed top-1/2 left-1/2 -translate-x-1/2
                     -translate-y-1/2 w-[328px] h-[512px] bg-white
-                    rounded-[0.6rem] shadow-lg z-[1066]
+                    rounded-[0.6rem] shadow-4 z-[1066]
                     xs:max-md:landscape:w-[475px] xs:max-md:landscape:h-[360px]
-                    xs:max-md:landscape:flex-row dark:bg-zinc-700
+                    xs:max-md:landscape:flex-row dark:bg-surface-dark
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Styling for main wrapper of datepicker.
