@@ -87,15 +87,15 @@ const DefaultType = {
 
 const DefaultClasses = {
   autocompleteItem:
-    "flex flex-row items-center justify-between w-full px-4 py-[0.4375rem] truncate text-gray-700 bg-transparent select-none cursor-pointer hover:[&:not([data-te-autocomplete-option-disabled])]:bg-black/5 data-[te-autocomplete-item-active]:bg-black/5 data-[data-te-autocomplete-option-disabled]:text-gray-400 data-[data-te-autocomplete-option-disabled]:cursor-default dark:text-gray-200 dark:hover:[&:not([data-te-autocomplete-option-disabled])]:bg-white/30 dark:data-[te-autocomplete-item-active]:bg-white/30",
+    "flex flex-row items-center justify-between w-full px-4 py-[0.4375rem] truncate text-gray-700 bg-transparent select-none cursor-pointer hover:[&:not([data-te-autocomplete-option-disabled])]:bg-black/5 data-[te-autocomplete-item-active]:bg-black/5 data-[data-te-autocomplete-option-disabled]:text-surface/50 data-[data-te-autocomplete-option-disabled]:cursor-default dark:text-white dark:hover:[&:not([data-te-autocomplete-option-disabled])]:bg-black/10 dark:data-[te-autocomplete-item-active]:bg-black/10 dark:data-[data-te-autocomplete-option-disabled]:text-white/50",
   autocompleteList: "list-none m-0 p-0 overflow-y-auto",
   autocompleteLoader:
     "absolute right-1 top-2 w-[1.4rem] h-[1.4rem] border-[0.15em]",
   dropdown:
-    "relative outline-none min-w-[100px] m-0 scale-y-[0.8] opacity-0 bg-white shadow-[0_2px_5px_0_rgba(0,0,0,0.16),_0_2px_10px_0_rgba(0,0,0,0.12)] transition duration-200 motion-reduce:transition-none data-[te-autocomplete-state-open]:scale-y-100 data-[te-autocomplete-state-open]:opacity-100 dark:bg-zinc-700",
+    "relative outline-none min-w-[100px] m-0 scale-y-[0.8] opacity-0 bg-white shadow-select transition duration-200 motion-reduce:transition-none data-[te-autocomplete-state-open]:scale-y-100 data-[te-autocomplete-state-open]:opacity-100 dark:bg-surface-dark",
   dropdownContainer: "z-[1070]",
   scrollbar:
-    "[&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar]:h-1 [&::-webkit-scrollbar-button]:block [&::-webkit-scrollbar-button]:h-0 [&::-webkit-scrollbar-button]:bg-transparent [&::-webkit-scrollbar-track-piece]:bg-transparent [&::-webkit-scrollbar-track-piece]:rounded-none [&::-webkit-scrollbar-track-piece]: [&::-webkit-scrollbar-track-piece]:rounded-l [&::-webkit-scrollbar-thumb]:h-[50px] [&::-webkit-scrollbar-thumb]:bg-[#999] [&::-webkit-scrollbar-thumb]:rounded",
+    "[&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar]:h-1 [&::-webkit-scrollbar-button]:block [&::-webkit-scrollbar-button]:h-0 [&::-webkit-scrollbar-button]:bg-transparent [&::-webkit-scrollbar-track-piece]:bg-transparent [&::-webkit-scrollbar-track-piece]:rounded-none [&::-webkit-scrollbar-track-piece]: [&::-webkit-scrollbar-track-piece]:rounded-l [&::-webkit-scrollbar-thumb]:h-[50px] [&::-webkit-scrollbar-thumb]:bg-[#999] [&::-webkit-scrollbar-thumb]:rounded [&::-webkit-scrollbar-thumb]:dark:bg-gray-200",
   spinnerIcon:
     "inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]",
 };
@@ -251,10 +251,10 @@ class Autocomplete {
   _updateInputState() {
     if (this._input.value !== "" || this._isOpen) {
       this._input.setAttribute(AUTOCOMPLETE_ACTIVE, "");
-      this._notch?.setAttribute(AUTOCOMPLETE_ACTIVE, "");
+      this._notch?.setAttribute(AUTOCOMPLETE_FOCUSED, "");
     } else {
       this._input.removeAttribute(AUTOCOMPLETE_ACTIVE);
-      this._notch?.removeAttribute(AUTOCOMPLETE_ACTIVE);
+      this._notch?.removeAttribute(AUTOCOMPLETE_FOCUSED);
     }
   }
 
@@ -696,7 +696,7 @@ class Autocomplete {
 
     if (!this._input.value) {
       this._input.removeAttribute(AUTOCOMPLETE_ACTIVE);
-      this._notch?.removeAttribute(AUTOCOMPLETE_ACTIVE);
+      this._notch?.removeAttribute(AUTOCOMPLETE_FOCUSED);
     }
   }
 
