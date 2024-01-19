@@ -369,7 +369,7 @@ function createSelectAllNode(option, options, config, classes) {
   optionNode.setAttribute("aria-selected", isSelected);
 
   if (isSelected) {
-    optionNode.setAttribute(DATA_SELECTED, "");
+    optionNode.setAttribute(DATA_SELECTED, "true");
   }
 
   optionNode.appendChild(getOptionContentTemplate(option, config, classes));
@@ -395,7 +395,7 @@ function createOptionTemplate(option, config, classes) {
   optionNode.setAttribute("aria-disabled", option.disabled);
 
   if (option.selected) {
-    optionNode.setAttribute(DATA_SELECTED, "");
+    optionNode.setAttribute(DATA_SELECTED, "true");
   }
 
   if (option.disabled) {

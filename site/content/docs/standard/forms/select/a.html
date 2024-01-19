@@ -703,7 +703,7 @@
                     shadow-[0_2px_5px_0_rgba(0,0,0,0.16),_0_2px_10px_0_rgba(0,0,0,0.12)]
                     transition duration-200 motion-reduce:transition-none
                     data-[te-select-open]:scale-100
-                    data-[te-select-open]:opacity-100 dark:bg-zinc-700
+                    data-[te-select-open]:opacity-100 dark:bg-surface-dark
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets transition, size and appearance styles for select
@@ -718,21 +718,46 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    relative float-left mt-[3px] mr-2 h-4 w-4 cursor-pointer
-                    appearance-none rounded-sm border border-gray-300 bg-white
-                    bg-contain bg-center bg-no-repeat align-top transition
-                    duration-200 motion-reduce:transition-none
-                    checked:border-blue-600 checked:bg-blue-600
-                    checked:after:absolute checked:after:ml-[5px]
-                    checked:after:mt-px checked:after:block
-                    checked:after:h-[9px] checked:after:w-[5px]
-                    checked:after:rotate-45 checked:after:border-2
-                    checked:after:border-t-0 checked:after:border-l-0
+                    relative float-left mt-[0.15rem] mr-[8px] h-[1.125rem]
+                    w-[1.125rem] appearance-none rounded-[0.25rem]
+                    border-[0.125rem] border-solid border-secondary-500
+                    outline-none before:pointer-events-none before:absolute
+                    before:h-[0.875rem] before:w-[0.875rem] before:scale-0
+                    before:rounded-full before:bg-transparent before:opacity-0
+                    before:shadow-checkbox before:shadow-transparent
+                    before:content-[''] checked:border-primary
+                    checked:bg-primary checked:before:opacity-[0.16]
+                    checked:after:absolute checked:after:-mt-px
+                    checked:after:ml-[0.25rem] checked:after:block
+                    checked:after:h-[0.8125rem] checked:after:w-[0.375rem]
+                    checked:after:rotate-45 checked:after:border-[0.125rem]
+                    checked:after:border-l-0 checked:after:border-t-0
                     checked:after:border-solid checked:after:border-white
                     checked:after:bg-transparent checked:after:content-['']
-                    focus:outline-none
-                    group-data-[te-select-option-text-ref]:mr-2.5
-                    dark:bg-zinc-700 dark:checked:bg-blue-500
+                    hover:cursor-pointer hover:before:opacity-[0.04]
+                    hover:before:shadow-black/60 focus:shadow-none
+                    focus:transition-[border-color_0.2s] focus:before:scale-100
+                    focus:before:opacity-[0.12] focus:before:shadow-black/60
+                    focus:before:transition-[box-shadow_0.2s,transform_0.2s]
+                    focus:after:absolute focus:after:z-[1] focus:after:block
+                    focus:after:h-[0.875rem] focus:after:w-[0.875rem]
+                    focus:after:rounded-[0.125rem] focus:after:content-['']
+                    checked:focus:before:scale-100
+                    checked:focus:before:shadow-checkbox
+                    checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s]
+                    checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem]
+                    checked:focus:after:h-[0.8125rem]
+                    checked:focus:after:w-[0.375rem]
+                    checked:focus:after:rotate-45
+                    checked:focus:after:rounded-none
+                    checked:focus:after:border-[0.125rem]
+                    checked:focus:after:border-l-0
+                    checked:focus:after:border-t-0
+                    checked:focus:after:border-solid
+                    checked:focus:after:border-white
+                    checked:focus:after:bg-transparent dark:border-neutral-400
+                    dark:bg-body-dark dark:checked:border-primary
+                    dark:checked:bg-primary
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets styles for checkbox input inside the select dropdown.
@@ -776,8 +801,7 @@
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
                     flex items-center whitespace-nowrap p-2.5 text-center
                     text-base font-normal leading-[1.6] text-gray-700
-                    dark:bg-zinc-800 dark:text-gray-200
-                    dark:placeholder:text-gray-200
+                    dark:bg-surface-dark dark:text-white
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets size, position and other styles for input group
@@ -846,6 +870,7 @@
                     [&::-webkit-scrollbar-thumb]:h-[50px]
                     [&::-webkit-scrollbar-thumb]:bg-[#999]
                     [&::-webkit-scrollbar-thumb]:rounded
+                    [&::-webkit-scrollbar-thumb]:dark:bg-gray-200
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Changes the default scrollbar appearance.
@@ -859,12 +884,7 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    absolute right-3 text-[0.8rem] cursor-pointer
-                    peer-focus:text-primary
-                    peer-data-[te-input-focused]:text-primary
-                    group-data-[te-was-validated]/validation:peer-valid:text-green-600
-                    group-data-[te-was-validated]/validation:peer-invalid:text-[rgb(220,76,100)]
-                    w-5 h-5
+                    absolute right-3 text-[0.8rem] cursor-pointer w-5 h-5
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets styles for select input arrow.
@@ -936,8 +956,8 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    absolute top-2 right-9 text-black cursor-pointer
-                    focus:text-blue-600 outline-none dark:text-gray-200
+                    absolute top-2 right-9 text-surface cursor-pointer
+                    focus:text-primary outline-none dark:text-white
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets position, size and other styles for clear button.
@@ -1040,12 +1060,14 @@
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
                     relative m-0 block w-full min-w-0 flex-auto rounded border
-                    border-solid border-gray-300 bg-transparent bg-clip-padding
-                    px-3 py-1.5 text-base font-normal text-gray-700 transition
-                    duration-300 ease-in-out motion-reduce:transition-none
-                    focus:border-blue-600 focus:text-gray-700
-                    focus:shadow-te-blue focus:outline-none dark:text-gray-200
-                    dark:placeholder:text-gray-200
+                    border-solid border-neutral-200 bg-transparent
+                    bg-clip-padding px-3 py-1.5 text-base font-normal
+                    text-surface transition duration-300 ease-in-out
+                    motion-reduce:transition-none focus:border-primary
+                    focus:text-gray-700 focus:shadow-te-primary
+                    focus:outline-none dark:text-white dark:focus:border-primary
+                    dark:border-neutral-600 dark:placeholder:text-neutral-300
+                    dark:bg-body-dark
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets styles for search input appearance.
@@ -1062,14 +1084,16 @@
                     peer block min-h-[auto] w-full rounded border-0
                     bg-transparent outline-none transition-all duration-200
                     ease-linear focus:placeholder:opacity-100
+                    peer-focus:text-primary
                     data-[te-input-state-active]:placeholder:opacity-100
-                    motion-reduce:transition-none dark:text-gray-200
-                    dark:placeholder:text-gray-200
+                    motion-reduce:transition-none dark:text-white
+                    dark:placeholder:text-neutral-300
+                    dark:peer-focus:text-primary
                     [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0
-                    cursor-pointer data-[te-input-disabled]:bg-[#e9ecef]
+                    cursor-pointer data-[te-input-disabled]:bg-neutral-200
                     data-[te-input-disabled]:cursor-default
                     group-data-[te-was-validated]/validation:mb-4
-                    dark:data-[te-input-disabled]:bg-zinc-600
+                    dark:data-[te-input-disabled]:bg-neutral-600
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets styles for select inputs.
@@ -1142,13 +1166,13 @@
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
                     pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%]
-                    origin-[0_0] truncate text-gray-500 transition-all
+                    origin-[0_0] truncate text-neutral-500 transition-all
                     duration-200 ease-out peer-focus:scale-[0.8]
                     peer-focus:text-primary
                     peer-data-[te-input-state-active]:scale-[0.8]
-                    motion-reduce:transition-none dark:text-gray-200
-                    dark:peer-focus:text-gray-200
+                    motion-reduce:transition-none dark:text-neutral-400
                     data-[te-input-state-active]:scale-[0.8]
+                    dark:peer-focus:text-primary
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets styles for select input label.
@@ -1229,23 +1253,24 @@
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
                     flex flex-row items-center justify-between w-full px-4
                     truncate text-gray-700 bg-transparent select-none
-                    cursor-pointer data-[te-input-multiple-active]:bg-black/5
-                    hover:[&:not([data-te-select-option-disabled])]:bg-black/5
-                    data-[te-input-state-active]:bg-black/5
-                    data-[te-select-option-selected]:data-[te-input-state-active]:bg-black/5
-                    data-[te-select-selected]:data-[te-select-option-disabled]:cursor-default
-                    data-[te-select-selected]:data-[te-select-option-disabled]:text-gray-400
-                    data-[te-select-selected]:data-[te-select-option-disabled]:bg-transparent
-                    data-[te-select-option-selected]:bg-black/[0.02]
-                    data-[te-select-option-disabled]:text-gray-400
+                    cursor-pointer
+                    data-[te-select-selected='true']:bg-primary/30
+                    data-[te-select-selected='true']:data-[te-input-state-active]:bg-primary/40
+                    data-[te-select-selected='true']:data-[te-input-multiple-active]:bg-primary/40
                     data-[te-select-option-disabled]:cursor-default
+                    data-[te-select-option-disabled]:text-surface/50
+                    data-[te-select-option-disabled]:cursor-default
+                    data-[te-select-option-disabled]:!bg-transparent
+                    data-[te-input-state-active]:[&:not([data-te-select-selected='true'])]:bg-black/5
+                    data-[te-input-multiple-active]:[&:not([data-te-select-selected='true'])]:bg-black/5
+                    hover:[&:not([data-te-select-selected='true'])]:bg-black/5
+                    hover:data-[te-select-selected='true']:bg-primary/40
                     group-data-[te-select-option-group-ref]/opt:pl-7
-                    dark:text-gray-200
-                    dark:hover:[&:not([data-te-select-option-disabled])]:bg-white/30
-                    dark:data-[te-input-state-active]:bg-white/30
-                    dark:data-[te-select-option-selected]:data-[te-input-state-active]:bg-white/30
-                    dark:data-[te-select-option-disabled]:text-gray-400
-                    dark:data-[te-input-multiple-active]:bg-white/30
+                    dark:text-white
+                    dark:data-[te-select-option-disabled]:text-white/50
+                    dark:hover:[&:not([data-te-select-selected='true'])]:bg-black/10
+                    dark:data-[te-input-state-active]:[&:not([data-te-select-selected='true'])]:bg-black/10
+                    dark:data-[te-input-multiple-active]:[&:not([data-te-select-selected='true'])]:bg-black/10
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets styles for every select options.
@@ -1290,7 +1315,7 @@
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
                     flex flex-row items-center w-full px-4 truncate
-                    bg-transparent text-black/50 select-none dark:text-gray-300
+                    bg-transparent text-black/50 select-none dark:text-white/50
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets styles for opt group labels.
@@ -1318,7 +1343,7 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    block text-[0.8rem] text-gray-500 dark:text-gray-300
+                    block text-[0.8rem] text-black/50 dark:text-white/50
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets font size, colors and other styles for secondary text.
@@ -1346,7 +1371,7 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    hidden absolute -mt-3 w-auto text-sm text-green-600
+                    hidden absolute -mt-3 w-auto text-sm text-success
                     cursor-pointer
                     group-data-[te-was-validated]/validation:peer-valid:block
                   </td>
@@ -1362,7 +1387,7 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    hidden absolute -mt-3 w-auto text-sm text-[rgb(220,76,100)]
+                    hidden absolute -mt-3 w-auto text-sm text-danger
                     cursor-pointer
                     group-data-[te-was-validated]/validation:peer-invalid:block
                   </td>
