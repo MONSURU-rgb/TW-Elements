@@ -163,6 +163,8 @@ module.exports = plugin(
             "0 8px 9px -4px rgba(51,45,45,0.1),0 4px 18px 0 rgba(51,45,45,0.2)",
           "dark-3": "0 4px 9px -4px rgba(51,45,45,0.7)",
           "dark-strong": "0 4px 18px -2px rgba(0,0,0,.7)",
+          "dark-mild":
+            "0 4px 12px 0 rgba(0,0,0,0.07),0 2px 4px rgba(0,0,0,0.05)",
           "secondary-1":
             "0 2px 15px -3px rgba(0,0,0,0.04),0 10px 20px -2px rgba(0,0,0,0.07)",
           "secondary-2":

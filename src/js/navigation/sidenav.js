@@ -508,7 +508,6 @@ class Sidenav {
       ? this.options.sidenavBackdropClass.split(" ")
       : this.options.sidenavPosition
       ? [
-          "opacity-50",
           "transition-all",
           "duration-300",
           "ease-in-out",
@@ -517,7 +516,7 @@ class Sidenav {
           "left-0",
           "z-50",
           "bg-black/10",
-          "dark:bg-black-60",
+          "dark:bg-black/50",
           "w-full",
           "h-full",
           this._element.id,
