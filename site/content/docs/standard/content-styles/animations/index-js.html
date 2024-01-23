@@ -86,13 +86,14 @@
       newElement.innerText = `element ${elementNumber}`;
       lastElement.style.zIndex = "1";
       newElement.classList.add(
+        "px-6",
+        "py-2",
         "[&:not(:last-child)]:border-b",
         `animate-${animation}`,
         "w-full",
         "border-neutral-100",
-        "border-opacity-100",
-        "p-4",
         "dark:border-white/10",
+        "dark:bg-[#3b3b3b]",
         "z-0"
       );
 

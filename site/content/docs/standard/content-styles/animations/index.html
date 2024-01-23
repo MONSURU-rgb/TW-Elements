@@ -1893,20 +1893,20 @@ autoinits: "Animate"
       <!-- Section: Demo-->
       {{< twsnippet/demo id="example13" >}}
       <section class="flex w-full justify-center p-4 ">
-        <div class="flex items-start" style="width: 18rem">
+        <div class="flex items-start">
           <div
-            class="block w-full max-w-[18rem] overflow-hidden rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
-            <ul class="w-full" data-te-animation-ref>
+            class="block w-full overflow-hidden rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+            <ul class="w-72" data-te-animation-ref>
               <li
-                class="w-full border-b border-neutral-100 border-opacity-100  p-4 dark:border-white/10">
+                class="w-full border-neutral-100 px-6 py-2 dark:border-white/10 dark:bg-[#3b3b3b] [&:not(:last-child)]:border-b">
                 Cras justo odio
               </li>
               <li
-                class="w-full border-b border-neutral-100 border-opacity-100  p-4 dark:border-white/10">
+                class="w-full border-neutral-100 px-6 py-2 dark:border-white/10 dark:bg-[#3b3b3b] [&:not(:last-child)]:border-b">
                 Dapibus ac facilisis in
               </li>
               <li
-                class="z-[1000] w-full border-neutral-100 border-opacity-100 p-4 dark:border-white/10 [&:not(:last-child)]:border-b">
+                class="z-[1000] w-full border-neutral-100 px-6 py-2 dark:border-white/10 dark:bg-[#3b3b3b] [&:not(:last-child)]:border-b">
                 Vestibulum at eros
               </li>
             </ul>
@@ -1929,31 +1929,24 @@ autoinits: "Animate"
         <div class="pb-4">
           {{< twsnippet/wrapper "HTML,javascript,umd" >}}
           {{< twsnippet/code active=true lang="html" >}}
-          <div class="flex items-start " style="width: 18rem">
-            <ul
-              data-te-animation-ref
-              class="w-96 overflow-hidden rounded-lg border border-neutral-200 bg-white text-neutral-900 dark:border-white/10 dark:bg-neutral-600 dark:text-neutral-200">
-              <li
-                class="relative w-full border-neutral-200 bg-white px-6 py-2 dark:border-white/10 dark:bg-neutral-600 [&:not(:last-child)]:border-b">
-                An item
-              </li>
-              <li
-                class="relative w-full border-neutral-200 bg-white px-6 py-2 dark:border-white/10 dark:bg-neutral-600 [&:not(:last-child)]:border-b">
-                A second item
-              </li>
-              <li
-                class="relative w-full border-neutral-200 bg-white px-6 py-2 dark:border-white/10 dark:bg-neutral-600 [&:not(:last-child)]:border-b">
-                A third item
-              </li>
-              <li
-                class="relative w-full border-neutral-200 bg-white px-6 py-2 dark:border-white/10 dark:bg-neutral-600 [&:not(:last-child)]:border-b">
-                A fourth item
-              </li>
-              <li
-                class="relative w-full border-neutral-200 bg-white px-6 py-2 dark:border-white/10 dark:bg-neutral-600 [&:not(:last-child)]:border-b">
-                And a fifth one
-              </li>
-            </ul>
+          <div class="flex items-start">
+            <div
+              class="block w-full overflow-hidden rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+              <ul class="w-72" data-te-animation-ref>
+                <li
+                  class="w-full border-neutral-100 px-6 py-2 dark:border-white/10 dark:bg-[#3b3b3b] [&:not(:last-child)]:border-b">
+                  Cras justo odio
+                </li>
+                <li
+                  class="w-full border-neutral-100 px-6 py-2 dark:border-white/10 dark:bg-[#3b3b3b] [&:not(:last-child)]:border-b">
+                  Dapibus ac facilisis in
+                </li>
+                <li
+                  class="z-[1000] w-full border-neutral-100 px-6 py-2 dark:border-white/10 dark:bg-[#3b3b3b] [&:not(:last-child)]:border-b">
+                  Vestibulum at eros
+                </li>
+              </ul>
+            </div>
             <button
               type="button"
               data-te-animation-add-ref
@@ -2013,13 +2006,12 @@ autoinits: "Animate"
                 "px-6",
                 "py-2",
                 "[&:not(:last-child)]:border-b",
-                "border-gray-200",
-                "w-full",
-                "rounded-t-lg",
-                "relative",
                 `animate-${animation}`,
-                "bg-white",
-                "dark:bg-neutral-600"
+                "w-full",
+                "border-neutral-100",
+                "dark:border-white/10",
+                "dark:bg-[#3b3b3b]",
+                "z-0"
               );
 
               newElement.addEventListener("animationend", () => {
@@ -2085,13 +2077,12 @@ autoinits: "Animate"
                 "px-6",
                 "py-2",
                 "[&:not(:last-child)]:border-b",
-                "border-gray-200",
-                "w-full",
-                "rounded-t-lg",
-                "relative",
                 `animate-${animation}`,
-                "bg-white",
-                "dark:bg-neutral-600"
+                "w-full",
+                "border-neutral-100",
+                "dark:border-white/10",
+                "dark:bg-[#3b3b3b]",
+                "z-0"
               );
 
               newElement.addEventListener("animationend", () => {
