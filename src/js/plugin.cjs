@@ -180,6 +180,7 @@ module.exports = plugin(
           "notch-1": "-1px 0 0 #3b71ca, 0 1px 0 0 #3b71ca, 0 -1px 0 0 #3b71ca",
           "notch-2": "0 1px 0 0 #3b71ca",
           "notch-3": "1px 0 0 #3b71ca, 0 -1px 0 0 #3b71ca, 0 1px 0 0 #3b71ca",
+          "border-b": "inset 0 -1px 0 rgba(229,231,235)",
         },
         keyframes: {
           "fade-in": {
