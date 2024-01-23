@@ -35,7 +35,7 @@ const ATTR_SELECTOR_CHIP_CLOSE = `[${ATTR_CHIP_CLOSE}]`;
 const EVENT_DELETE = "delete.te.chips";
 const EVENT_SELECT = "select.te.chip";
 
-const defaultIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3"> <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>`;
+const defaultIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>`;
 
 const DefaultType = {
   text: "string",
@@ -52,11 +52,11 @@ const Default = {
 };
 
 const DefaultClasses = {
-  icon: "float-right pl-[8px] text-[16px] opacity-[.53] cursor-pointer fill-[#afafaf] hover:text-[#8b8b8b] transition-all duration-200 ease-in-out",
+  icon: "float-right pl-2 text-base opacity-[.53] cursor-pointer transition-all duration-200 ease-in-out",
   chipElement:
-    "flex justify-between items-center h-[32px] leading-loose py-[5px] px-[12px] mr-4 my-[5px] text-[13px] font-normal text-[#4f4f4f] cursor-pointer bg-[#eceff1] dark:text-white dark:bg-neutral-600 rounded-[16px] transition-[opacity] duration-300 ease-linear [word-wrap: break-word] shadow-none normal-case hover:!shadow-none active:bg-[#cacfd1] inline-block font-medium leading-normal text-[#4f4f4f] text-center no-underline align-middle cursor-pointer select-none border-[.125rem] border-solid border-transparent py-1.5 px-3 text-xs rounded",
+    "flex justify-between items-center h-8 leading-loose py-[5px] px-3 mr-4 my-[5px] text-[13px] font-normal text-surface cursor-pointer bg-zinc-50 dark:text-white dark:bg-neutral-700 rounded-2xl transition-[opacity] duration-300 ease-linear [word-wrap: break-word] shadow-none normal-case hover:!shadow-none inline-block font-medium leading-normal text-center no-underline align-middle cursor-pointer select-none border-[.125rem] border-solid border-transparent py-1.5 px-3 text-xs rounded",
   chipCloseIcon:
-    "w-4 float-right pl-[8px] text-[16px] opacity-[.53] cursor-pointer fill-[#afafaf] hover:fill-[#8b8b8b] dark:fill-gray-400 dark:hover:fill-gray-100 transition-all duration-200 ease-in-out",
+    "w-4 float-right cursor-pointer pl-2 text-[16px] dark:text-white/30 opacity-[.53] transition-all duration-200 ease-in-out hover:text-black/50 text-black/30 dark:hover:text-white/50 [&>svg]:h-3 [&>svg]:w-3",
 };
 
 const DefaultClassesType = {
