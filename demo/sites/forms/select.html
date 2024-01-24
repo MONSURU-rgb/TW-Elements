@@ -347,7 +347,7 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
       <!-- Button trigger modal -->
       <button
         type="button"
-        class="inline-block rounded bg-primary px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+        class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
         data-te-toggle="modal"
         data-te-target="#exampleModal"
         data-te-ripple-init
@@ -379,18 +379,19 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                 class="box-content rounded-none border-none text-neutral-500 hover:text-neutral-800 hover:no-underline focus:opacity-100 focus:shadow-none focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-300"
                 data-te-modal-dismiss
                 aria-label="Close">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                <span class="[&>svg]:h-6 [&>svg]:w-6">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </span>
               </button>
             </div>
             <div class="relative flex-auto p-4" data-te-modal-body-ref>

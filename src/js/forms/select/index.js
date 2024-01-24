@@ -80,6 +80,7 @@ const Default = {
   selectAutoSelect: false,
   selectContainer: "body",
   selectClearButton: false,
+  customArrow: "",
   disabled: false,
   selectDisplayedLabels: 5,
   selectFormWhite: false,
@@ -104,6 +105,7 @@ const DefaultType = {
   selectAutoSelect: "boolean",
   selectContainer: "string",
   selectClearButton: "boolean",
+  customArrow: "string",
   disabled: "boolean",
   selectDisplayedLabels: "number",
   selectFormWhite: "boolean",
@@ -138,10 +140,11 @@ const DefaultClasses = {
   optionsWrapper: "overflow-y-auto",
   optionsWrapperScrollbar:
     "[&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar]:h-1 [&::-webkit-scrollbar-button]:block [&::-webkit-scrollbar-button]:h-0 [&::-webkit-scrollbar-button]:bg-transparent [&::-webkit-scrollbar-track-piece]:bg-transparent [&::-webkit-scrollbar-track-piece]:rounded-none [&::-webkit-scrollbar-track-piece]: [&::-webkit-scrollbar-track-piece]:rounded-l [&::-webkit-scrollbar-thumb]:h-[50px] [&::-webkit-scrollbar-thumb]:bg-[#999] [&::-webkit-scrollbar-thumb]:rounded [&::-webkit-scrollbar-thumb]:dark:bg-gray-200",
-  selectArrow: "absolute right-3 text-[0.8rem] cursor-pointer w-5 h-5",
+  selectArrow:
+    "absolute right-3 text-[0.8rem] cursor-pointer [&>svg]:w-5 [&>svg]:h-5",
   selectArrowWhite:
     "text-gray-50 peer-focus:!text-white peer-data-[te-input-focused]:!text-white",
-  selectArrowDefault: "top-2",
+  selectArrowDefault: "top-2 text-surface/50 dark:text-white/50",
   selectArrowLg: "top-[13px]",
   selectArrowSm: "top-1",
   selectClearBtn:
