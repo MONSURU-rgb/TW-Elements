@@ -74,19 +74,19 @@ const DefaultClassesType = {
 
 const DefaultClasses = {
   backdrop:
-    "h-full w-full z-[1070] fixed top-0 left-0 bg-[#00000066] flex justify-center items-center",
-  body: "p-[1rem] bg-white rounded-[0.5rem] opacity-0 dark:bg-neutral-700",
+    "h-full w-full z-[1070] fixed top-0 left-0 bg-black/40 flex justify-center items-center",
+  body: "p-4 bg-white rounded-lg opacity-0 dark:bg-surface-dark",
   btnCancel:
-    "inline-block rounded bg-primary-100 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200",
+    "inline-block rounded bg-primary-100 px-4 pb-[5px] pt-1.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-200 focus:bg-primary-accent-200 focus:outline-none focus:ring-0 active:bg-primary-accent-200 dark:bg-primary-300 dark:hover:bg-primary-400 dark:focus:bg-primary-400 dark:active:bg-primary-400",
   btnConfirm:
-    "inline-block rounded bg-primary px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]",
+    "inline-block rounded bg-primary me-1 px-4 pb-[5px] pt-1.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong",
   btnsContainer: "flex justify-end space-x-2",
   fade: "transition-opacity duration-[150ms] ease-linear",
   icon: "pr-2",
   message: "flex mb-3",
   messageText: "text-neutral-600 dark:text-white",
-  modal: "absolute w-[300px] z-[1080] shadow-sm rounded-[0.5rem]",
-  popover: "w-[300px] border-0 rounded-[0.5rem] z-[1080] shadow-sm",
+  modal: "absolute w-[300px] z-[1080] shadow-md rounded-lg",
+  popover: "w-[300px] border-0 rounded-lg z-[1080] shadow-md",
 };
 
 /**
