@@ -14,7 +14,7 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
 import SelectorEngine from "../../dom/selector-engine";
 
 const DATA_ACTIVE = "data-te-input-state-active";
-const DATA_SELECTED = "data-te-input-selected";
+const DATA_SELECTED = "data-te-select-selected";
 const DATA_MULTIPLE_ACTIVE = "data-te-input-multiple-active";
 
 const SELECTOR_FORM_CHECK_INPUT = "[data-te-form-check-input]";
@@ -58,7 +58,7 @@ class SelectOption {
 
   _selectSingle() {
     if (!this.selected) {
-      this.node.setAttribute(DATA_SELECTED, "");
+      this.node.setAttribute(DATA_SELECTED, "true");
       this.node.setAttribute("aria-selected", true);
       this.selected = true;
 
@@ -75,7 +75,7 @@ class SelectOption {
         this.node
       );
       checkbox.checked = true;
-      this.node.setAttribute(DATA_SELECTED, "");
+      this.node.setAttribute(DATA_SELECTED, "true");
 
       this.node.setAttribute("aria-selected", true);
       this.selected = true;

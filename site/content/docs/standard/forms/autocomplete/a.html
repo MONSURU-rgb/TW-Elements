@@ -405,7 +405,7 @@
       >
     </p>
     <div
-      class="my-5 rounded-md border-l-[6px] border-solid border-primary-400 bg-primary-100 p-4 dark:border-primary-300 dark:bg-primary-300/30 ">
+      class="my-5 rounded-md border-l-[6px] border-solid border-primary-700 bg-primary-100 p-4 text-primary-700 dark:border-primary-500 dark:bg-[#0c1728] dark:text-primary-500">
       <strong>Note:</strong> To apply styling to an input element, you can
       utilize the identical classes as those available in the
       <a
@@ -451,11 +451,12 @@
                     select-none cursor-pointer
                     hover:[&:not([data-te-autocomplete-option-disabled])]:bg-black/5
                     data-[te-autocomplete-item-active]:bg-black/5
-                    data-[data-te-autocomplete-option-disabled]:text-gray-400
+                    data-[data-te-autocomplete-option-disabled]:text-surface/50
                     data-[data-te-autocomplete-option-disabled]:cursor-default
-                    dark:text-gray-200
-                    dark:hover:[&:not([data-te-autocomplete-option-disabled])]:bg-white/30
-                    dark:data-[te-autocomplete-item-active]:bg-white/30
+                    dark:text-white
+                    dark:hover:[&:not([data-te-autocomplete-option-disabled])]:bg-black/10
+                    dark:data-[te-autocomplete-item-active]:bg-black/10
+                    dark:data-[data-te-autocomplete-option-disabled]:text-white/50
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Classes applied to each result item in the dropdown list.
@@ -501,12 +502,11 @@
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
                     relative outline-none min-w-[100px] m-0 scale-y-[0.8]
-                    opacity-0 bg-white
-                    shadow-[0_2px_5px_0_rgba(0,0,0,0.16),_0_2px_10px_0_rgba(0,0,0,0.12)]
-                    transition duration-200 motion-reduce:transition-none
+                    opacity-0 bg-white shadow-select transition duration-200
+                    motion-reduce:transition-none
                     data-[te-autocomplete-state-open]:scale-y-100
                     data-[te-autocomplete-state-open]:opacity-100
-                    dark:bg-zinc-700
+                    dark:bg-surface-dark
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Classes applied to the dropdown element.
@@ -547,6 +547,7 @@
                     [&::-webkit-scrollbar-thumb]:h-[50px]
                     [&::-webkit-scrollbar-thumb]:bg-[#999]
                     [&::-webkit-scrollbar-thumb]:rounded
+                    [&::-webkit-scrollbar-thumb]:dark:bg-gray-200
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Classes applied to the dropdown container. Contains styling
@@ -594,7 +595,7 @@
     </h2>
 
     <div
-      class="my-6 rounded-lg bg-red-100 px-6 py-5 text-base text-red-700"
+      class="my-6 rounded-lg bg-red-100 px-6 py-5 text-base text-red-700 dark:bg-[#2c0f14] dark:text-danger-500"
       role="alert">
       <p class="mb-2">
         <strong>Asynchronous methods and transitions:</strong>
