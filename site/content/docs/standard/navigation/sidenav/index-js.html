@@ -4,51 +4,74 @@
 <script type="module">
   // example with mode
 
-  const instanceMode = te.Sidenav.getInstance(
-    document.getElementById("sidenav-2")
-  );
-  const modes = ["push", "over", "side"];
+  document.addEventListener("DOMContentLoaded", () => {
+    const instanceMode = te.Sidenav.getInstance(
+      document.getElementById("sidenav-2")
+    );
+    const modes = ["push", "over", "side"];
 
-  modes.forEach((mode) => {
-    const modeSwitch = document.getElementById(mode);
-    modeSwitch.addEventListener("click", () => {
-      const instance = te.Sidenav.getInstance(
-        document.getElementById("sidenav-2")
-      );
-      instance.changeMode(mode);
-      modes.forEach((el) => {
-        if (el === mode) {
-          ["text-blue-600", "border-blue-600"].forEach((item) =>
-            modeSwitch.classList.remove(item)
-          );
-          modeSwitch.className +=
-            " bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 focus:bg-blue-700 border-transparent";
-        } else {
-          const node = document.getElementById(el);
-          node.className += " text-blue-600 border-blue-600";
-          [
-            "bg-blue-600",
-            "text-white",
-            "hover:bg-blue-700",
-            "active:bg-blue-800",
-            "focus:bg-blue-700",
-            "border-transparent",
-          ].forEach((item) => node.classList.remove(item));
-        }
+    modes.forEach((mode) => {
+      const modeSwitch = document.getElementById(mode);
+      modeSwitch.addEventListener("click", () => {
+        const instance = te.Sidenav.getInstance(
+          document.getElementById("sidenav-2")
+        );
+        instance.changeMode(mode);
+        modes.forEach((el) => {
+          if (el === mode) {
+            [
+              "text-primary",
+              "border-primary",
+              "hover:border-primary-accent-300",
+              "hover:bg-primary-50/50",
+              "hover:text-primary-accent-300",
+              "focus:border-primary-600",
+              "focus:bg-primary-50/50",
+              "focus:text-primary-600",
+              "active:border-primary-700",
+              "active:text-primary-700",
+              "dark:text-primary-500",
+              "dark:hover:bg-blue-950",
+              "dark:focus:bg-blue-950",
+            ].forEach((item) => modeSwitch.classList.remove(item));
+            modeSwitch.className +=
+              " bg-primary text-white border-transparent shadow-primary-3 hover:bg-primary-accent-300 hover:shadow-primary-2 active:bg-primary-600 active:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong";
+          } else {
+            const node = document.getElementById(el);
+            node.className +=
+              " text-primary border-primary hover:border-primary-accent-300 hover:bg-primary-50/50 hover:text-primary-accent-300 focus:border-primary-600 focus:bg-primary-50/50 focus:text-primary-600 active:border-primary-700 active:text-primary-700 dark:text-primary-500 dark:hover:bg-blue-950 dark:focus:bg-blue-950";
+            [
+              "bg-primary",
+              "text-white",
+              "border-transparent",
+              "shadow-primary-3",
+              "hover:bg-primary-accent-300",
+              "hover:shadow-primary-2",
+              "active:bg-primary-600",
+              "active:shadow-primary-2",
+              "focus:bg-primary-accent-300",
+              "focus:shadow-primary-2",
+              "dark:shadow-black/30",
+              "dark:hover:shadow-dark-strong",
+              "dark:focus:shadow-dark-strong",
+              "dark:active:shadow-dark-strong",
+            ].forEach((item) => node.classList.remove(item));
+          }
+        });
       });
     });
+
+    // example with mode
+
+    // slim toggle
+
+    document.getElementById("slim-toggler").addEventListener("click", () => {
+      const instance = te.Sidenav.getInstance(
+        document.getElementById("sidenav-4")
+      );
+      instance.toggleSlim();
+    });
+
+    // slim toggle
   });
-
-  // example with mode
-
-  // slim toggle
-
-  document.getElementById("slim-toggler").addEventListener("click", () => {
-    const instance = te.Sidenav.getInstance(
-      document.getElementById("sidenav-4")
-    );
-    instance.toggleSlim();
-  });
-
-  // slim toggle
 </script>
