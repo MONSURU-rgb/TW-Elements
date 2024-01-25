@@ -42,12 +42,12 @@ menu:
     {{< twsnippet/demo id="example1" >}}
     <div class="flex justify-center">
       <div
-        class="block max-w-[22rem] rounded-lg bg-white p-6 shadow-secondary-1 dark:bg-surface-dark">
+        class="block max-w-[22rem] rounded-lg bg-white p-6 shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <h5
-          class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+          class="mb-2 text-xl font-medium leading-tight ">
           Card title
         </h5>
-        <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+        <p class="mb-4 text-base">
           Some quick example text to build on the card title and make up the bulk
           of the card's content.
         </p>
@@ -68,12 +68,9 @@ menu:
         {{< twsnippet/wrapper "HTML,javascript" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block rounded-lg bg-white p-6 shadow-secondary-1 dark:bg-surface-dark">
-          <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-            Card title
-          </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          class="block rounded-lg bg-white p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+          <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+          <p class="mb-4 text-base">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
@@ -88,14 +85,14 @@ menu:
         {{< /twsnippet/code >}}
         <!-- prettier-ignore -->
         {{< twsnippet/code lang="js" >}}
-      // Initialization for ES Users
-      import {
-        Ripple,
-        initTE,
-      } from "tw-elements";
-      
-      initTE({ Ripple });
-      {{< /twsnippet/code >}}
+        // Initialization for ES Users
+        import {
+          Ripple,
+          initTE,
+        } from "tw-elements";
+        
+        initTE({ Ripple });
+        {{< /twsnippet/code >}}
       {{< /twsnippet/wrapper >}}
       </div>
     </section>
@@ -404,18 +401,18 @@ menu:
             src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
             alt="" />
         </a>
-        <div class="p-6">
+        <div class="p-6 dark:text-white text-surface">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight ">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
           <button
             type="button"
-          class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
             data-te-ripple-init
             data-te-ripple-color="light">
             Button
@@ -438,12 +435,9 @@ menu:
               src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
               alt="" />
           </a>
-          <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-              Card title
-            </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <div class="p-6 text-surface dark:text-white">
+            <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+            <p class="mb-4 text-base">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
@@ -459,14 +453,14 @@ menu:
         {{< /twsnippet/code >}}
         <!-- prettier-ignore -->
         {{< twsnippet/code lang="js" >}}
-      // Initialization for ES Users
-      import {
-        Ripple,
-        initTE,
-      } from "tw-elements";
-      
-      initTE({ Ripple });
-      {{< /twsnippet/code >}}
+        // Initialization for ES Users
+        import {
+          Ripple,
+          initTE,
+        } from "tw-elements";
+        
+        initTE({ Ripple });
+        {{< /twsnippet/code >}}
       {{< /twsnippet/wrapper >}}
       </div>
     </section>
@@ -519,12 +513,12 @@ menu:
               class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
           </a>
         </div>
-        <div class="p-6">
+        <div class="p-6 dark:text-white text-surface">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
@@ -560,12 +554,9 @@ menu:
                 class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
           </div>
-          <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-              Card title
-            </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <div class="p-6 text-surface dark:text-white">
+            <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+            <p class="mb-4 text-base">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
@@ -581,14 +572,14 @@ menu:
         {{< /twsnippet/code >}}
         <!-- prettier-ignore -->
         {{< twsnippet/code lang="js" >}}
-      // Initialization for ES Users
-      import {
-        Ripple,
-        initTE,
-      } from "tw-elements";
-      
-      initTE({ Ripple });
-      {{< /twsnippet/code >}}
+        // Initialization for ES Users
+        import {
+          Ripple,
+          initTE,
+        } from "tw-elements";
+        
+        initTE({ Ripple });
+        {{< /twsnippet/code >}}
       {{< /twsnippet/wrapper >}}
       </div>
     </section>
@@ -613,17 +604,17 @@ menu:
     {{< twsnippet/demo id="example3" >}}
     <div class="flex justify-center">
       <div
-        class="block max-w-[22rem] rounded-lg bg-white text-center shadow-secondary-1 dark:bg-surface-dark">
+        class="block max-w-[22rem] rounded-lg bg-white text-center shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <div
-          class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+          class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10 ">
           Featured
         </div>
-        <div class="p-6">
+        <div class="p-6 ">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight ">
             Special title treatment
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base ">
             With supporting text below as a natural lead-in to additional content.
           </p>
           <button
@@ -635,7 +626,7 @@ menu:
           </button>
         </div>
         <div
-          class="border-t-2 border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+          class="border-t-2 border-neutral-100 px-6 py-3 dark:border-white/10 text-[#4f4f4f]/75 dark:text-neutral-300">
           2 days ago
         </div>
       </div>
@@ -648,17 +639,16 @@ menu:
         {{< twsnippet/wrapper "HTML,javascript" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block rounded-lg bg-white text-center shadow-secondary-1 dark:bg-surface-dark">
+          class="block rounded-lg bg-white text-center text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div
-            class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+            class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10">
             Featured
           </div>
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            <h5 class="mb-2 text-xl font-medium leading-tight ">
               Special title treatment
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base ">
               With supporting text below as a natural lead-in to additional
               content.
             </p>
@@ -671,7 +661,7 @@ menu:
             </button>
           </div>
           <div
-            class="border-t-2 border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+            class="border-t-2 border-neutral-100 px-6 py-3 text-[#4f4f4f]/75 dark:border-white/10 dark:text-neutral-300">
             2 days ago
           </div>
         </div>
@@ -728,11 +718,9 @@ menu:
       {{< twsnippet/demo id="example4" >}}
       <div class="flex w-full justify-center">
         <div
-          class="block w-full rounded-lg bg-white text-left shadow-secondary-1 dark:bg-surface-dark">
+          class="block w-full rounded-lg bg-white text-left text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div class="p-6">
-            <p class="text-base text-neutral-600 dark:text-neutral-200">
-              This is some text within a card body.
-            </p>
+            <p class="text-base">This is some text within a card body.</p>
           </div>
         </div>
       </div>
@@ -744,11 +732,9 @@ menu:
         {{< twsnippet/wrapper "HTML" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block w-full rounded-lg bg-white text-left shadow-secondary-1 dark:bg-surface-dark">
+          class="block w-full rounded-lg bg-white text-left text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div class="p-6">
-            <p class="text-base text-neutral-600 dark:text-neutral-200">
-              This is some text within a card body.
-            </p>
+            <p class="text-base">This is some text within a card body.</p>
           </div>
         </div>
         {{< /twsnippet/code >}}
@@ -777,18 +763,16 @@ menu:
       {{< twsnippet/demo id="example5" >}}
       <div class="flex justify-center">
         <div
-          class="block max-w-[18rem] rounded-lg bg-white text-left shadow-secondary-1 dark:bg-surface-dark">
+          class="block max-w-[18rem] rounded-lg bg-white text-left text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div class="p-6">
-            <h5
-              class="mb-1 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            <h5 class="mb-1 text-xl font-medium leading-tight ">
               Special title treatment
             </h5>
             <h6
-              class="mb-2 text-base font-medium leading-tight text-neutral-500 dark:text-neutral-50">
+              class="mb-2 text-base font-medium leading-tight text-[#4f4f4f]/75 dark:text-neutral-300">
               Card subtitle
             </h6>
-            <p
-              class="mb-4 text-base  leading-normal text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base leading-normal">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
@@ -813,18 +797,16 @@ menu:
         {{< twsnippet/wrapper "HTML" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block max-w-[18rem] rounded-lg bg-white text-left shadow-secondary-1 dark:bg-surface-dark">
+          class="block max-w-[18rem] rounded-lg bg-white text-left text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div class="p-6">
-            <h5
-              class="mb-1 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            <h5 class="mb-1 text-xl font-medium leading-tight ">
               Special title treatment
             </h5>
             <h6
-              class="mb-2 text-base font-medium leading-tight text-neutral-500 dark:text-neutral-50">
+              class="mb-2 text-base font-medium leading-tight text-[#4f4f4f]/75 dark:text-neutral-300">
               Card subtitle
             </h6>
-            <p
-              class="mb-4 text-base  leading-normal text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base leading-normal">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
@@ -868,7 +850,7 @@ menu:
       {{< twsnippet/demo id="example6" >}}
       <div class="flex justify-center">
         <div
-          class="block max-w-[18rem] rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div class="relative overflow-hidden bg-cover bg-no-repeat">
             <img
               class="rounded-t-lg"
@@ -876,7 +858,7 @@ menu:
               alt="" />
           </div>
           <div class="p-6">
-            <p class="text-base text-neutral-600 dark:text-neutral-200">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
@@ -891,7 +873,7 @@ menu:
         {{< twsnippet/wrapper "HTML" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block max-w-[18rem] rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div class="relative overflow-hidden bg-cover bg-no-repeat">
             <img
               class="rounded-t-lg"
@@ -899,7 +881,7 @@ menu:
               alt="" />
           </div>
           <div class="p-6">
-            <p class="text-base text-neutral-600 dark:text-neutral-200">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
@@ -930,7 +912,7 @@ menu:
       {{< twsnippet/demo id="example7" >}}
       <div class="flex justify-center">
         <div
-          class="block w-full max-w-[18rem] rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block w-full max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <ul class="w-full">
             <li
               class="w-full border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-white/10">
@@ -952,7 +934,7 @@ menu:
         {{< twsnippet/wrapper "HTML" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block w-full max-w-[18rem] rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block w-full max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <ul class="w-full">
             <li
               class="w-full border-b-2 border-neutral-100 border-opacity-100 p-4  dark:border-white/10">
@@ -974,9 +956,9 @@ menu:
       {{< twsnippet/demo id="example8" >}}
       <div class="flex justify-center">
         <div
-          class="block w-full max-w-[18rem] rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block w-full max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div
-            class="border-b-2 border-neutral-100 border-opacity-100 p-4  dark:border-white/10 dark:text-neutral-50">
+            class="border-b-2 border-neutral-100 border-opacity-100 p-4  dark:border-white/10">
             Featured
           </div>
           <ul class="w-full">
@@ -1000,9 +982,8 @@ menu:
         {{< twsnippet/wrapper "HTML" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block w-full max-w-[18rem] rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
-          <div
-            class="border-b-2 border-neutral-100 border-opacity-100 p-4  dark:text-neutral-50">
+          class="block w-full max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+          <div class="border-b-2 border-neutral-100 border-opacity-100 p-4">
             Featured
           </div>
           <ul class="w-full">
@@ -1026,7 +1007,7 @@ menu:
       {{< twsnippet/demo id="example9" >}}
       <div class="flex justify-center">
         <div
-          class="block w-full max-w-[18rem] rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block w-full max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <ul class="w-full">
             <li
               class="w-full border-b-2 border-neutral-100 border-opacity-100 px-4 py-3  dark:border-white/10">
@@ -1042,7 +1023,7 @@ menu:
             </li>
           </ul>
           <div
-            class="border-neutral-100 p-4 dark:border-white/10 dark:text-neutral-50">
+            class="rounded-lg border-neutral-100 bg-zinc-50 p-4 dark:border-white/10 dark:bg-neutral-700">
             Card footer
           </div>
         </div>
@@ -1055,7 +1036,7 @@ menu:
         {{< twsnippet/wrapper "HTML" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block w-full max-w-[18rem] rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block w-full max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <ul class="w-full">
             <li
               class="w-full border-b-2 border-neutral-100 border-opacity-100 px-4 py-3  dark:border-white/10">
@@ -1071,7 +1052,7 @@ menu:
             </li>
           </ul>
           <div
-            class="border-neutral-100 p-4 dark:border-white/10 dark:text-neutral-50">
+            class="rounded-lg border-neutral-100 bg-zinc-50 p-4 dark:border-white/10 dark:bg-neutral-700">
             Card footer
           </div>
         </div>
@@ -1101,7 +1082,7 @@ menu:
       {{< twsnippet/demo id="example10" >}}
       <div class="flex justify-center">
         <div
-          class="block max-w-[18rem] rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div class="relative overflow-hidden bg-cover bg-no-repeat">
             <img
               class="rounded-t-lg"
@@ -1109,11 +1090,8 @@ menu:
               alt="" />
           </div>
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-              Card title
-            </h5>
-            <p class="text-base text-neutral-600 dark:text-neutral-200">
+            <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+            <p class="text-base">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
@@ -1154,7 +1132,7 @@ menu:
         {{< twsnippet/wrapper "HTML" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block max-w-[18rem] rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="dark:bg-surface-dar text-surfacek block max-w-[18rem] rounded-lg bg-white shadow-secondary-1 dark:text-white">
           <div class="relative overflow-hidden bg-cover bg-no-repeat">
             <img
               class="rounded-t-lg"
@@ -1162,11 +1140,8 @@ menu:
               alt="" />
           </div>
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-              Card title
-            </h5>
-            <p class="text-base text-neutral-600 dark:text-neutral-200">
+            <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+            <p class="text-base">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
@@ -1222,17 +1197,16 @@ menu:
       {{< twsnippet/demo id="example11" >}}
       <div class="flex justify-center">
         <div
-          class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div
-            class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+            class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10">
             Featured
           </div>
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Special title treatment
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base">
               With supporting text below as a natural lead-in to additional
               content.
             </p>
@@ -1255,24 +1229,24 @@ menu:
       {{< twsnippet/wrapper "HTML,javascript" >}}
       {{< twsnippet/code active=true lang="HTML" >}}
       <div
-        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <div
-          class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+          class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10">
           Featured
         </div>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Special title treatment
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             With supporting text below as a natural lead-in to additional
             content.
           </p>
           <button
             type="button"
             href="#"
-          class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
             data-te-ripple-init
             data-te-ripple-color="light">
             Go somewhere
@@ -1302,17 +1276,16 @@ menu:
       {{< twsnippet/demo id="example12" >}}
       <div class="flex justify-center">
         <div
-          class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <h5
-            class="border-b-2 border-neutral-100 px-6 py-3 text-xl font-medium leading-tight dark:border-white/10 dark:text-neutral-50">
+            class="border-b-2 border-neutral-100 px-6 py-3 text-xl font-medium leading-tight dark:border-white/10">
             Featured
           </h5>
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Special title treatment
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base">
               With supporting text below as a natural lead-in to additional
               content.
             </p>
@@ -1336,17 +1309,17 @@ menu:
       {{< twsnippet/wrapper "HTML,javascript" >}}
       {{< twsnippet/code active=true lang="HTML" >}}
       <div
-        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <h5
-          class="border-b-2 border-neutral-100 px-6 py-3 text-xl font-medium leading-tight dark:border-white/10 dark:text-neutral-50">
+          class="border-b-2 border-neutral-100 px-6 py-3 text-xl font-medium leading-tight dark:border-white/10">
           Featured
         </h5>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Special title treatment
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             With supporting text below as a natural lead-in to additional
             content.
           </p>
@@ -1378,9 +1351,9 @@ menu:
       {{< twsnippet/demo id="example13" >}}
       <div class="flex justify-center">
         <div
-          class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div
-            class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+            class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10">
             Quote
           </div>
           <div class="p-6">
@@ -1404,9 +1377,9 @@ menu:
         {{< twsnippet/wrapper "HTML" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div
-            class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+            class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10">
             Quote
           </div>
           <div class="p-6">
@@ -1430,17 +1403,16 @@ menu:
       {{< twsnippet/demo id="example14" >}}
       <div class="flex justify-center">
         <div
-          class="block rounded-lg bg-white text-center shadow-secondary-1 dark:bg-surface-dark">
+          class="block rounded-lg bg-white text-center text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div
-            class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+            class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10">
             Featured
           </div>
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Special title treatment
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base">
               With supporting text below as a natural lead-in to additional
               content.
             </p>
@@ -1453,7 +1425,7 @@ menu:
             </button>
           </div>
           <div
-            class="border-t-2 border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+            class="border-t-2 border-neutral-100 px-6 py-3 text-[#4f4f4f]/75 dark:border-white/10 dark:text-neutral-300">
             2 days ago
           </div>
         </div>
@@ -1467,31 +1439,31 @@ menu:
       {{< twsnippet/wrapper "HTML,javascript" >}}
       {{< twsnippet/code active=true lang="HTML" >}}
       <div
-        class="block rounded-lg bg-white text-center shadow-secondary-1 dark:bg-surface-dark">
+        class="block rounded-lg bg-white text-center shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <div
-          class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+          class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10">
           Featured
         </div>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Special title treatment
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             With supporting text below as a natural lead-in to additional
             content.
           </p>
           <button
             type="button"
             href="#"
-          class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
             data-te-ripple-init
             data-te-ripple-color="light">
             Go somewhere
           </button>
         </div>
         <div
-          class="border-t-2 border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+          class="border-t-2 border-neutral-100 px-6 py-3 dark:border-white/10 text-[#4f4f4f]/75 dark:text-neutral-300">
           2 days ago
         </div>
       </div>
@@ -1548,13 +1520,12 @@ menu:
       {{< twsnippet/demo id="example15" >}}
       <div class="grid grid-cols-1 grid-rows-1 md:grid-cols-2">
         <div
-          class="mr-4 block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="mr-4 block rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Special title treatment
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base">
               With supporting text below as a natural lead-in to additional
               content.
             </p>
@@ -1570,13 +1541,12 @@ menu:
         </div>
 
         <div
-          class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Special title treatment
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base">
               With supporting text below as a natural lead-in to additional
               content.
             </p>
@@ -1601,20 +1571,20 @@ menu:
         {{< twsnippet/code active=true lang="HTML" >}}
         <div class="grid grid-cols-1 grid-rows-1 md:grid-cols-2">
           <div
-            class="mr-4 block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+            class="mr-4 block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
             <div class="p-6">
               <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                class="mb-2 text-xl font-medium leading-tight">
                 Special title treatment
               </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <p class="mb-4 text-base">
                 With supporting text below as a natural lead-in to additional
                 content.
               </p>
               <button
                 type="button"
                 href="#"
-              class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
                 data-te-ripple-init
                 data-te-ripple-color="light">
                 Go somewhere
@@ -1623,20 +1593,20 @@ menu:
           </div>
   
           <div
-            class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+            class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
             <div class="p-6">
               <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                class="mb-2 text-xl font-medium leading-tight">
                 Special title treatment
               </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <p class="mb-4 text-base">
                 With supporting text below as a natural lead-in to additional
                 content.
               </p>
               <button
                 type="button"
                 href="#"
-              class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
                 data-te-ripple-init
                 data-te-ripple-color="light">
                 Go somewhere
@@ -1646,14 +1616,14 @@ menu:
         </div>
         {{< /twsnippet/code >}}
         {{< twsnippet/code lang="js" >}}
-      // Initialization for ES Users
-      import {
-        Ripple,
-        initTE,
-      } from "tw-elements";
-      
-      initTE({ Ripple });
-      {{< /twsnippet/code >}}
+        // Initialization for ES Users
+        import {
+          Ripple,
+          initTE,
+        } from "tw-elements";
+        
+        initTE({ Ripple });
+        {{< /twsnippet/code >}}
       {{< /twsnippet/wrapper >}}
       </div>
     </section>
@@ -1678,12 +1648,9 @@ menu:
     <section class="rounded-lg bg-[#fbfbfb] dark:bg-transparent">
       {{< twsnippet/demo id="example16" >}}
       <div
-        class="block w-3/4 rounded-lg bg-white p-6 shadow-secondary-1 dark:bg-surface-dark">
-        <h5
-          class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-          Card title
-        </h5>
-        <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+        class="block w-3/4 rounded-lg bg-white p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+        <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+        <p class="mb-4 text-base">
           With supporting text below as a natural lead-in to additional content.
         </p>
         <button
@@ -1696,12 +1663,9 @@ menu:
       </div>
 
       <div
-        class="mt-4 block w-1/2 rounded-lg bg-white p-6 shadow-secondary-1 dark:bg-surface-dark">
-        <h5
-          class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-          Card title
-        </h5>
-        <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+        class="mt-4 block w-1/2 rounded-lg bg-white p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+        <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+        <p class="mb-4 text-base">
           With supporting text below as a natural lead-in to additional content.
         </p>
         <button
@@ -1721,17 +1685,17 @@ menu:
         {{< twsnippet/wrapper "HTML,javascript" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block w-3/4 rounded-lg bg-white p-6 shadow-secondary-1 dark:bg-surface-dark">
+          class="block w-3/4 rounded-lg bg-white p-6 shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             With supporting text below as a natural lead-in to additional content.
           </p>
           <button
             type="button"
-          class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
             data-te-ripple-init
             data-te-ripple-color="light">
             Button
@@ -1739,17 +1703,17 @@ menu:
         </div>
 
         <div
-          class="mt-4 block w-1/2 rounded-lg bg-white p-6 shadow-secondary-1 dark:bg-surface-dark">
+          class="mt-4 block w-1/2 rounded-lg bg-white p-6 shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             With supporting text below as a natural lead-in to additional content.
           </p>
           <button
             type="button"
-          class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
             data-te-ripple-init
             data-te-ripple-color="light">
             Button
@@ -1757,14 +1721,14 @@ menu:
         </div>
         {{< /twsnippet/code >}}
         {{< twsnippet/code lang="js" >}}
-      // Initialization for ES Users
-      import {
-        Ripple,
-        initTE,
-      } from "tw-elements";
-      
-      initTE({ Ripple });
-      {{< /twsnippet/code >}}
+        // Initialization for ES Users
+        import {
+          Ripple,
+          initTE,
+        } from "tw-elements";
+        
+        initTE({ Ripple });
+        {{< /twsnippet/code >}}
       {{< /twsnippet/wrapper >}}
       </div>
     </section>
@@ -1789,14 +1753,13 @@ menu:
       {{< twsnippet/demo id="example17" >}}
       <div class="flex justify-center">
         <div
-          class="mr-4 block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark"
+          class="mr-4 block rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white"
           style="width: 18rem;">
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Special title treatment
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base">
               With supporting text below as a natural lead-in to additional
               content.
             </p>
@@ -1820,21 +1783,21 @@ menu:
         {{< twsnippet/wrapper "HTML,javascript" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="mr-4 block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark"
+          class="mr-4 block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface"
           style="width: 18rem;">
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+              class="mb-2 text-xl font-medium leading-tight">
               Special title treatment
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base">
               With supporting text below as a natural lead-in to additional
               content.
             </p>
             <button
               type="button"
               href="#"
-            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+              class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
               data-te-ripple-init
               data-te-ripple-color="light">
               Go somewhere
@@ -1843,14 +1806,14 @@ menu:
         </div>
         {{< /twsnippet/code >}}
         {{< twsnippet/code lang="js" >}}
-      // Initialization for ES Users
-      import {
-        Ripple,
-        initTE,
-      } from "tw-elements";
-      
-      initTE({ Ripple });
-      {{< /twsnippet/code >}}
+        // Initialization for ES Users
+        import {
+          Ripple,
+          initTE,
+        } from "tw-elements";
+        
+        initTE({ Ripple });
+        {{< /twsnippet/code >}}
       {{< /twsnippet/wrapper >}}
       </div>
     </section>
@@ -1879,36 +1842,12 @@ menu:
     <div class="flex w-full flex-col justify-center space-y-4">
       <div class="flex justify-center">
         <div
-          class="block max-w-[18rem] rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Special title treatment
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <button
-              type="button"
-              href="#"
-              class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-              data-te-ripple-init
-              data-te-ripple-color="light">
-              Go somewhere
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-center">
-        <div
-          class="block max-w-[18rem] rounded-lg bg-white text-center shadow-secondary-1 dark:bg-surface-dark">
-          <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-              Special title treatment
-            </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base">
               With supporting text below as a natural lead-in to additional
               content.
             </p>
@@ -1926,13 +1865,35 @@ menu:
 
       <div class="flex justify-center">
         <div
-          class="block max-w-[18rem] rounded-lg bg-white text-right shadow-secondary-1 dark:bg-surface-dark">
+          class="block max-w-[18rem] rounded-lg bg-white text-center text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Special title treatment
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base">
+              With supporting text below as a natural lead-in to additional
+              content.
+            </p>
+            <button
+              type="button"
+              href="#"
+              class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+              data-te-ripple-init
+              data-te-ripple-color="light">
+              Go somewhere
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <div
+          class="block max-w-[18rem] rounded-lg bg-white text-right text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+          <div class="p-6">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
+              Special title treatment
+            </h5>
+            <p class="mb-4 text-base">
               With supporting text below as a natural lead-in to additional
               content.
             </p>
@@ -1957,20 +1918,20 @@ menu:
         {{< twsnippet/wrapper "HTML,javascript" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block max-w-[18rem] rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block max-w-[18rem] rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+              class="mb-2 text-xl font-medium leading-tight">
               Special title treatment
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base">
               With supporting text below as a natural lead-in to additional
               content.
             </p>
             <button
               type="button"
               href="#"
-            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+              class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
               data-te-ripple-init
               data-te-ripple-color="light">
               Go somewhere
@@ -1979,20 +1940,20 @@ menu:
         </div>
 
         <div
-          class="block max-w-[18rem] rounded-lg bg-white text-center shadow-secondary-1 dark:bg-surface-dark">
+          class="block max-w-[18rem] rounded-lg bg-white text-center shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+              class="mb-2 text-xl font-medium leading-tight">
               Special title treatment
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base">
               With supporting text below as a natural lead-in to additional
               content.
             </p>
             <button
               type="button"
               href="#"
-            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+              class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
               data-te-ripple-init
               data-te-ripple-color="light">
               Go somewhere
@@ -2001,20 +1962,20 @@ menu:
         </div>
 
         <div
-          class="block max-w-[18rem] rounded-lg bg-white text-right shadow-secondary-1 dark:bg-surface-dark">
+          class="block max-w-[18rem] rounded-lg bg-white text-right shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+              class="mb-2 text-xl font-medium leading-tight">
               Special title treatment
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base">
               With supporting text below as a natural lead-in to additional
               content.
             </p>
             <button
               type="button"
               href="#"
-            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+              class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
               data-te-ripple-init
               data-te-ripple-color="light">
               Go somewhere
@@ -2023,14 +1984,14 @@ menu:
         </div>
         {{< /twsnippet/code >}}
         {{< twsnippet/code lang="js" >}}
-      // Initialization for ES Users
-      import {
-        Ripple,
-        initTE,
-      } from "tw-elements";
-      
-      initTE({ Ripple });
-      {{< /twsnippet/code >}}
+        // Initialization for ES Users
+        import {
+          Ripple,
+          initTE,
+        } from "tw-elements";
+        
+        initTE({ Ripple });
+        {{< /twsnippet/code >}}
       {{< /twsnippet/wrapper >}}
       </div>
   </section>
@@ -2067,9 +2028,9 @@ menu:
     {{< twsnippet/demo id="example19" >}}
     <div class="flex justify-center">
       <div
-        class="block w-full rounded-lg bg-white text-center shadow-secondary-1 dark:bg-surface-dark">
+        class="block w-full rounded-lg bg-white text-center text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
         <div
-          class="border-b-2 border-neutral-100 px-3 pt-3 dark:border-white/10 dark:text-neutral-50">
+          class="border-b-2 border-neutral-100 px-3 pt-3 dark:border-white/10">
           <!--Tabs navigation-->
           <ul
             class="-mb-0.5 flex list-none flex-row flex-wrap border-b-0 pl-0"
@@ -2077,10 +2038,8 @@ menu:
             data-te-nav-ref>
             <li role="presentation">
               <a
-                href="#"
+                href="#!"
                 class="block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[te-nav-active]:text-primary"
-                data-te-toggle="pill"
-                data-te-target="#tabs-home"
                 data-te-nav-active
                 role="tab"
                 aria-controls="tabs-home"
@@ -2090,10 +2049,8 @@ menu:
             </li>
             <li role="presentation">
               <a
-                href="#"
+                href="#!"
                 class="block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[te-nav-active]:text-primary"
-                data-te-toggle="pill"
-                data-te-target="#tabs-profile"
                 role="tab"
                 aria-controls="tabs-profile"
                 aria-selected="false"
@@ -2104,22 +2061,20 @@ menu:
               <a
                 href="#tabs-contact"
                 class="disabled pointer-events-none block border-x-0 border-b-2 border-t-0 border-transparent bg-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-400 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent dark:text-neutral-600"
-                data-te-toggle="pill"
-                data-te-target="#tabs-contact"
                 role="tab"
                 aria-controls="tabs-contact"
                 aria-selected="false"
-                >Contact</a
+                >Disabled</a
               >
             </li>
           </ul>
         </div>
+
         <div class="p-6">
-          <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+          <h5 class="mb-2 text-xl font-medium leading-tight">
             Special title treatment
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             With supporting text below as a natural lead-in to additional
             content.
           </p>
@@ -2143,9 +2098,9 @@ menu:
         {{< twsnippet/wrapper "HTML,javascript" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block w-full rounded-lg bg-white text-center shadow-secondary-1 dark:bg-surface-dark">
+          class="block w-full rounded-lg bg-white text-center shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
           <div
-            class="border-b-2 border-neutral-100 px-3 pt-3 dark:border-white/10 dark:text-neutral-50">
+            class="border-b-2 border-neutral-100 px-3 pt-3 dark:border-white/10">
             <!--Tabs navigation-->
             <ul
               class="-mb-0.5 flex list-none flex-row flex-wrap border-b-0 pl-0"
@@ -2202,27 +2157,26 @@ menu:
         </div>
         {{< /twsnippet/code >}}
         {{< twsnippet/code lang="js" >}}
-      // Initialization for ES Users
-      import {
-        Ripple,
-        initTE,
-      } from "tw-elements";
-      
-      initTE({ Ripple });
-      {{< /twsnippet/code >}}
+        // Initialization for ES Users
+        import {
+          Ripple,
+          initTE,
+        } from "tw-elements";
+        
+        initTE({ Ripple });
+        {{< /twsnippet/code >}}
       {{< /twsnippet/wrapper >}}
       </div>
   </section>
 
-  <hr />
+  <hr class="dark:border-white/10" />
 
   <section class="rounded-lg bg-[#fbfbfb] dark:bg-transparent">
     {{< twsnippet/demo id="example20" >}}
     <div class="flex justify-center">
       <div
-        class="block w-full rounded-lg bg-white text-center shadow-secondary-1 dark:bg-surface-dark">
-        <div
-          class="border-b-2 border-neutral-100 p-3 dark:border-white/10 dark:text-neutral-50">
+        class="block w-full rounded-lg bg-white text-center text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+        <div class="border-b-2 border-neutral-100 p-3 dark:border-white/10">
           <!--Pills navigation-->
           <ul
             class="flex list-none flex-col flex-wrap pl-0 md:flex-row"
@@ -2231,11 +2185,9 @@ menu:
             data-te-nav-ref>
             <li role="presentation">
               <a
-                href="#"
+                href="#!"
                 class="block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[te-nav-active]:!bg-primary-100 data-[te-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[te-nav-active]:!bg-slate-900 dark:data-[te-nav-active]:text-primary-500 md:mr-4"
                 id="pills-home-tab"
-                data-te-toggle="pill"
-                data-te-target="#pills-home"
                 data-te-nav-active
                 role="tab"
                 aria-controls="pills-home"
@@ -2245,11 +2197,9 @@ menu:
             </li>
             <li role="presentation">
               <a
-                href="#"
+                href="#!"
                 class="block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[te-nav-active]:!bg-primary-100 data-[te-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[te-nav-active]:!bg-slate-900 dark:data-[te-nav-active]:text-primary-500 md:mr-4"
                 id="pills-profile-tab"
-                data-te-toggle="pill"
-                data-te-target="#pills-profile"
                 role="tab"
                 aria-controls="pills-profile"
                 aria-selected="false"
@@ -2261,8 +2211,6 @@ menu:
                 href="#"
                 class="pointer-events-none block rounded bg-zinc-200 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-400 dark:bg-surface-dark dark:text-neutral-500"
                 id="pills-disabled-tab"
-                data-te-toggle="pill"
-                data-te-target="#pills-disabled"
                 role="tab"
                 aria-controls="pills-disabled"
                 aria-selected="false"
@@ -2271,12 +2219,12 @@ menu:
             </li>
           </ul>
         </div>
+
         <div class="p-6">
-          <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+          <h5 class="mb-2 text-xl font-medium leading-tight">
             Special title treatment
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             With supporting text below as a natural lead-in to additional
             content.
           </p>
@@ -2300,9 +2248,9 @@ menu:
         {{< twsnippet/wrapper "HTML,javascript" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block w-full rounded-lg bg-white text-center shadow-secondary-1 dark:bg-surface-dark">
+          class="block w-full rounded-lg bg-white text-center shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
           <div
-            class="border-b-2 border-neutral-100 p-3 dark:border-white/10 dark:text-neutral-50">
+            class="border-b-2 border-neutral-100 p-3 dark:border-white/10">
             <!--Pills navigation-->
             <ul
               class="flex list-none flex-col flex-wrap pl-0 md:flex-row"
@@ -2342,19 +2290,20 @@ menu:
               </li>
             </ul>
           </div>
+
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+              class="mb-2 text-xl font-medium leading-tight">
               Special title treatment
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base">
               With supporting text below as a natural lead-in to additional
               content.
             </p>
             <button
               type="button"
               href="#"
-            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+              class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
               data-te-ripple-init
               data-te-ripple-color="light">
               Go somewhere
@@ -2363,14 +2312,14 @@ menu:
         </div>
         {{< /twsnippet/code >}}
         {{< twsnippet/code lang="js" >}}
-      // Initialization for ES Users
-      import {
-        Ripple,
-        initTE,
-      } from "tw-elements";
-      
-      initTE({ Ripple });
-      {{< /twsnippet/code >}}
+        // Initialization for ES Users
+        import {
+          Ripple,
+          initTE,
+        } from "tw-elements";
+        
+        initTE({ Ripple });
+        {{< /twsnippet/code >}}
       {{< /twsnippet/wrapper >}}
       </div>
   </section>
@@ -2413,7 +2362,7 @@ menu:
       <div class="flex w-full flex-col justify-center space-y-4">
         <div class="flex justify-center">
           <div
-            class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+            class="block rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
             <div class="relative overflow-hidden bg-cover bg-no-repeat">
               <img
                 class="rounded-t-lg"
@@ -2421,40 +2370,31 @@ menu:
                 alt="" />
             </div>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
-              <p class="text-base text-neutral-600 dark:text-neutral-200">
-                <small class="text-neutral-500 dark:text-neutral-400"
-                  >Last updated 3 mins ago</small
-                >
+              <p class="text-base text-[#4f4f4f]/75 dark:text-neutral-300">
+                <small>Last updated 3 mins ago</small>
               </p>
             </div>
           </div>
         </div>
+
         <div class="flex justify-center">
           <div
-            class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+            class="block rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
-              <p class="text-base text-neutral-600 dark:text-neutral-200">
-                <small class="text-neutral-500 dark:text-neutral-400"
-                  >Last updated 3 mins ago</small
-                >
+              <p class="text-base text-[#4f4f4f]/75 dark:text-neutral-300">
+                <small>Last updated 3 mins ago</small>
               </p>
             </div>
             <div class="relative overflow-hidden bg-cover bg-no-repeat">
@@ -2475,7 +2415,7 @@ menu:
         {{< twsnippet/wrapper "HTML" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
           <div class="relative overflow-hidden bg-cover bg-no-repeat">
             <img
               class="rounded-t-lg"
@@ -2484,34 +2424,38 @@ menu:
           </div>
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+              class="mb-2 text-xl font-medium leading-tight">
               Card title
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base">
               This is a wider card with supporting text below as a natural
               lead-in to additional content. This content is a little bit
               longer.
             </p>
-            <p class="text-base text-neutral-600 dark:text-neutral-200">
-              <small class="text-neutral-500 dark:text-neutral-400">Last updated 3 mins ago</small>
+            <p class="text-base text-[#4f4f4f]/75 dark:text-neutral-300">
+              <small
+                >Last updated 3 mins ago</small
+              >
             </p>
           </div>
         </div>
 
         <div
-          class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+          class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+              class="mb-2 text-xl font-medium leading-tight">
               Card title
             </h5>
-            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            <p class="mb-4 text-base">
               This is a wider card with supporting text below as a natural
               lead-in to additional content. This content is a little bit
               longer.
             </p>
-            <p class="text-base text-neutral-600 dark:text-neutral-200">
-              <small class="text-neutral-500 dark:text-neutral-400">Last updated 3 mins ago</small>
+            <p class="text-base text-[#4f4f4f]/75 dark:text-neutral-300">
+              <small
+                >Last updated 3 mins ago</small
+              >
             </p>
           </div>
           <div class="relative overflow-hidden bg-cover bg-no-repeat">
@@ -2549,22 +2493,22 @@ menu:
       <div class="flex w-full justify-center overflow-hidden">
         <div class="relative">
           <div
-            class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+            class="block rounded-lg bg-white text-white shadow-secondary-1 dark:bg-surface-dark">
             <img
               class="rounded-lg"
               src="https://tecdn.b-cdn.net/img/new/slides/017.webp"
               alt="" />
             <div class="absolute top-0 p-6">
-              <h5 class="mb-2 text-xl font-medium leading-tight text-white">
+              <h5 class="mb-2 text-xl font-medium leading-tight ">
                 Card title
               </h5>
-              <p class="mb-4 text-base text-white">
+              <p class="mb-4 text-base">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
-              <p class="text-base text-white">
-                <small class="text-white">Last updated 3 mins ago</small>
+              <p class="text-base">
+                <small>Last updated 3 mins ago</small>
               </p>
             </div>
           </div>
@@ -2574,7 +2518,7 @@ menu:
     </section>
 
     <div
-      class="border-l-1.5 my-5 rounded-md border-solid border-warning-400 bg-warning-100 p-4 dark:border-warning-300 dark:bg-warning-300/30 ">
+      class="border-l-1.5 my-5 rounded-md border-solid border-warning-400 bg-warning-100 p-4 text-warning-800 dark:bg-[#2e2005] dark:text-warning-500">
       <strong>Note:</strong> Content should not be larger than the height of the
       image. If content is larger than the image the content will be displayed
       outside the image.
@@ -2586,22 +2530,22 @@ menu:
         {{< twsnippet/wrapper "HTML" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
           <div
-            class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
+            class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark text-white">
             <img
               class="rounded-lg"
               src="https://tecdn.b-cdn.net/img/new/slides/017.webp"
               alt="" />
             <div class="absolute top-0 p-6">
-              <h5 class="mb-2 text-xl font-medium leading-tight text-white">
+              <h5 class="mb-2 text-xl font-medium leading-tight">
                 Card title
               </h5>
-              <p class="mb-4 text-base text-white">
+              <p class="mb-4 text-base">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
-              <p class="text-base text-white">
-                <small class="text-white">Last updated 3 mins ago</small>
+              <p class="text-base">
+                <small>Last updated 3 mins ago</small>
               </p>
             </div>
           </div>
@@ -2634,21 +2578,21 @@ menu:
     {{< twsnippet/demo id="example23" >}}
     <div class="flex justify-center">
       <div
-        class="flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark md:max-w-xl md:flex-row">
+        class="flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark md:max-w-xl md:flex-row dark:text-white text-surface">
         <img
           class="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:!rounded-none md:!rounded-l-lg"
           src="https://tecdn.b-cdn.net/wp-content/uploads/2020/06/vertical.jpg"
           alt="" />
         <div class="flex flex-col justify-start p-6">
           <h5
-            class="mb-2 text-xl font-medium text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a wider card with supporting text below as a natural lead-in
             to additional content. This content is a little bit longer.
           </p>
-          <p class="text-xs text-neutral-500 dark:text-neutral-300">
+          <p class="text-xs text-[#4f4f4f]/75 dark:text-neutral-300">
             Last updated 3 mins ago
           </p>
         </div>
@@ -2662,21 +2606,18 @@ menu:
       {{< twsnippet/wrapper "HTML" >}}
       {{< twsnippet/code active=true lang="HTML" >}}
       <div
-        class="flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark md:max-w-xl md:flex-row">
+        class="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl md:flex-row">
         <img
           class="h-96 w-full rounded-t-lg object-cover md:h-auto md:!rounded-none md:!rounded-l-lg"
           src="https://tecdn.b-cdn.net/wp-content/uploads/2020/06/vertical.jpg"
           alt="" />
         <div class="flex flex-col justify-start p-6">
-          <h5
-            class="mb-2 text-xl font-medium text-neutral-800 dark:text-neutral-50">
-            Card title
-          </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <h5 class="mb-2 text-xl font-medium">Card title</h5>
+          <p class="mb-4 text-base">
             This is a wider card with supporting text below as a natural lead-in
             to additional content. This content is a little bit longer.
           </p>
-          <p class="text-xs text-neutral-500 dark:text-neutral-300">
+          <p class="text-xs text-[#4f4f4f]/75 dark:text-neutral-300">
             Last updated 3 mins ago
           </p>
         </div>
@@ -2725,17 +2666,17 @@ menu:
     <div class="flex justify-center flex-col space-y-4">
       <div class="flex justify-center">
         <div
-          class="max-w-[18rem] block rounded-lg bg-primary shadow-secondary-1">
+          class="max-w-[18rem] block rounded-lg bg-primary shadow-secondary-1 text-white">
           <div
-            class="border-b-2 text-white border-black/20 px-6 py-3 dark:text-neutral-50">
+            class="border-b-2 text-white border-black/20 px-6 py-3">
             Header
           </div>
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-white dark:text-neutral-50">
+              class="mb-2 text-xl font-medium leading-tight">
               Primary card title
             </h5>
-            <p class="text-base text-white dark:text-neutral-50">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
           </div>
@@ -2744,17 +2685,17 @@ menu:
 
       <div class="flex justify-center">
         <div
-          class="max-w-[18rem] block rounded-lg bg-secondary dark:bg-secondary-600 shadow-secondary-1">
+          class="max-w-[18rem] block rounded-lg bg-secondary shadow-secondary-1 text-white">
           <div
-            class="border-b-2 text-white border-black/20 px-6 py-3 dark:text-neutral-50">
+            class="border-b-2 border-black/20 px-6 py-3">
             Header
           </div>
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-white dark:text-neutral-50">
+              class="mb-2 text-xl font-medium leading-tight">
               Secondary card title
             </h5>
-            <p class="text-base text-white dark:text-neutral-50">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
           </div>
@@ -2763,17 +2704,17 @@ menu:
 
       <div class="flex justify-center">
         <div
-          class="max-w-[18rem] block rounded-lg bg-success shadow-secondary-1">
+          class="max-w-[18rem] block rounded-lg bg-success shadow-secondary-1 text-white">
           <div
-            class="border-b-2 text-white border-black/20 px-6 py-3 dark:text-neutral-50">
+            class="border-b-2 border-black/20 px-6 py-3">
             Header
           </div>
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-white dark:text-neutral-50">
+              class="mb-2 text-xl font-medium leading-tight">
               Success card title
             </h5>
-            <p class="text-base text-white dark:text-neutral-50">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
           </div>
@@ -2782,17 +2723,17 @@ menu:
 
       <div class="flex justify-center">
         <div
-          class="max-w-[18rem] block rounded-lg bg-danger shadow-secondary-1">
+          class="max-w-[18rem] block rounded-lg bg-danger shadow-secondary-1 text-white">
           <div
-            class="border-b-2 text-white border-black/20 px-6 py-3 dark:text-neutral-50">
+            class="border-b-2 border-black/20 px-6 py-3">
             Header
           </div>
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-white dark:text-neutral-50">
+              class="mb-2 text-xl font-medium leading-tight">
               Danger card title
             </h5>
-            <p class="text-base text-white dark:text-neutral-50">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
           </div>
@@ -2801,17 +2742,17 @@ menu:
 
       <div class="flex justify-center">
         <div
-          class="max-w-[18rem] block rounded-lg bg-warning shadow-secondary-1">
+          class="max-w-[18rem] block rounded-lg bg-warning shadow-secondary-1 text-white">
           <div
-            class="border-b-2 text-black border-black/20 px-6 py-3">
+            class="border-b-2 border-black/20 px-6 py-3">
             Header
           </div>
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-black">
+              class="mb-2 text-xl font-medium leading-tight">
               Warning card title
             </h5>
-            <p class="text-base text-black">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
           </div>
@@ -2822,15 +2763,15 @@ menu:
         <div
           class="max-w-[18rem] block rounded-lg bg-info shadow-secondary-1">
           <div
-            class="border-b-2 text-black border-black/20 px-6 py-3">
+            class="border-b-2 text-white border-black/20 px-6 py-3">
             Header
           </div>
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-black">
+              class="mb-2 text-xl font-medium leading-tight">
               Info card title
             </h5>
-            <p class="text-base text-black">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
           </div>
@@ -2839,17 +2780,17 @@ menu:
 
       <div class="flex justify-center">
         <div
-          class="max-w-[18rem] block rounded-lg bg-neutral-50 shadow-secondary-1 dark:bg-neutral-200">
+          class="max-w-[18rem] block rounded-lg bg-neutral-50 shadow-secondary-1 text-black">
           <div
-            class="border-b-2 text-black border-black/20 px-6 py-3">
+            class="border-b-2 border-black/20 px-6 py-3">
             Header
           </div>
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-black">
+              class="mb-2 text-xl font-medium leading-tight">
               Light card title
             </h5>
-            <p class="text-base text-black">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
           </div>
@@ -2858,17 +2799,17 @@ menu:
 
       <div class="flex justify-center">
         <div
-          class="max-w-[18rem] block rounded-lg bg-neutral-800 shadow-secondary-1 dark:bg-surface-dark">
+          class="max-w-[18rem] block rounded-lg bg-[#332D2D] shadow-secondary-1 text-white">
           <div
-            class="border-b-2 text-white dark:text-neutral-50 border-black/20 px-6 py-3">
+            class="border-b-2 border-black/20 px-6 py-3">
             Header
           </div>
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-white dark:text-neutral-50">
+              class="mb-2 text-xl font-medium leading-tight">
               Dark card title
             </h5>
-            <p class="text-base text-white dark:text-neutral-50">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
           </div>
@@ -2883,136 +2824,128 @@ menu:
         {{< twsnippet/wrapper "HTML" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block max-w-[18rem] rounded-lg bg-primary shadow-secondary-1">
-          <div
-            class="border-b-2 border-black/20 px-6 py-3 text-white dark:text-neutral-50">
+          class="block max-w-[18rem] rounded-lg bg-primary text-white shadow-secondary-1">
+          <div class="border-b-2 border-black/20 px-6 py-3 text-white">
             Header
           </div>
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-white dark:text-neutral-50">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Primary card title
             </h5>
-            <p class="text-base text-white dark:text-neutral-50">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
           </div>
         </div>
+      </div>
 
+      <div class="flex justify-center">
         <div
-          class="block max-w-[18rem] rounded-lg bg-secondary shadow-secondary-1 dark:bg-secondary-600">
-          <div
-            class="border-b-2 border-black/20 px-6 py-3 text-white dark:text-neutral-50">
-            Header
-          </div>
+          class="block max-w-[18rem] rounded-lg bg-secondary text-white shadow-secondary-1">
+          <div class="border-b-2 border-black/20 px-6 py-3">Header</div>
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-white dark:text-neutral-50">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Secondary card title
             </h5>
-            <p class="text-base text-white dark:text-neutral-50">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
           </div>
         </div>
+      </div>
 
+      <div class="flex justify-center">
         <div
-          class="block max-w-[18rem] rounded-lg bg-success shadow-secondary-1">
-          <div
-            class="border-b-2 border-black/20 px-6 py-3 text-white dark:text-neutral-50">
-            Header
-          </div>
+          class="block max-w-[18rem] rounded-lg bg-success text-white shadow-secondary-1">
+          <div class="border-b-2 border-black/20 px-6 py-3">Header</div>
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-white dark:text-neutral-50">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Success card title
             </h5>
-            <p class="text-base text-white dark:text-neutral-50">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
           </div>
         </div>
+      </div>
 
+      <div class="flex justify-center">
         <div
-          class="block max-w-[18rem] rounded-lg bg-danger shadow-secondary-1">
-          <div
-            class="border-b-2 border-black/20 px-6 py-3 text-white dark:text-neutral-50">
-            Header
-          </div>
+          class="block max-w-[18rem] rounded-lg bg-danger text-white shadow-secondary-1">
+          <div class="border-b-2 border-black/20 px-6 py-3">Header</div>
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-white dark:text-neutral-50">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Danger card title
             </h5>
-            <p class="text-base text-white dark:text-neutral-50">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
           </div>
         </div>
+      </div>
 
+      <div class="flex justify-center">
         <div
-          class="block max-w-[18rem] rounded-lg bg-warning shadow-secondary-1">
-          <div class="border-b-2 border-black/20 px-6 py-3 text-black">
-            Header
-          </div>
+          class="block max-w-[18rem] rounded-lg bg-warning text-white shadow-secondary-1">
+          <div class="border-b-2 border-black/20 px-6 py-3">Header</div>
           <div class="p-6">
-            <h5 class="mb-2 text-xl font-medium leading-tight text-black">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Warning card title
             </h5>
-            <p class="text-base text-black">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
           </div>
         </div>
+      </div>
 
+      <div class="flex justify-center">
         <div class="block max-w-[18rem] rounded-lg bg-info shadow-secondary-1">
-          <div class="border-b-2 border-black/20 px-6 py-3 text-black">
+          <div class="border-b-2 border-black/20 px-6 py-3 text-white">
             Header
           </div>
           <div class="p-6">
-            <h5 class="mb-2 text-xl font-medium leading-tight text-black">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Info card title
             </h5>
-            <p class="text-base text-black">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
           </div>
         </div>
+      </div>
 
+      <div class="flex justify-center">
         <div
-          class="block max-w-[18rem] rounded-lg bg-neutral-50 shadow-secondary-1 dark:bg-neutral-200">
-          <div class="border-b-2 border-black/20 px-6 py-3 text-black">
-            Header
-          </div>
+          class="block max-w-[18rem] rounded-lg bg-neutral-50 text-black shadow-secondary-1">
+          <div class="border-b-2 border-black/20 px-6 py-3">Header</div>
           <div class="p-6">
-            <h5 class="mb-2 text-xl font-medium leading-tight text-black">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Light card title
             </h5>
-            <p class="text-base text-black">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
           </div>
         </div>
+      </div>
 
+      <div class="flex justify-center">
         <div
-          class="block max-w-[18rem] rounded-lg bg-neutral-800 shadow-secondary-1 dark:bg-surface-dark">
-          <div
-            class="border-b-2 border-black/20 px-6 py-3 text-white dark:text-neutral-50">
-            Header
-          </div>
+          class="block max-w-[18rem] rounded-lg bg-[#332D2D] text-white shadow-secondary-1">
+          <div class="border-b-2 border-black/20 px-6 py-3">Header</div>
           <div class="p-6">
-            <h5
-              class="mb-2 text-xl font-medium leading-tight text-white dark:text-neutral-50">
+            <h5 class="mb-2 text-xl font-medium leading-tight">
               Dark card title
             </h5>
-            <p class="text-base text-white dark:text-neutral-50">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
@@ -3050,12 +2983,12 @@ menu:
         <div
           class="max-w-[18rem] block rounded-lg border bg-white border-primary shadow-secondary-1 dark:bg-surface-dark">
           <div
-            class="border-b-2 text-neutral-600 dark:text-neutral-50 border-neutral-100 dark:border-white/10 px-6 py-3">
+            class="border-b-2 dark:text-white text-surface border-neutral-100 dark:border-white/10 px-6 py-3">
             Header
           </div>
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-primary ">
+              class="mb-2 text-xl font-medium leading-tight text-primary">
               Primary card title
             </h5>
             <p class="text-base text-primary ">
@@ -3069,12 +3002,12 @@ menu:
         <div
           class="max-w-[18rem] block rounded-lg border bg-white border-secondary-600 shadow-secondary-1 dark:bg-surface-dark">
           <div
-            class="border-b-2 text-neutral-600 dark:text-neutral-50 border-neutral-100 dark:border-white/10 px-6 py-3">
+            class="border-b-2 dark:text-white text-surface border-neutral-100 dark:border-white/10 px-6 py-3">
             Header
           </div>
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-secondary-600 ">
+              class="mb-2 text-xl font-medium leading-tight text-secondary-600">
               Secondary card title
             </h5>
             <p class="text-base text-secondary-600 ">
@@ -3088,7 +3021,7 @@ menu:
         <div
           class="max-w-[18rem] block rounded-lg border bg-white border-success-600 shadow-secondary-1 dark:bg-surface-dark">
           <div
-            class="border-b-2 text-neutral-600 dark:text-neutral-50 border-neutral-100 dark:border-white/10 px-6 py-3">
+            class="border-b-2 dark:text-white text-surface border-neutral-100 dark:border-white/10 px-6 py-3">
             Header
           </div>
           <div class="p-6">
@@ -3107,7 +3040,7 @@ menu:
         <div
           class="max-w-[18rem] block rounded-lg border bg-white border-danger-600 shadow-secondary-1 dark:bg-surface-dark">
           <div
-            class="border-b-2 text-neutral-600 dark:text-neutral-50 border-neutral-100 dark:border-white/10 px-6 py-3">
+            class="border-b-2 dark:text-white text-surface border-neutral-100 dark:border-white/10 px-6 py-3">
             Header
           </div>
           <div class="p-6">
@@ -3126,7 +3059,7 @@ menu:
         <div
           class="max-w-[18rem] block rounded-lg border bg-white border-warning-600 shadow-secondary-1 dark:bg-surface-dark">
           <div
-            class="border-b-2 text-neutral-600 dark:text-neutral-50 border-neutral-100 dark:border-white/10 px-6 py-3">
+            class="border-b-2 dark:text-white text-surface border-neutral-100 dark:border-white/10 px-6 py-3">
             Header
           </div>
           <div class="p-6">
@@ -3145,7 +3078,7 @@ menu:
         <div
           class="max-w-[18rem] block rounded-lg border bg-white border-info-600 shadow-secondary-1 dark:bg-surface-dark">
           <div
-            class="border-b-2 text-neutral-600 dark:text-neutral-50 border-neutral-100 dark:border-white/10 px-6 py-3">
+            class="border-b-2 dark:text-white text-surface border-neutral-100 dark:border-white/10 px-6 py-3">
             Header
           </div>
           <div class="p-6">
@@ -3162,17 +3095,17 @@ menu:
 
       <div class="flex justify-center">
         <div
-          class="max-w-[18rem] block rounded-lg border bg-white border-neutral-200 dark:border-neutral-300 shadow-secondary-1 dark:bg-surface-dark">
+          class="max-w-[18rem] block rounded-lg border bg-white border-neutral-200 shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
           <div
-            class="border-b-2 text-neutral-600 dark:text-neutral-50 border-neutral-100 dark:border-white/10 px-6 py-3">
+            class="border-b-2 border-neutral-100 dark:border-white/10 px-6 py-3">
             Header
           </div>
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-black dark:text-neutral-50">
+              class="mb-2 text-xl font-medium leading-tight">
               Light card title
             </h5>
-            <p class="text-base text-black dark:text-neutral-50">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
           </div>
@@ -3181,17 +3114,17 @@ menu:
 
       <div class="flex justify-center">
         <div
-          class="max-w-[18rem] block rounded-lg border bg-white border-neutral-700 shadow-secondary-1 dark:bg-surface-dark">
+          class="max-w-[18rem] block rounded-lg border bg-white border-[#332D2D] shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
           <div
-            class="border-b-2 text-neutral-600 dark:text-neutral-50 border-neutral-100 dark:border-white/10 px-6 py-3">
+            class="border-b-2 border-neutral-100 dark:border-white/10 px-6 py-3">
             Header
           </div>
           <div class="p-6">
             <h5
-              class="mb-2 text-xl font-medium leading-tight text-black dark:text-neutral-50">
+              class="mb-2 text-xl font-medium leading-tight">
               Dark card title
             </h5>
-            <p class="text-base text-black dark:text-neutral-50">
+            <p class="text-base">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
           </div>
@@ -3209,11 +3142,11 @@ menu:
           <div
             class="block max-w-[18rem] rounded-lg border border-primary bg-white shadow-secondary-1 dark:bg-surface-dark">
             <div
-              class="border-b-2 border-neutral-100 px-6 py-3 text-neutral-600 dark:border-white/10 dark:text-neutral-50">
+              class="border-b-2 border-neutral-100 px-6 py-3 text-surface dark:border-white/10 dark:text-white">
               Header
             </div>
             <div class="p-6">
-              <h5 class="mb-2 text-xl font-medium leading-tight text-primary ">
+              <h5 class="mb-2 text-xl font-medium leading-tight text-primary">
                 Primary card title
               </h5>
               <p class="text-base text-primary ">
@@ -3228,12 +3161,12 @@ menu:
           <div
             class="block max-w-[18rem] rounded-lg border border-secondary-600 bg-white shadow-secondary-1 dark:bg-surface-dark">
             <div
-              class="border-b-2 border-neutral-100 px-6 py-3 text-neutral-600 dark:border-white/10 dark:text-neutral-50">
+              class="border-b-2 border-neutral-100 px-6 py-3 text-surface dark:border-white/10 dark:text-white">
               Header
             </div>
             <div class="p-6">
               <h5
-                class="mb-2 text-xl font-medium leading-tight text-secondary-600 ">
+                class="mb-2 text-xl font-medium leading-tight text-secondary-600">
                 Secondary card title
               </h5>
               <p class="text-base text-secondary-600 ">
@@ -3248,7 +3181,7 @@ menu:
           <div
             class="block max-w-[18rem] rounded-lg border border-success-600 bg-white shadow-secondary-1 dark:bg-surface-dark">
             <div
-              class="border-b-2 border-neutral-100 px-6 py-3 text-neutral-600 dark:border-white/10 dark:text-neutral-50">
+              class="border-b-2 border-neutral-100 px-6 py-3 text-surface dark:border-white/10 dark:text-white">
               Header
             </div>
             <div class="p-6">
@@ -3268,7 +3201,7 @@ menu:
           <div
             class="block max-w-[18rem] rounded-lg border border-danger-600 bg-white shadow-secondary-1 dark:bg-surface-dark">
             <div
-              class="border-b-2 border-neutral-100 px-6 py-3 text-neutral-600 dark:border-white/10 dark:text-neutral-50">
+              class="border-b-2 border-neutral-100 px-6 py-3 text-surface dark:border-white/10 dark:text-white">
               Header
             </div>
             <div class="p-6">
@@ -3288,7 +3221,7 @@ menu:
           <div
             class="block max-w-[18rem] rounded-lg border border-warning-600 bg-white shadow-secondary-1 dark:bg-surface-dark">
             <div
-              class="border-b-2 border-neutral-100 px-6 py-3 text-neutral-600 dark:border-white/10 dark:text-neutral-50">
+              class="border-b-2 border-neutral-100 px-6 py-3 text-surface dark:border-white/10 dark:text-white">
               Header
             </div>
             <div class="p-6">
@@ -3308,7 +3241,7 @@ menu:
           <div
             class="block max-w-[18rem] rounded-lg border border-info-600 bg-white shadow-secondary-1 dark:bg-surface-dark">
             <div
-              class="border-b-2 border-neutral-100 px-6 py-3 text-neutral-600 dark:border-white/10 dark:text-neutral-50">
+              class="border-b-2 border-neutral-100 px-6 py-3 text-surface dark:border-white/10 dark:text-white">
               Header
             </div>
             <div class="p-6">
@@ -3325,17 +3258,16 @@ menu:
 
         <div class="flex justify-center">
           <div
-            class="block max-w-[18rem] rounded-lg border border-neutral-200 bg-white shadow-secondary-1 dark:border-neutral-300 dark:bg-surface-dark">
+            class="block max-w-[18rem] rounded-lg border border-neutral-200 bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
             <div
-              class="border-b-2 border-neutral-100 px-6 py-3 text-neutral-600 dark:border-white/10 dark:text-neutral-50">
+              class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10">
               Header
             </div>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-black dark:text-neutral-50">
+              <h5 class="mb-2 text-xl font-medium leading-tight">
                 Light card title
               </h5>
-              <p class="text-base text-black dark:text-neutral-50">
+              <p class="text-base">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
@@ -3345,17 +3277,16 @@ menu:
 
         <div class="flex justify-center">
           <div
-            class="block max-w-[18rem] rounded-lg border border-neutral-700 bg-white shadow-secondary-1 dark:bg-surface-dark">
+            class="block max-w-[18rem] rounded-lg border border-[#332D2D] bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
             <div
-              class="border-b-2 border-neutral-100 px-6 py-3 text-neutral-600 dark:border-white/10 dark:text-neutral-50">
+              class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10">
               Header
             </div>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-black dark:text-neutral-50">
+              <h5 class="mb-2 text-xl font-medium leading-tight">
                 Dark card title
               </h5>
-              <p class="text-base text-black dark:text-neutral-50">
+              <p class="text-base">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
@@ -3390,9 +3321,9 @@ menu:
     {{< twsnippet/demo id="example26" >}}
     <div class="flex justify-center">
       <div
-        class="block max-w-[18rem] rounded-lg border border-success-600 bg-transparent shadow-secondary-1  dark:bg-surface-dark">
+        class="block max-w-[18rem] rounded-lg border border-success-600 bg-transparent shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <div
-          class="border-b-2 border-success-600 px-6 py-3 text-neutral-600 dark:text-neutral-50">
+          class="border-b-2 border-success-600 px-6 py-3">
           Header
         </div>
         <div class="p-6">
@@ -3406,7 +3337,7 @@ menu:
           </p>
         </div>
         <div
-          class="border-t-2 border-success-600 px-6 py-3 text-neutral-600  dark:text-neutral-50">
+          class="border-t-2 border-success-600 px-6 py-3">
           Footer
         </div>
       </div> 
@@ -3419,11 +3350,8 @@ menu:
         {{< twsnippet/wrapper "HTML" >}}
         {{< twsnippet/code active=true lang="HTML" >}}
         <div
-          class="block max-w-[18rem] rounded-lg border border-success-600 bg-transparent shadow-secondary-1 dark:bg-surface-dark">
-          <div
-            class="border-b-2 border-success-600 px-6 py-3 text-neutral-600  dark:text-neutral-50">
-            Header
-          </div>
+          class="block max-w-[18rem] rounded-lg border border-success-600 bg-transparent text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+          <div class="border-b-2 border-success-600 px-6 py-3">Header</div>
           <div class="p-6">
             <h5 class="mb-2 text-xl font-medium leading-tight text-success-600">
               Success card title
@@ -3433,10 +3361,7 @@ menu:
               bulk of the card's content.
             </p>
           </div>
-          <div
-            class="border-t-2 border-success-600 px-6 py-3 text-neutral-600 dark:text-neutral-50">
-            Footer
-          </div>
+          <div class="border-t-2 border-success-600 px-6 py-3">Footer</div>
         </div>
         {{< /twsnippet/code >}}
         {{< /twsnippet/wrapper >}}
@@ -3489,7 +3414,7 @@ menu:
     {{< twsnippet/demo id="example27" >}}
     <div class="sm:flex sm:justify-center">
       <div
-        class="flex flex-col rounded-lg sm:rounded-r-none sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col rounded-lg sm:rounded-r-none sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg sm:rounded-tr-none"
@@ -3498,20 +3423,21 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
           </p>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base text-[#4f4f4f]/75 dark:text-neutral-300">
             <small>Last updated 3 mins ago</small>
           </p>
       
         </div>
       </div>
+
       <div
-        class="flex flex-col rounded-lg sm:rounded-none sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col rounded-lg sm:rounded-none sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg sm:rounded-none"
@@ -3520,19 +3446,20 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base ">
             This card has supporting text below as a natural lead-in to additional content.
           </p>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base text-[#4f4f4f]/75 dark:text-neutral-300">
             <small>Last updated 3 mins ago</small>
           </p>
         </div>
       </div>
+
       <div
-        class="flex flex-col rounded-lg sm:rounded-l-none sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col rounded-lg sm:rounded-l-none sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg sm:rounded-tl-none"
@@ -3541,13 +3468,13 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base ">
             This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
           </p>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base text-[#4f4f4f]/75 dark:text-neutral-300">
             <small>Last updated 3 mins ago</small>
           </p>
         </div>
@@ -3562,7 +3489,7 @@ menu:
         {{< twsnippet/code active=true lang="HTML" >}}
         <div class="sm:flex sm:justify-center">
           <div
-            class="flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0 sm:rounded-r-none">
+            class="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0 sm:rounded-r-none">
             <a href="#!">
               <img
                 class="rounded-t-lg sm:rounded-tr-none"
@@ -3570,22 +3497,20 @@ menu:
                 alt="Hollywood Sign on The Hill" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <p class="mb-4 text-base text-[#4f4f4f]/75 dark:text-neutral-300">
                 <small>Last updated 3 mins ago</small>
               </p>
             </div>
           </div>
+
           <div
-            class="flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0 sm:rounded-none">
+            class="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0 sm:rounded-none">
             <a href="#!">
               <img
                 class="rounded-t-lg sm:rounded-none"
@@ -3593,21 +3518,19 @@ menu:
                 alt="Palm Springs Road" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This card has supporting text below as a natural lead-in to
                 additional content.
               </p>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <p class="mb-4 text-base text-[#4f4f4f]/75 dark:text-neutral-300">
                 <small>Last updated 3 mins ago</small>
               </p>
             </div>
           </div>
+
           <div
-            class="flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0 sm:rounded-l-none">
+            class="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0 sm:rounded-l-none">
             <a href="#!">
               <img
                 class="rounded-t-lg sm:rounded-tl-none"
@@ -3615,16 +3538,13 @@ menu:
                 alt="Los Angeles Skyscrapers" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </p>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <p class="mb-4 text-base text-[#4f4f4f]/75 dark:text-neutral-300">
                 <small>Last updated 3 mins ago</small>
               </p>
             </div>
@@ -3646,7 +3566,7 @@ menu:
     {{< twsnippet/demo id="example28" >}}
     <div class="sm:flex sm:justify-center">
       <div
-        class="flex flex-col rounded-lg sm:rounded-r-none sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col rounded-lg sm:rounded-r-none sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg sm:rounded-tr-none"
@@ -3655,19 +3575,20 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
           </p>
         </div>
-        <div class="border-t-2 mt-auto text-center border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+        <div class="border-t-2 mt-auto text-center border-neutral-100 px-6 py-3 dark:border-white/10 text-[#4f4f4f]/75 dark:text-neutral-300">
           <small>Last updated 3 mins ago</small>
         </div>
       </div>
+
       <div
-        class="flex flex-col rounded-lg sm:rounded-none sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col rounded-lg sm:rounded-none sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg sm:rounded-none"
@@ -3676,19 +3597,20 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This card has supporting text below as a natural lead-in to additional content.
           </p>
         </div>
-        <div class="border-t-2 mt-auto text-center border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+        <div class="border-t-2 mt-auto text-center border-neutral-100 px-6 py-3 dark:border-white/10 text-[#4f4f4f]/75 dark:text-neutral-300">
           <small>Last updated 3 mins ago</small>
         </div>
       </div>
+
       <div
-        class="flex flex-col rounded-lg sm:rounded-l-none sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col rounded-lg sm:rounded-l-none sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg sm:rounded-tl-none"
@@ -3697,14 +3619,14 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
           </p>
         </div>
-        <div class="border-t-2 mt-auto text-center border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+        <div class="border-t-2 mt-auto text-center border-neutral-100 px-6 py-3 dark:border-white/10 text-[#4f4f4f]/75 dark:text-neutral-300">
           <small>Last updated 3 mins ago</small>
         </div>
       </div>
@@ -3718,7 +3640,7 @@ menu:
         {{< twsnippet/code active=true lang="HTML" >}}
         <div class="sm:flex sm:justify-center">
           <div
-            class="flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0 sm:rounded-r-none">
+            class="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0 sm:rounded-r-none">
             <a href="#!">
               <img
                 class="rounded-t-lg sm:rounded-tr-none"
@@ -3726,23 +3648,21 @@ menu:
                 alt="Hollywood Sign on The Hill" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
             </div>
             <div
-              class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-white/10 dark:text-neutral-50">
+              class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center text-[#4f4f4f]/75 dark:border-white/10 dark:text-neutral-300">
               <small>Last updated 3 mins ago</small>
             </div>
           </div>
+
           <div
-            class="flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0 sm:rounded-none">
+            class="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0 sm:rounded-none">
             <a href="#!">
               <img
                 class="rounded-t-lg sm:rounded-none"
@@ -3750,22 +3670,20 @@ menu:
                 alt="Palm Springs Road" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This card has supporting text below as a natural lead-in to
                 additional content.
               </p>
             </div>
             <div
-              class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-white/10 dark:text-neutral-50">
+              class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center text-[#4f4f4f]/75 dark:border-white/10 dark:text-neutral-300">
               <small>Last updated 3 mins ago</small>
             </div>
           </div>
+
           <div
-            class="flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0 sm:rounded-l-none">
+            class="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0 sm:rounded-l-none">
             <a href="#!">
               <img
                 class="rounded-t-lg sm:rounded-tl-none"
@@ -3773,18 +3691,15 @@ menu:
                 alt="Los Angeles Skyscrapers" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </p>
             </div>
             <div
-              class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-white/10 dark:text-neutral-50">
+              class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center text-[#4f4f4f]/75 dark:border-white/10 dark:text-neutral-300">
               <small>Last updated 3 mins ago</small>
             </div>
           </div>
@@ -3821,7 +3736,7 @@ menu:
     {{< twsnippet/demo id="example29" >}}
     <div class="sm:grid grid-cols-1 md:grid-cols-2 ">
       <div
-        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg"
@@ -3830,16 +3745,17 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
           </p>
         </div>
       </div>
+
       <div
-        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg"
@@ -3848,16 +3764,17 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
           </p>
         </div>
       </div>
+
       <div
-        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg"
@@ -3866,16 +3783,17 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a longer card with supporting text below as a natural lead-in to additional content.
           </p>
         </div>
       </div>
+
       <div
-        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg"
@@ -3884,10 +3802,10 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
           </p>
         </div>
@@ -3902,7 +3820,7 @@ menu:
         {{< twsnippet/code active=true lang="HTML" >}}
         <div class="grid-cols-1 sm:grid md:grid-cols-2 ">
           <div
-            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0">
+            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
             <a href="#!">
               <img
                 class="rounded-t-lg"
@@ -3910,19 +3828,17 @@ menu:
                 alt="Hollywood Sign on The Hill" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
             </div>
           </div>
+
           <div
-            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0">
+            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
             <a href="#!">
               <img
                 class="rounded-t-lg"
@@ -3930,19 +3846,17 @@ menu:
                 alt="Palm Springs Road" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
             </div>
           </div>
+
           <div
-            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0">
+            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
             <a href="#!">
               <img
                 class="rounded-t-lg"
@@ -3950,18 +3864,16 @@ menu:
                 alt="Skyscrapers" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content.
               </p>
             </div>
           </div>
+
           <div
-            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0">
+            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
             <a href="#!">
               <img
                 class="rounded-t-lg"
@@ -3969,11 +3881,8 @@ menu:
                 alt="Los Angeles Skyscrapers" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
@@ -3997,7 +3906,7 @@ menu:
     {{< twsnippet/demo id="example30" >}}
     <div class="sm:grid grid-cols-1 md:grid-cols-3 ">
       <div
-        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg"
@@ -4006,16 +3915,17 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
           </p>
         </div>
       </div>
+
       <div
-        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg"
@@ -4024,16 +3934,17 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
           </p>
         </div>
       </div>
+
       <div
-        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg"
@@ -4042,16 +3953,17 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a longer card with supporting text below as a natural lead-in to additional content.
           </p>
         </div>
       </div>
+
       <div
-        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col self-start mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg"
@@ -4060,10 +3972,10 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
           </p>
         </div>
@@ -4078,7 +3990,7 @@ menu:
         {{< twsnippet/code active=true lang="HTML" >}}
         <div class="grid-cols-1 sm:grid md:grid-cols-3 ">
           <div
-            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0">
+            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
             <a href="#!">
               <img
                 class="rounded-t-lg"
@@ -4086,19 +3998,17 @@ menu:
                 alt="Hollywood Sign on The Hill" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
             </div>
           </div>
+
           <div
-            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0">
+            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
             <a href="#!">
               <img
                 class="rounded-t-lg"
@@ -4106,19 +4016,17 @@ menu:
                 alt="Palm Springs Road" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
             </div>
           </div>
+
           <div
-            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0">
+            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
             <a href="#!">
               <img
                 class="rounded-t-lg"
@@ -4126,18 +4034,16 @@ menu:
                 alt="Skyscrapers" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content.
               </p>
             </div>
           </div>
+
           <div
-            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0">
+            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
             <a href="#!">
               <img
                 class="rounded-t-lg"
@@ -4145,11 +4051,8 @@ menu:
                 alt="Los Angeles Skyscrapers" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
@@ -4173,7 +4076,7 @@ menu:
     {{< twsnippet/demo id="example31" >}}
     <div class="sm:grid grid-cols-1 md:grid-cols-3 ">
       <div
-        class="flex flex-col mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg"
@@ -4182,16 +4085,17 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
           </p>
         </div>
       </div>
+
       <div
-        class="flex flex-col mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg"
@@ -4200,16 +4104,17 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
           </p>
         </div>
       </div>
+
       <div
-        class="flex flex-col mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg"
@@ -4218,16 +4123,17 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a longer card with supporting text below as a natural lead-in to additional content.
           </p>
         </div>
       </div>
+
       <div
-        class="flex flex-col mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg"
@@ -4236,10 +4142,10 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
           </p>
         </div>
@@ -4254,7 +4160,7 @@ menu:
         {{< twsnippet/code active=true lang="HTML" >}}
         <div class="grid-cols-1 sm:grid md:grid-cols-3 ">
           <div
-            class="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0">
+            class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
             <a href="#!">
               <img
                 class="rounded-t-lg"
@@ -4262,19 +4168,17 @@ menu:
                 alt="Hollywood Sign on The Hill" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
             </div>
           </div>
+
           <div
-            class="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0">
+            class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
             <a href="#!">
               <img
                 class="rounded-t-lg"
@@ -4282,19 +4186,17 @@ menu:
                 alt="Palm Springs Road" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
             </div>
           </div>
+
           <div
-            class="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0">
+            class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
             <a href="#!">
               <img
                 class="rounded-t-lg"
@@ -4302,18 +4204,16 @@ menu:
                 alt="Skyscrapers" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content.
               </p>
             </div>
           </div>
+
           <div
-            class="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0">
+            class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
             <a href="#!">
               <img
                 class="rounded-t-lg"
@@ -4321,11 +4221,8 @@ menu:
                 alt="Los Angeles Skyscrapers" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
@@ -4348,7 +4245,7 @@ menu:
     {{< twsnippet/demo id="example32" >}}
     <div class="sm:grid grid-cols-1 md:grid-cols-3 ">
       <div
-        class="flex flex-col mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg"
@@ -4357,19 +4254,20 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
           </p>
         </div>
-        <div class="border-t-2 mt-auto text-center border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+        <div class="border-t-2 mt-auto text-center border-neutral-100 px-6 py-3 dark:border-white/10 text-[#4f4f4f]/75 dark:text-neutral-300">
           <small>Last updated 3 mins ago</small>
         </div>
       </div>
+
       <div
-        class="flex flex-col mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg"
@@ -4378,19 +4276,20 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This card has supporting text below as a natural lead-in to additional content.
           </p>
         </div>
-        <div class="border-t-2 mt-auto text-center border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+        <div class="border-t-2 mt-auto text-center border-neutral-100 px-6 py-3 dark:border-white/10 text-[#4f4f4f]/75 dark:text-neutral-300">
           <small>Last updated 3 mins ago</small>
         </div>
       </div>
+
       <div
-        class="flex flex-col mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark">
+        class="flex flex-col mt-6 mx-3 rounded-lg sm:grow sm:shrink-0 sm:basis-0 bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
         <a href="#!">
           <img
             class="rounded-t-lg"
@@ -4399,14 +4298,14 @@ menu:
         </a>
         <div class="p-6">
           <h5
-            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            class="mb-2 text-xl font-medium leading-tight">
             Card title
           </h5>
-          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p class="mb-4 text-base">
             This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
           </p>
         </div>
-        <div class="border-t-2 mt-auto text-center border-neutral-100 px-6 py-3 dark:border-white/10 dark:text-neutral-50">
+        <div class="border-t-2 mt-auto text-center border-neutral-100 px-6 py-3 dark:border-white/10 text-[#4f4f4f]/75 dark:text-neutral-300">
           <small>Last updated 3 mins ago</small>
         </div>
       </div>
@@ -4420,7 +4319,7 @@ menu:
         {{< twsnippet/code active=true lang="HTML" >}}
         <div class="grid-cols-1 sm:grid md:grid-cols-3 ">
           <div
-            class="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0">
+            class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
             <a href="#!">
               <img
                 class="rounded-t-lg"
@@ -4428,23 +4327,21 @@ menu:
                 alt="Skyscrapers" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
             </div>
             <div
-              class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-white/10 dark:text-neutral-50">
+              class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center text-[#4f4f4f]/75 dark:border-white/10 dark:text-neutral-300">
               <small>Last updated 3 mins ago</small>
             </div>
           </div>
+
           <div
-            class="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0">
+            class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
             <a href="#!">
               <img
                 class="rounded-t-lg"
@@ -4452,22 +4349,20 @@ menu:
                 alt="Los Angeles Skyscrapers" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This card has supporting text below as a natural lead-in to
                 additional content.
               </p>
             </div>
             <div
-              class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-white/10 dark:text-neutral-50">
+              class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center text-[#4f4f4f]/75 dark:border-white/10 dark:text-neutral-300">
               <small>Last updated 3 mins ago</small>
             </div>
           </div>
+
           <div
-            class="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark sm:shrink-0 sm:grow sm:basis-0">
+            class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
             <a href="#!">
               <img
                 class="rounded-t-lg"
@@ -4475,18 +4370,15 @@ menu:
                 alt="Palm Springs Road" />
             </a>
             <div class="p-6">
-              <h5
-                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </p>
             </div>
             <div
-              class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-white/10 dark:text-neutral-50">
+              class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center text-[#4f4f4f]/75 dark:border-white/10 dark:text-neutral-300">
               <small>Last updated 3 mins ago</small>
             </div>
           </div>
