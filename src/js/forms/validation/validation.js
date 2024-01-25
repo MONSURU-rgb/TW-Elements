@@ -75,43 +75,43 @@ const Default = {
 const DefaultClasses = {
   // default notch
   notchLeadingValid:
-    "border-[#14a44d] dark:border-[#14a44d] group-data-[te-input-focused]:shadow-[-1px_0_0_#14a44d,_0_1px_0_0_#14a44d,_0_-1px_0_0_#14a44d] group-data-[te-input-focused]:border-[#14a44d]",
+    "border-success dark:border-success group-data-[te-input-focused]:shadow-notch-1 group-data-[te-input-focused]:shadow-success group-data-[te-input-focused]:border-success",
   notchMiddleValid:
-    "border-[#14a44d] dark:border-[#14a44d] group-data-[te-input-focused]:shadow-[0_1px_0_0_#14a44d] group-data-[te-input-focused]:border-[#14a44d]",
+    "border-success dark:border-success group-data-[te-input-focused]:shadow-notch-2 group-data-[te-input-focused]:shadow-success group-data-[te-input-focused]:border-success",
   notchTrailingValid:
-    "border-[#14a44d] dark:border-[#14a44d] group-data-[te-input-focused]:shadow-[1px_0_0_#14a44d,_0_-1px_0_0_#14a44d,_0_1px_0_0_#14a44d] group-data-[te-input-focused]:border-[#14a44d]",
+    "border-success dark:border-success group-data-[te-input-focused]:shadow-notch-3 group-data-[te-input-focused]:shadow-success group-data-[te-input-focused]:border-success",
   notchLeadingInvalid:
-    "border-[#dc4c64] dark:border-[#dc4c64] group-data-[te-input-focused]:shadow-[-1px_0_0_#dc4c64,_0_1px_0_0_#dc4c64,_0_-1px_0_0_#dc4c64] group-data-[te-input-focused]:border-[#dc4c64]",
+    "border-danger dark:border-danger group-data-[te-input-focused]:shadow-notch-1 group-data-[te-input-focused]:shadow-danger group-data-[te-input-focused]:border-danger",
   notchMiddleInvalid:
-    "border-[#dc4c64] dark:border-[#dc4c64] group-data-[te-input-focused]:shadow-[0_1px_0_0_#dc4c64] group-data-[te-input-focused]:border-[#dc4c64]",
+    "border-danger dark:border-danger group-data-[te-input-focused]:shadow-notch-2 group-data-[te-input-focused]:shadow-danger group-data-[te-input-focused]:border-danger",
   notchTrailingInvalid:
-    "border-[#dc4c64] dark:border-[#dc4c64] group-data-[te-input-focused]:shadow-[1px_0_0_#dc4c64,_0_-1px_0_0_#dc4c64,_0_1px_0_0_#dc4c64] group-data-[te-input-focused]:border-[#dc4c64]",
+    "border-danger dark:border-danger group-data-[te-input-focused]:shadow-notch-3 group-data-[te-input-focused]:shadow-danger group-data-[te-input-focused]:border-danger",
 
   // basic inputs
   basicInputValid:
-    "!border-[#14a44d] focus:!border-[#14a44d] focus:!shadow-[inset_0_0_0_1px_#14a44d]",
+    "!border-success focus:!border-success focus:!shadow-inset focus:!shadow-success",
   basicInputInvalid:
-    "!border-[#dc4c64] focus:!border-[#dc4c64] focus:!shadow-[inset_0_0_0_1px_#dc4c64]",
+    "!border-danger focus:!border-danger focus:!shadow-inset focus:!shadow-danger",
 
   // checkbox
 
   checkboxValid:
-    "checked:!border-[#14a44d] checked:!bg-[#14a44d] checked:after:!bg-[#14a44d]",
+    "checked:!border-success checked:!bg-success checked:after:!bg-success",
   checkboxInvalid:
-    "checked:!border-[#dc4c64] checked:!bg-[#dc4c64] checked:after:!bg-[#dc4c64]",
+    "checked:!border-danger checked:!bg-danger checked:after:!bg-danger",
 
-  radioValid: "checked:!border-[#14a44d] checked:after:!bg-[#14a44d]",
-  radioInvalid: "checked:!border-[#dc4c64] checked:after:!bg-[#dc4c64]",
+  radioValid: "checked:!border-success checked:after:!bg-success",
+  radioInvalid: "checked:!border-danger checked:after:!bg-danger",
 
   // labels
-  labelValid: "!text-[#14a44d]",
-  labelInvalid: "!text-[#dc4c64]",
+  labelValid: "!text-success",
+  labelInvalid: "!text-danger",
 
   // feedback
   validFeedback:
-    "absolute top-full left-0 m-1 w-auto text-sm text-[#14a44d] animate-[fade-in_0.3s_both]",
+    "absolute top-full left-0 m-1 w-auto text-sm text-success animate-[fade-in_0.3s_both]",
   invalidFeedback:
-    "absolute top-full left-0 m-1 w-auto text-sm text-[#dc4c64] animate-[fade-in_0.3s_both]",
+    "absolute top-full left-0 m-1 w-auto text-sm text-danger animate-[fade-in_0.3s_both]",
 
   // element validated
   elementValidated: "mb-8",

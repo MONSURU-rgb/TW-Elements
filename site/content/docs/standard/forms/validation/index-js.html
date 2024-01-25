@@ -82,7 +82,7 @@
   ];
 
   const generateMessage = (result, message) =>
-    `<p class="${result ? "text-[#14a44d]" : "text-[#dc4c64]"}">${message}</p>`;
+    `<p class="${result ? "text-success" : "text-danger"}">${message}</p>`;
 
   tooltipsInfo.forEach((tooltip) => {
     const title = Object.entries(tooltip.message)
@@ -93,7 +93,7 @@
       html: true,
       template: `
         <div>
-          <div class="tooltip-inner bg-white text-xs p-4 ml-4 rounded border dark:bg-neutral-800 dark:border-neutral-400"></div>
+          <div class="bg-white text-xs p-4 ml-4 rounded border dark:bg-neutral-800 dark:border-neutral-400" data-te-tooltip-inner-ref></div>
         </div>
       `,
       placement: "right",
@@ -119,14 +119,14 @@
       .join("");
 
     const borderColor =
-      e.value.result === "valid" ? "border-[#14a44d]" : "border-[#dc4c64]";
+      e.value.result === "valid" ? "border-success" : "border-danger";
 
     element.instance = new te.Tooltip(element.element, {
       html: true,
       template: `
-        <div>
-          <div class="tooltip-inner bg-white text-xs p-4 ml-4 rounded border ${borderColor} dark:bg-neutral-800"></div>
-        </div>
+      <div>
+        <div class="bg-white text-xs p-4 ml-4 rounded border dark:bg-neutral-800 dark:border-neutral-400" data-te-tooltip-inner-ref></div>
+      </div>
       `,
       placement: "right",
       title: title,

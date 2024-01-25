@@ -73,12 +73,12 @@
             data-te-validate="input">
             <input
               type="text"
-              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleFormControlInput1"
               placeholder="Example label" />
             <label
               for="exampleFormControlInput1"
-              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
               >Example label
             </label>
           </div>
@@ -383,9 +383,10 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    border-[#14a44d] dark:border-[#14a44d]
-                    group-data-[te-input-focused]:shadow-[-1px_0_0_#14a44d,_0_1px_0_0_#14a44d,_0_-1px_0_0_#14a44d]
-                    group-data-[te-input-focused]:border-[#14a44d]
+                    border-success dark:border-success
+                    group-data-[te-input-focused]:shadow-notch-1
+                    group-data-[te-input-focused]:shadow-success
+                    group-data-[te-input-focused]:border-success
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets border and shadow of the valid leading notch.
@@ -399,9 +400,10 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    border-[#14a44d] dark:border-[#14a44d]
-                    group-data-[te-input-focused]:shadow-[0_1px_0_0_#14a44d]
-                    group-data-[te-input-focused]:border-[#14a44d]
+                    border-success dark:border-success
+                    group-data-[te-input-focused]:shadow-notch-2
+                    group-data-[te-input-focused]:shadow-success
+                    group-data-[te-input-focused]:border-success
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets border and shadow of the valid middle notch.
@@ -415,9 +417,10 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    border-[#14a44d] dark:border-[#14a44d]
-                    group-data-[te-input-focused]:shadow-[1px_0_0_#14a44d,_0_-1px_0_0_#14a44d,_0_1px_0_0_#14a44d]
-                    group-data-[te-input-focused]:border-[#14a44d]
+                    border-success dark:border-success
+                    group-data-[te-input-focused]:shadow-notch-3
+                    group-data-[te-input-focused]:shadow-success
+                    group-data-[te-input-focused]:border-success
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets border and shadow of the valid trailing notch.
@@ -431,9 +434,10 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    border-[#dc4c64] dark:border-[#dc4c64]
-                    group-data-[te-input-focused]:shadow-[-1px_0_0_#dc4c64,_0_1px_0_0_#dc4c64,_0_-1px_0_0_#dc4c64]
-                    group-data-[te-input-focused]:border-[#dc4c64]
+                    border-danger dark:border-danger
+                    group-data-[te-input-focused]:shadow-notch-1
+                    group-data-[te-input-focused]:shadow-danger
+                    group-data-[te-input-focused]:border-danger
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets border and shadow of the invalid leading notch.
@@ -447,9 +451,10 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    border-[#dc4c64] dark:border-[#dc4c64]
-                    group-data-[te-input-focused]:shadow-[0_1px_0_0_#dc4c64]
-                    group-data-[te-input-focused]:border-[#dc4c64]
+                    border-danger dark:border-danger
+                    group-data-[te-input-focused]:shadow-notch-2
+                    group-data-[te-input-focused]:shadow-danger
+                    group-data-[te-input-focused]:border-danger
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets border and shadow of the invalid middle notch.
@@ -463,9 +468,10 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    border-[#dc4c64] dark:border-[#dc4c64]
-                    group-data-[te-input-focused]:shadow-[1px_0_0_#dc4c64,_0_-1px_0_0_#dc4c64,_0_1px_0_0_#dc4c64]
-                    group-data-[te-input-focused]:border-[#dc4c64]
+                    border-danger dark:border-danger
+                    group-data-[te-input-focused]:shadow-notch-3
+                    group-data-[te-input-focused]:shadow-danger
+                    group-data-[te-input-focused]:border-danger
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets border and shadow of the invalid trailing notch.
@@ -479,8 +485,8 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    !border-[#14a44d] focus:!border-[#14a44d]
-                    focus:!shadow-[inset_0_0_0_1px_#14a44d]
+                    !border-success focus:!border-success focus:!shadow-inset
+                    focus:!shadow-success
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets border and shadow of the valid input element.
@@ -494,8 +500,8 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    !border-[#dc4c64] focus:!border-[#dc4c64]
-                    focus:!shadow-[inset_0_0_0_1px_#dc4c64]
+                    !border-danger focus:!border-danger focus:!shadow-inset
+                    focus:!shadow-danger
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets border and shadow of the invalid input element.
@@ -509,8 +515,8 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    checked:!border-[#14a44d] checked:!bg-[#14a44d]
-                    checked:after:!bg-[#14a44d]
+                    checked:!border-success checked:!bg-success
+                    checked:after:!bg-success
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets border and background of the valid checkbox element and
@@ -525,8 +531,8 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    checked:!border-[#dc4c64] checked:!bg-[#dc4c64]
-                    checked:after:!bg-[#dc4c64]
+                    checked:!border-danger checked:!bg-danger
+                    checked:after:!bg-danger
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets border and background of the invalid checkbox element
@@ -541,7 +547,7 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    checked:!border-[#14a44d] checked:after:!bg-[#14a44d]
+                    checked:!border-success checked:after:!bg-success
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets border and background of the valid radio element and
@@ -556,7 +562,7 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    checked:!border-[#dc4c64] checked:after:!bg-[#dc4c64]
+                    checked:!border-danger checked:after:!bg-danger
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets border and background of the invalid radio element and
@@ -571,7 +577,7 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    !text-[#14a44d]
+                    !text-success
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets the text color of the valid label element.
@@ -585,7 +591,7 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    !text-[#dc4c64]
+                    !text-danger
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets the text color of the invalid label element.
@@ -599,7 +605,7 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    absolute top-full left-0 m-1 w-auto text-sm text-[#14a44d]
+                    absolute top-full left-0 m-1 w-auto text-sm text-success
                     animate-[fade-in_0.3s_both]
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
@@ -615,7 +621,7 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    absolute top-full left-0 m-1 w-auto text-sm text-[#dc4c64]
+                    absolute top-full left-0 m-1 w-auto text-sm text-danger
                     animate-[fade-in_0.3s_both]
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
