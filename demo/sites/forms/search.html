@@ -62,81 +62,102 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
         Basic example
       </h3>
 
-      <div class="mb-12 xl:w-96">
-        <div class="relative mb-4 flex w-full flex-wrap items-stretch">
+      <div class="relative mb-4 flex justify-center">
+        <div
+          class="relative flex"
+          data-te-input-wrapper-init
+          data-te-input-group-ref>
           <input
             type="search"
-            class="relative m-0 -mr-px block w-[1%] min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 transition duration-300 ease-in-out placeholder:text-neutral-500 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-300"
+            class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
             placeholder="Search"
             aria-label="Search"
-            aria-describedby="button-addon1" />
+            id="exampleFormControlInput"
+            aria-describedby="basic-addon1" />
+          <label
+            for="exampleFormControlInput"
+            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
+            >Search
+          </label>
           <button
-            class="relative z-[2] flex items-center rounded-r bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+            class="relative z-[2] -ms-0.5 flex items-center rounded-r bg-primary px-5  text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
             type="button"
-            id="button-addon1">
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fas"
-              data-icon="search"
-              class="svg-inline--fa fa-search w-4"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512">
-              <path
-                fill="currentColor"
-                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
-            </svg>
+            id="button-addon1"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <span class="[&>svg]:h-5 [&>svg]:w-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+            </span>
           </button>
         </div>
       </div>
+
+      <br />
+      <br />
+      <br />
 
       <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
         Search with icon
       </h3>
 
-      <div class="mb-12 xl:w-96">
-        <div class="relative mb-4 flex w-full flex-wrap items-stretch">
+      <div class="relative mb-4 flex justify-center">
+        <div class="relative flex">
           <input
             type="search"
-            class="relative m-0 block w-[1%] min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 transition duration-300 ease-in-out placeholder:text-neutral-500 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200"
+            class="relative m-0 block flex-auto rounded border border-solid border-neutral-200 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:text-white dark:placeholder:text-neutral-200 dark:focus:border-primary"
             placeholder="Search"
             aria-label="Search"
+            id="exampleFormControlInput2"
             aria-describedby="button-addon2" />
           <span
-            class="flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-300"
-            id="basic-addon2">
+            class="flex items-center whitespace-nowrap px-3 py-[0.25rem] text-surface dark:border-neutral-400 dark:text-white [&>svg]:h-5 [&>svg]:w-5"
+            id="button-addon2">
             <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fas"
-              data-icon="search"
-              class="svg-inline--fa fa-search w-4"
-              role="img"
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512">
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor">
               <path
-                fill="currentColor"
-                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
             </svg>
           </span>
         </div>
       </div>
 
+      <br />
+      <br />
+      <br />
+
       <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
         Search with button
       </h3>
 
-      <div class="mb-12 xl:w-96">
-        <div class="relative mb-4 flex w-full flex-wrap items-stretch">
+      <div class="relative mb-4 flex justify-center">
+        <div class="relative flex">
           <input
             type="search"
-            class="relative m-0 -mr-px block w-[1%] min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 transition duration-300 ease-in-out placeholder:text-neutral-500 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-300"
+            class="relative m-0 -mr-0.5 block flex-auto rounded-l border border-solid border-neutral-200 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:text-white dark:placeholder:text-neutral-200 dark:focus:border-primary"
             placeholder="Search"
             aria-label="Search"
+            id="exampleFormControlInput3"
             aria-describedby="button-addon3" />
           <button
-            class="relative z-[2] rounded-r border-2 border-primary px-6 py-2 text-xs font-medium uppercase text-primary transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+            class="z-[2] inline-block rounded-r border-2 border-primary px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-primary-accent-300 hover:bg-primary-50/50 hover:text-primary-accent-300 focus:border-primary-600 focus:bg-primary-50/50 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 dark:text-primary-500 dark:hover:bg-blue-950 dark:focus:bg-blue-950"
+            data-te-ripple-init
+            data-te-ripple-color="white"
             type="button"
             id="button-addon3">
             Search
@@ -144,46 +165,669 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
         </div>
       </div>
 
+      <br />
+      <br />
+      <br />
+
       <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
         Search without additional elements
       </h3>
 
-      <div class="mb-12 xl:w-96">
+      <div class="relative">
         <input
           type="search"
-          class="relative m-0 block w-full min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 transition duration-300 ease-in-out placeholder:text-neutral-500 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-300"
-          id="exampleSearch"
-          placeholder="Type query" />
+          class="relative m-0 block w-full rounded border border-solid border-neutral-200 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:text-white dark:placeholder:text-neutral-200 dark:focus:border-primary"
+          placeholder="Search"
+          aria-label="Search"
+          id="exampleFormControlInput4" />
       </div>
+
+      <br />
+      <br />
+      <br />
 
       <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
-        Search with label
+        Search event
       </h3>
 
-      <div class="mb-12 xl:w-96">
-        <label
-          for="exampleSearch2"
-          class="mb-2 inline-block text-neutral-700 dark:text-neutral-200"
-          >Search</label
-        >
-        <input
-          type="search"
-          class="relative m-0 block w-full min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 transition duration-300 ease-in-out placeholder:text-neutral-500 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-300"
-          id="exampleSearch2"
-          placeholder="Type query" />
+      <div class="relative mb-4 flex justify-center">
+        <div
+          class="relative flex"
+          data-te-input-wrapper-init
+          data-te-input-group-ref>
+          <input
+            type="search"
+            class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+            placeholder="Search"
+            aria-label="Search"
+            id="search-input"
+            aria-describedby="search-button" />
+          <label
+            for="search-input"
+            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
+            >Search
+          </label>
+          <button
+            class="relative z-[2] -ms-0.5 flex items-center rounded-r bg-primary px-5  text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+            type="button"
+            id="search-button"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <span class="[&>svg]:h-5 [&>svg]:w-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+            </span>
+          </button>
+        </div>
       </div>
+
+      <br />
+      <br />
+      <br />
+
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        Autocomplete
+      </h3>
+
+      <div class="relative mb-4 flex justify-center">
+        <div
+          class="relative flex"
+          id="search-autocomplete"
+          data-te-input-wrapper-init
+          data-te-input-group-ref>
+          <input
+            type="search"
+            class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+            placeholder="Search"
+            aria-label="Search"
+            id="exampleFormControlInput5"
+            aria-describedby="basic-addon2" />
+          <label
+            for="exampleFormControlInput5"
+            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
+            >Search
+          </label>
+        </div>
+        <button
+          class="relative z-[2] -ms-0.5 flex items-center rounded-r bg-primary px-5  text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong "
+          type="button"
+          id="button-addon2"
+          data-te-ripple-init
+          data-te-ripple-color="light">
+          <span class="[&>svg]:h-5 [&>svg]:w-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        Focus
+      </h3>
+
+      <div class="relative mb-4 flex justify-center">
+        <div
+          class="relative flex"
+          data-te-input-wrapper-init
+          data-te-input-group-ref>
+          <input
+            type="search"
+            class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+            placeholder="Search"
+            aria-label="Search"
+            id="search-focus"
+            aria-describedby="basic-addon4" />
+          <label
+            for="search-focus"
+            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
+            >Search
+          </label>
+          <button
+            class="relative z-[2] -ms-0.5 flex items-center rounded-r bg-primary px-5  text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+            type="button"
+            id="button-addon4"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <span class="[&>svg]:h-5 [&>svg]:w-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        Navbar
+      </h3>
+
+      <nav
+        class="shadow-dark-mild relative flex w-full flex-nowrap items-center justify-between bg-zinc-50 py-2 dark:bg-neutral-700 lg:flex-wrap lg:justify-start"
+        data-te-navbar-ref>
+        <div
+          class="flex w-full flex-wrap items-center justify-between px-3 py-1">
+          <div class="me-4 ms-2">
+            <a class="text-xl text-black dark:text-white" href="#">Brand</a>
+          </div>
+          <!-- Hamburger button for mobile view -->
+          <button
+            class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+            type="button"
+            data-te-collapse-init
+            data-te-target="#navbarSupportedContent5"
+            aria-controls="navbarSupportedContent5"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <!-- Hamburger icon -->
+            <span
+              class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
+          </button>
+
+          <!-- Collapsible navbar container -->
+          <div
+            class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+            id="navbarSupportedContent5"
+            data-te-collapse-item>
+            <!-- Left links -->
+            <ul
+              class="list-style-none mr-auto flex flex-col pl-0 lg:mt-1 lg:flex-row"
+              data-te-navbar-nav-ref>
+              <!-- Home link -->
+              <li
+                class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1"
+                data-te-nav-item-ref>
+                <a
+                  class="text-black dark:text-white"
+                  aria-current="page"
+                  href="#"
+                  data-te-nav-link-ref
+                  >Home</a
+                >
+              </li>
+              <!-- Link -->
+              <li
+                class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+                data-te-nav-item-ref>
+                <a
+                  class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  href="#"
+                  data-te-nav-link-ref
+                  >Link</a
+                >
+              </li>
+              <!-- Dropdown link -->
+              <li
+                class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+                data-te-nav-item-ref
+                data-te-dropdown-ref>
+                <!-- Dropdown -->
+                <a
+                  class="flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  href="#"
+                  type="button"
+                  id="dropdownMenuButton2"
+                  data-te-dropdown-toggle-ref
+                  aria-expanded="false">
+                  Dropdown
+                  <span class="ml-1 [&>svg]:w-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor">
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </a>
+                <ul
+                  class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-surface-dark [&[data-te-dropdown-show]]:block"
+                  aria-labelledby="dropdownMenuButton1"
+                  data-te-dropdown-menu-ref>
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                      href="#"
+                      data-te-dropdown-item-ref
+                      >Action</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                      href="#"
+                      data-te-dropdown-item-ref
+                      >Another action</a
+                    >
+                  </li>
+                  <hr
+                    class="my-2 h-0 border border-t-0 border-solid border-neutral-100 dark:border-white/10" />
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                      href="#"
+                      data-te-dropdown-item-ref
+                      >Something else here</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Disabled link -->
+              <li
+                class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+                data-te-nav-link-ref>
+                <a
+                  class="pointer-events-none text-black/30 dark:text-white/30 lg:px-2"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+
+            <!-- Search form -->
+            <div class="relative flex justify-center">
+              <div
+                class="relative flex"
+                id="navbar-search-autocomplete"
+                data-te-input-wrapper-init
+                data-te-input-group-ref>
+                <input
+                  type="search"
+                  class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  placeholder="Search"
+                  aria-label="Search"
+                  id="exampleFormControlInput6"
+                  aria-describedby="basic-addon3" />
+                <label
+                  for="exampleFormControlInput6"
+                  class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
+                  >Search
+                </label>
+              </div>
+              <button
+                class="relative z-[2] -ms-0.5 flex items-center rounded-r bg-primary px-5  text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong "
+                type="button"
+                id="button-addon3"
+                data-te-ripple-init
+                data-te-ripple-color="light">
+                <span class="[&>svg]:h-5 [&>svg]:w-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <br />
+      <br />
+      <br />
+
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        Dropdown
+      </h3>
+
+      <div class="relative mb-4 flex justify-center">
+        <div class="relative" data-te-dropdown-ref id="dropdown-search">
+          <button
+            class="mx-auto flex items-center rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+            type="button"
+            id="dropdownMenuButton1"
+            data-te-dropdown-toggle-ref
+            aria-expanded="false"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            Dropdown
+          </button>
+          <ul
+            class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-surface-dark [&[data-te-dropdown-show]]:block"
+            aria-labelledby="dropdownMenuButton1"
+            data-te-dropdown-menu-ref>
+            <li>
+              <div class="relative mx-2 mt-2" data-te-input-wrapper-init>
+                <input
+                  type="search"
+                  class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  placeholder="Search"
+                  aria-label="Search"
+                  id="search-input-dropdown"
+                  aria-describedby="basic-addon1" />
+                <label
+                  for="search-input-dropdown"
+                  class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
+                  >Search
+                </label>
+              </div>
+            </li>
+            <hr
+              class="my-2 h-0 border border-t-0 border-solid border-neutral-100 dark:border-white/10" />
+            <li>
+              <a
+                class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                href="#"
+                data-te-dropdown-item-ref
+                >Action</a
+              >
+            </li>
+            <li>
+              <a
+                class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                href="#"
+                data-te-dropdown-item-ref
+                >Another action</a
+              >
+            </li>
+            <li>
+              <a
+                class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                href="#"
+                data-te-dropdown-item-ref
+                >Something else here</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        Datatable
+      </h3>
+
+      <div
+        class="relative mb-4 flex w-full flex-wrap items-stretch"
+        data-te-input-wrapper-init>
+        <input
+          id="datatable-search-input"
+          type="search"
+          class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+          placeholder="Search"
+          aria-label="Search"
+          aria-describedby="button-addon10" />
+        <label
+          for="datatable-search-input"
+          class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
+          >Search
+        </label>
+      </div>
+      <div id="datatable-1"></div>
     </div>
     <!-- End your project here-->
 
     <!-- Theme switcher -->
     <script type="module" src="../../../src/js/theme.js"></script>
-    <!-- MDB -->
-    <script type="module" src="../../../src/js/index.umd.js"></script>
     <!-- PRISM -->
     <script type="module" src="../../dev/js/new-prism.js"></script>
     <!-- MDB SNIPPET -->
     <script type="module" src="../../dev/js/dist/mdbsnippet.min.js"></script>
     <!-- Custom scripts -->
-    <script type="text/javascript"></script>
+    <script type="module">
+      import * as te from "../../../src/js/index.umd.js";
+
+      // Search event
+      const searchButton = document.getElementById("search-button");
+      const searchInput = document.getElementById("search-input");
+      searchButton.addEventListener("click", () => {
+        const inputValue = searchInput.value;
+        alert(inputValue);
+      });
+      // Search event
+
+      // Autocomplete
+
+      const basicAutocomplete = document.querySelector("#search-autocomplete");
+      const data = ["One", "Two", "Three", "Four", "Five"];
+      const dataFilter = (value) => {
+        return data.filter((item) => {
+          return item.toLowerCase().startsWith(value.toLowerCase());
+        });
+      };
+
+      new te.Autocomplete(basicAutocomplete, {
+        filter: dataFilter,
+      });
+
+      // Autocomplete
+
+      // Focus
+      const searchFocus = document.getElementById("search-focus");
+      const keys = [
+        { keyCode: "AltLeft", isTriggered: false },
+        { keyCode: "ControlLeft", isTriggered: false },
+      ];
+
+      window.addEventListener("keydown", (e) => {
+        keys.forEach((obj) => {
+          if (obj.keyCode === e.code) {
+            obj.isTriggered = true;
+          }
+        });
+
+        const shortcutTriggered =
+          keys.filter((obj) => obj.isTriggered).length === keys.length;
+
+        if (shortcutTriggered) {
+          searchFocus.focus();
+        }
+      });
+
+      window.addEventListener("keyup", (e) => {
+        keys.forEach((obj) => {
+          if (obj.keyCode === e.code) {
+            obj.isTriggered = false;
+          }
+        });
+      });
+
+      // Focus
+
+      // Navbar
+
+      const navbarAutocomplete = document.querySelector(
+        "#navbar-search-autocomplete"
+      );
+      const navbarData = ["One", "Two", "Three", "Four", "Five"];
+      const navbarDataFilter = (value) => {
+        return navbarData.filter((item) => {
+          return item.toLowerCase().startsWith(value.toLowerCase());
+        });
+      };
+
+      new te.Autocomplete(navbarAutocomplete, {
+        filter: navbarDataFilter,
+      });
+
+      // Navbar
+
+      // Dropdown
+
+      const searchInputDropdown = document.getElementById(
+        "search-input-dropdown"
+      );
+      const dropdownOptions = document.querySelectorAll(
+        "#dropdown-search [data-te-dropdown-item-ref]"
+      );
+
+      searchInputDropdown.addEventListener("input", () => {
+        const filter = searchInputDropdown.value.toLowerCase();
+        showOptions();
+        const valueExist = !!filter.length;
+
+        if (valueExist) {
+          dropdownOptions.forEach((el) => {
+            const elText = el.textContent.trim().toLowerCase();
+            const isIncluded = elText.includes(filter);
+            if (!isIncluded) {
+              el.classList.add("hidden");
+            }
+          });
+        }
+      });
+
+      const showOptions = () => {
+        dropdownOptions.forEach((el) => {
+          el.classList.remove("hidden");
+        });
+      };
+
+      // Dropdown
+
+      // Datatables
+
+      const data2 = {
+        columns: ["Name", "Position", "Office", "Age", "Start date", "Salary"],
+        rows: [
+          [
+            "Tiger Nixon",
+            "System Architect",
+            "	Edinburgh",
+            61,
+            "2011/04/25",
+            "$320,800",
+          ],
+          [
+            "Sonya Frost",
+            "Software Engineer",
+            "Edinburgh",
+            23,
+            "2008/12/13",
+            "$103,600",
+          ],
+          [
+            "Jena Gaines",
+            "Office Manager",
+            "London",
+            30,
+            "2008/12/19",
+            "$90,560",
+          ],
+          [
+            "Quinn Flynn",
+            "Support Lead",
+            "Edinburgh",
+            22,
+            "2013/03/03",
+            "$342,000",
+          ],
+          [
+            "Charde Marshall",
+            "Regional Director",
+            "San Francisco",
+            36,
+            "2008/10/16",
+            "$470,600",
+          ],
+          [
+            "Haley Kennedy",
+            "Senior Marketing Designer",
+            "London",
+            43,
+            "2012/12/18",
+            "$313,500",
+          ],
+          [
+            "Tatyana Fitzpatrick",
+            "Regional Director",
+            "London",
+            19,
+            "2010/03/17",
+            "$385,750",
+          ],
+          [
+            "Michael Silva",
+            "Marketing Designer",
+            "London",
+            66,
+            "2012/11/27",
+            "$198,500",
+          ],
+          [
+            "Paul Byrd",
+            "Chief Financial Officer (CFO)",
+            "New York",
+            64,
+            "2010/06/09",
+            "$725,000",
+          ],
+          [
+            "Gloria Little",
+            "Systems Administrator",
+            "New York",
+            59,
+            "2009/04/10",
+            "$237,500",
+          ],
+        ],
+      };
+
+      const instance = new te.Datatable(
+        document.getElementById("datatable-1"),
+        data2
+      );
+
+      document
+        .getElementById("datatable-search-input")
+        .addEventListener("input", (e) => {
+          instance.search(e.target.value);
+        });
+      // Datatables
+    </script>
   </body>
 </html>
