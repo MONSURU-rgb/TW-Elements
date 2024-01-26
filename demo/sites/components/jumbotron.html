@@ -51,28 +51,42 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
   </head>
 
   <body class="dark:bg-neutral-800">
-    <div class="xl:mx-96">
+    <div class="mx-6 md:mx-16 lg:mx-44 xl:mx-96">
       <br />
       <br />
       <br />
 
+      <h1
+        class="my-0 text-5xl font-medium leading-tight text-surface dark:text-white">
+        Jumbotron
+      </h1>
+
+      <br />
+      <br />
+      <br />
+
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        Basic example
+      </h3>
+
       <!-- Jumbotron -->
-      <div class="rounded-lg bg-neutral-100 p-6 text-neutral-700 shadow-lg">
+      <div
+        class="rounded-lg bg-white p-6 text-surface shadow-lg dark:bg-neutral-700 dark:text-white dark:shadow-black/30">
         <h2 class="mb-5 text-3xl font-semibold">Hello world!</h2>
         <p>
           This is a simple hero unit, a simple jumbotron-style component for
           calling extra attention to featured content or information.
         </p>
-        <hr class="my-6 border-neutral-300" />
-        <p>
+        <hr class="my-6 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10" />
+        <p class="mb-4">
           It uses utility classes for typography and spacing to space content
           out within the larger container.
         </p>
         <button
           type="button"
-          class="mt-4 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
           data-te-ripple-init
-          data-te-ripple-color="light">
+          data-te-ripple-color="light"
+          class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
           Learn more
         </button>
       </div>
@@ -82,28 +96,26 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
       <br />
       <br />
 
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        Background image
+      </h3>
+
       <!-- Jumbotron -->
       <div
-        class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
-        style="
-          background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-          height: 400px;
-        ">
+        class="relative h-[400px] overflow-hidden rounded-lg bg-[url('https://tecdn.b-cdn.net/img/new/slides/041.webp')] bg-cover bg-no-repeat p-12 text-center text-white">
         <div
-          class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-          style="background-color: rgba(0, 0, 0, 0.6)">
+          class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
           <div class="flex h-full items-center justify-center">
             <div class="text-white">
               <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
               <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
-              <a
-                class="mb-1 inline-block rounded border-2 border-neutral-200 px-7 py-3 text-sm font-medium uppercase leading-snug text-neutral-200 transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
-                href="#!"
-                role="button"
+              <button
+                type="button"
+                class="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
                 data-te-ripple-init
-                data-te-ripple-color="light"
-                >Call to action</a
-              >
+                data-te-ripple-color="light">
+                Call to action
+              </button>
             </div>
           </div>
         </div>
@@ -114,44 +126,55 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
       <br />
       <br />
 
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        With navbar
+      </h3>
+
       <header>
-        <!-- Navbar -->
+        <!-- Navigation bar -->
         <nav
-          class="relative flex w-full items-center justify-between bg-white py-2 shadow-lg md:flex-wrap md:justify-start"
+          class="shadow-dark-mild relative flex w-full items-center justify-between bg-white py-2 dark:bg-body-dark lg:flex-wrap lg:justify-start lg:py-4"
           data-te-navbar-ref>
-          <div class="px-6">
-            <button
-              class="border-0 bg-transparent px-2 py-3 text-xl leading-none text-neutral-600 transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:hidden"
-              type="button"
-              data-te-collapse-init
-              data-te-target="#navbarSupportedContentX"
-              aria-controls="navbarSupportedContentX"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="[&>svg]:w-5">
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512">
-                  <path
-                    fill="currentColor"
-                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
-                </svg>
-              </span>
-            </button>
+          <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div class="flex items-center">
+              <!-- Hamburger menu button -->
+              <button
+                class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                type="button"
+                data-te-collapse-init
+                data-te-target="#navbarSupportedContentY"
+                aria-controls="navbarSupportedContentY"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- Hamburger menu icon -->
+                <span
+                  class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <!-- Navigation links -->
             <div
-              class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-              id="navbarSupportedContentX"
+              class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
+              id="navbarSupportedContentY"
               data-te-collapse-item>
               <ul
-                class="mr-auto flex flex-col md:flex-row"
+                class="mr-auto flex flex-col lg:flex-row"
                 data-te-navbar-nav-ref>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -159,9 +182,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                     >Home</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -169,9 +192,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                     >Features</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -179,9 +202,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                     >Pricing</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -193,65 +216,76 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
             </div>
           </div>
         </nav>
-        <!-- Navbar -->
 
-        <!-- Jumbotron -->
-        <div class="bg-neutral-100 p-12 text-center text-neutral-700">
-          <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
-          <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
-          <button
-            type="button"
-            class="mb-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+        <!-- Hero section with background image, heading, subheading and button -->
+        <div
+          class="bg-zinc-50 px-6 py-20 text-center text-surface dark:bg-neutral-700 dark:text-white">
+          <h1 class="mb-6 text-5xl font-bold">Heading</h1>
+          <h3 class="mb-8 text-3xl font-bold">Subeading</h3>
+          <a
+            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
             data-te-ripple-init
-            data-te-ripple-color="light">
-            Call to action
-          </button>
+            data-te-ripple-color="light"
+            href="#!"
+            role="button"
+            >Call to action</a
+          >
         </div>
-        <!-- Jumbotron -->
       </header>
 
       <br />
       <br />
       <br />
 
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        Background image
+      </h3>
+
       <header>
-        <!-- Navbar -->
+        <!-- Navigation bar -->
         <nav
-          class="relative flex w-full items-center justify-between bg-neutral-50 py-2 shadow-lg md:flex-wrap md:justify-start"
+          class="shadow-dark-mild relative flex w-full items-center justify-between bg-white py-2 dark:bg-body-dark lg:flex-wrap lg:justify-start lg:py-4"
           data-te-navbar-ref>
-          <div class="px-6">
-            <button
-              class="border-0 bg-transparent px-2 py-3 text-xl leading-none text-neutral-600 transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:hidden"
-              type="button"
-              data-te-collapse-init
-              data-te-target="#navbarSupportedContentY"
-              aria-controls="navbarSupportedContentY"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="[&>svg]:w-5">
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512">
-                  <path
-                    fill="currentColor"
-                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
-                </svg>
-              </span>
-            </button>
+          <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div class="flex items-center">
+              <!-- Hamburger menu button -->
+              <button
+                class="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+                type="button"
+                data-te-collapse-init
+                data-te-target="#navbarSupportedContentX"
+                aria-controls="navbarSupportedContentX"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- Hamburger menu icon -->
+                <span
+                  class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <!-- Navigation links -->
             <div
-              class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-              id="navbarSupportedContentY"
+              class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
+              id="navbarSupportedContentX"
               data-te-collapse-item>
               <ul
-                class="mr-auto flex flex-col md:flex-row"
+                class="mr-auto flex flex-col lg:flex-row"
                 data-te-navbar-nav-ref>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -259,9 +293,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                     >Home</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -269,9 +303,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                     >Features</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -279,9 +313,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                     >Pricing</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -293,79 +327,82 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
             </div>
           </div>
         </nav>
-        <!-- Navbar -->
 
-        <!-- Background image -->
+        <!-- Hero section with background image, heading, subheading and button -->
         <div
-          class="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
-          style="
-            background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-            height: 400px;
-          ">
+          class="relative h-[350px] overflow-hidden bg-[url('https://tecdn.b-cdn.net/img/new/slides/041.webp')] bg-cover bg-[50%] bg-no-repeat">
           <div
-            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-            style="background-color: rgba(0, 0, 0, 0.6)">
+            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
             <div class="flex h-full items-center justify-center">
-              <div class="text-white">
-                <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
-                <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
-                <a
-                  class="mb-1 inline-block rounded border-2 border-neutral-200 px-7 py-3 text-sm font-medium uppercase leading-snug text-neutral-200 transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
-                  href="#!"
-                  role="button"
+              <div class="px-6 text-center text-white md:px-12">
+                <h1 class="mb-6 text-5xl font-bold">Heading</h1>
+                <h3 class="mb-8 text-3xl font-bold">Subeading</h3>
+                <button
+                  type="button"
+                  class="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
                   data-te-ripple-init
-                  data-te-ripple-color="light"
-                  >Call to action</a
-                >
+                  data-te-ripple-color="light">
+                  Call to action
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <!-- Background image -->
       </header>
 
       <br />
       <br />
       <br />
 
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        Full page option
+      </h3>
+
       <header>
-        <!-- Navbar -->
+        <!--Navbar -->
         <nav
-          class="relative flex w-full items-center justify-between bg-neutral-50 py-2 shadow-lg md:flex-wrap md:justify-start"
+          class="shadow-dark-mild relative flex w-full items-center justify-between bg-white py-2 dark:bg-body-dark lg:flex-wrap lg:justify-start lg:py-4"
           data-te-navbar-ref>
-          <div class="px-6">
-            <button
-              class="border-0 bg-transparent px-2 py-3 text-xl leading-none text-neutral-600 transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:hidden"
-              type="button"
-              data-te-collapse-init
-              data-te-target="#navbarSupportedContentO"
-              aria-controls="navbarSupportedContentO"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="[&>svg]:w-5">
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512">
-                  <path
-                    fill="currentColor"
-                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
-                </svg>
-              </span>
-            </button>
+          <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div class="flex items-center">
+              <!-- Hamburger menu button -->
+              <button
+                class="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+                type="button"
+                data-te-collapse-init
+                data-te-target="#navbarSupportedContent3"
+                aria-controls="navbarSupportedContent3"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- Hamburger menu icon -->
+                <span
+                  class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <!-- Navigation links -->
             <div
-              class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-              id="navbarSupportedContentO"
+              class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
+              id="navbarSupportedContent3"
               data-te-collapse-item>
               <ul
-                class="mr-auto flex flex-col md:flex-row"
+                class="mr-auto flex flex-col lg:flex-row"
                 data-te-navbar-nav-ref>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -373,9 +410,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                     >Home</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -383,9 +420,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                     >Features</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -393,9 +430,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                     >Pricing</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -411,11 +448,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
 
         <!-- Background image -->
         <div
-          class="relative h-96 overflow-hidden bg-cover bg-no-repeat p-12 text-center lg:h-screen"
-          style="background-image: url('https://mdbootstrap.com/img/Photos/Inne/ostia.jpg')">
+          class="relative h-96 overflow-hidden bg-[url('https://tecdn.b-cdn.net/img/Photos/Inne/ostia.jpg')] bg-cover bg-no-repeat p-12 text-center lg:h-screen">
           <div
-            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-            style="background-color: rgba(2, 56, 53, 0.7)">
+            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-teal-950/70 bg-fixed">
             <div class="flex h-full items-center justify-center">
               <div class="text-white">
                 <h2 class="mb-4 text-4xl font-semibold">
@@ -425,7 +460,7 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                   It is a coastal town in Italy that is part of Rome
                 </h4>
                 <a
-                  class="mb-1 inline-block rounded border-2 border-neutral-200 px-7 py-3 text-sm font-medium uppercase leading-snug text-neutral-200 transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  class="mb-1 inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
                   href="#!"
                   role="button"
                   data-te-ripple-init
@@ -443,50 +478,61 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
       <br />
       <br />
 
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        Fixed navbar
+      </h3>
+
       <!-- Demo -->
 
       <section
         class="w-100 text-center"
         style="overflow-y: scroll; height: 400px">
-        <!-- Warning! Only for the demo purpose, we use sticky-top instead of the fixed-top class, because when using fixed-top in the demo the navbar will stick to the window instead of the demo box. That's why we also remove <header> tags from the demo-->
+        <!-- Warning! Only for the demo purpose, we use sticky instead of the fixed class, because when using fixed-top in the demo the navbar will stick to the window instead of the demo box. That's why we also remove <header> tags from the demo-->
 
-        <!-- Navbar -->
+        <!--Navbar -->
         <nav
-          class="sticky top-0 flex w-full items-center justify-between bg-white py-2 shadow-lg md:flex-wrap md:justify-start"
+          class="shadow-dark-mild sticky top-0 z-10 flex w-full items-center justify-between bg-white py-2 dark:bg-body-dark lg:flex-wrap lg:justify-start lg:py-4"
           data-te-navbar-ref>
-          <div class="px-6">
-            <button
-              class="border-0 bg-transparent px-2 py-3 text-xl leading-none text-neutral-600 transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:hidden"
-              type="button"
-              data-te-collapse-init
-              data-te-target="#navbarSupportedContentU"
-              aria-controls="navbarSupportedContentU"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="[&>svg]:w-5">
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512">
-                  <path
-                    fill="currentColor"
-                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
-                </svg>
-              </span>
-            </button>
+          <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div class="flex items-center">
+              <!-- Hamburger menu button -->
+              <button
+                class="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+                type="button"
+                data-te-collapse-init
+                data-te-target="#navbarSupportedContent4"
+                aria-controls="navbarSupportedContent4"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- Hamburger menu icon -->
+                <span
+                  class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <!-- Navigation links -->
             <div
-              class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-              id="navbarSupportedContentU"
+              class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
+              id="navbarSupportedContent4"
               data-te-collapse-item>
               <ul
-                class="mr-auto flex flex-col md:flex-row"
+                class="mr-auto flex flex-col lg:flex-row"
                 data-te-navbar-nav-ref>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -494,9 +540,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                     >Home</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -504,9 +550,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                     >Features</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -514,9 +560,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                     >Pricing</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -531,296 +577,87 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
         <!-- Navbar -->
 
         <!-- Jumbotron -->
-        <div class="bg-neutral-100 p-12 text-center text-neutral-700">
+        <div
+          class="bg-zinc-50 p-12 text-center text-surface dark:bg-neutral-700 dark:text-white">
           <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
           <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
           <button
             type="button"
-            class="mb-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
-            data-te-ripple-init
-            data-te-ripple-color="light">
-            Call to act
-          </button>
-        </div>
-        <!-- Jumbotron -->
-
-        <p class="my-4 text-neutral-700">Scroll down</p>
-        <p class="mb-4 text-neutral-700">Scroll down</p>
-        <p class="mb-4 text-neutral-700">Scroll down</p>
-        <p class="mb-4 text-neutral-700">Scroll down</p>
-        <p class="mb-4 text-neutral-700">Scroll down</p>
-        <p class="mb-4 text-neutral-700">Scroll down</p>
-        <p class="mb-4 text-neutral-700">Scroll down</p>
-        <p class="mb-4 text-neutral-700">Scroll down</p>
-      </section>
-
-      <!-- Prisma -->
-
-      <header>
-        <!-- Navbar -->
-        <nav
-          class="fixed left-0 right-0 top-0 flex w-full items-center justify-between bg-white py-2 shadow-lg md:flex-wrap md:justify-start"
-          data-te-navbar-ref>
-          <div class="px-6">
-            <button
-              class="border-0 bg-transparent px-2 py-3 text-xl leading-none text-neutral-600 transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:hidden"
-              type="button"
-              data-te-collapse-init
-              data-te-target="#navbarSupportedContentL"
-              aria-controls="navbarSupportedContentL"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="[&>svg]:w-5">
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512">
-                  <path
-                    fill="currentColor"
-                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
-                </svg>
-              </span>
-            </button>
-            <div
-              class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-              id="navbarSupportedContentL"
-              data-te-collapse-item>
-              <ul
-                class="mr-auto flex flex-col md:flex-row"
-                data-te-navbar-nav-ref>
-                <li data-te-nav-item-ref>
-                  <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
-                    href="#!"
-                    data-te-nav-link-ref
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                    >Home</a
-                  >
-                </li>
-                <li data-te-nav-item-ref>
-                  <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
-                    href="#!"
-                    data-te-nav-link-ref
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                    >Features</a
-                  >
-                </li>
-                <li data-te-nav-item-ref>
-                  <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
-                    href="#!"
-                    data-te-nav-link-ref
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                    >Pricing</a
-                  >
-                </li>
-                <li data-te-nav-item-ref>
-                  <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
-                    href="#!"
-                    data-te-nav-link-ref
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                    >About</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <!-- Navbar -->
-
-        <!-- Jumbotron -->
-        <div class="bg-neutral-100 p-12 text-center text-neutral-700">
-          <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
-          <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
-          <button
-            type="button"
-            class="mb-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+            class="mb-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
             data-te-ripple-init
             data-te-ripple-color="light">
             Call to action
           </button>
         </div>
         <!-- Jumbotron -->
-      </header>
 
-      <br />
-      <br />
-      <br />
-
-      <!-- Demo -->
-
-      <section
-        class="w-100 text-center"
-        style="overflow-y: scroll; height: 400px">
-        <!-- Warning! Only for the demo purpose, we use sticky-top instead of the fixed-top class, because when using fixed-top in the demo the navbar will stick to the window instead of the demo box. That's why we also remove <header> tags from the demo-->
-
-        <!-- Navbar -->
-        <nav
-          class="sticky top-0 z-10 flex w-full items-center justify-between bg-white py-2 shadow-lg md:flex-wrap md:justify-start"
-          data-te-navbar-ref>
-          <div class="px-6">
-            <button
-              class="border-0 bg-transparent px-2 py-3 text-xl leading-none text-neutral-600 transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:hidden"
-              type="button"
-              data-te-collapse-init
-              data-te-target="#navbarSupportedContentE"
-              aria-controls="navbarSupportedContentE"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="[&>svg]:w-5">
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512">
-                  <path
-                    fill="currentColor"
-                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
-                </svg>
-              </span>
-            </button>
-            <div
-              class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-              id="navbarSupportedContentE"
-              data-te-collapse-item>
-              <ul
-                class="mr-auto flex flex-col md:flex-row"
-                data-te-navbar-nav-ref>
-                <li data-te-nav-item-ref>
-                  <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
-                    href="#!"
-                    data-te-nav-link-ref
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                    >Home</a
-                  >
-                </li>
-                <li data-te-nav-item-ref>
-                  <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
-                    href="#!"
-                    data-te-nav-link-ref
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                    >Features</a
-                  >
-                </li>
-                <li data-te-nav-item-ref>
-                  <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
-                    href="#!"
-                    data-te-nav-link-ref
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                    >Pricing</a
-                  >
-                </li>
-                <li data-te-nav-item-ref>
-                  <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
-                    href="#!"
-                    data-te-nav-link-ref
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                    >About</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <!-- Navbar -->
-
-        <!-- Background image -->
-        <div
-          class="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
-          style="
-            background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-            height: 400px;
-          ">
-          <div
-            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-            style="background-color: rgba(0, 0, 0, 0.6)">
-            <div class="flex h-full items-center justify-center">
-              <div class="text-white">
-                <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
-                <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
-                <a
-                  class="mb-1 inline-block rounded border-2 border-neutral-200 px-7 py-3 text-sm font-medium uppercase leading-snug text-neutral-200 transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
-                  href="#!"
-                  role="button"
-                  data-te-ripple-init
-                  data-te-ripple-color="light"
-                  >Call to action</a
-                >
-              </div>
-            </div>
-          </div>
+        <div class="text-surface dark:text-white">
+          <p class="my-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
         </div>
-        <!-- Background image -->
-
-        <p class="my-4 text-neutral-700">Scroll down</p>
-        <p class="mb-4 text-neutral-700">Scroll down</p>
-        <p class="mb-4 text-neutral-700">Scroll down</p>
-        <p class="mb-4 text-neutral-700">Scroll down</p>
-        <p class="mb-4 text-neutral-700">Scroll down</p>
-        <p class="mb-4 text-neutral-700">Scroll down</p>
-        <p class="mb-4 text-neutral-700">Scroll down</p>
-        <p class="mb-4 text-neutral-700">Scroll down</p>
       </section>
 
-      <!-- Prisma -->
+      <br />
+      <br />
+      <br />
 
-      <header>
-        <!-- Navbar -->
+      <h3 class="mb-4 text-3xl font-medium leading-tight text-red-600">
+        Fixed navbar with background image
+      </h3>
+
+      <section class="w-100" style="overflow-y: scroll; height: 400px">
+        <!-- Warning! Only for the demo purpose, we use sticky instead of the fixed class, because when using fixed-top in the demo the navbar will stick to the window instead of the demo box. That's why we also remove <header> tags from the demo-->
+
+        <!--Navbar -->
         <nav
-          class="fixed left-0 right-0 top-0 z-10 flex w-full items-center justify-between bg-white py-2 shadow-lg md:flex-wrap md:justify-start"
+          class="shadow-dark-mild sticky top-0 z-10 flex w-full items-center justify-between bg-white py-2 dark:bg-body-dark lg:flex-wrap lg:justify-start lg:py-4"
           data-te-navbar-ref>
-          <div class="px-6">
-            <button
-              class="border-0 bg-transparent px-2 py-3 text-xl leading-none text-neutral-600 transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:hidden"
-              type="button"
-              data-te-collapse-init
-              data-te-target="#navbarSupportedContentM"
-              aria-controls="navbarSupportedContentM"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="[&>svg]:w-5">
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512">
-                  <path
-                    fill="currentColor"
-                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
-                </svg>
-              </span>
-            </button>
+          <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div class="flex items-center">
+              <!-- Hamburger menu button -->
+              <button
+                class="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+                type="button"
+                data-te-collapse-init
+                data-te-target="#navbarSupportedContent5"
+                aria-controls="navbarSupportedContent5"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- Hamburger menu icon -->
+                <span
+                  class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <!-- Navigation links -->
             <div
-              class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-              id="navbarSupportedContentM"
+              class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
+              id="navbarSupportedContent5"
               data-te-collapse-item>
               <ul
-                class="mr-auto flex flex-col md:flex-row"
+                class="mr-auto flex flex-col lg:flex-row"
                 data-te-navbar-nav-ref>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -828,9 +665,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                     >Home</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -838,9 +675,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                     >Features</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -848,9 +685,9 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
                     >Pricing</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block text-neutral-600 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -866,32 +703,37 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
 
         <!-- Background image -->
         <div
-          class="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
-          style="
-            background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-            height: 400px;
-          ">
+          class="relative h-[350px] overflow-hidden bg-[url('https://tecdn.b-cdn.net/img/new/slides/041.webp')] bg-cover bg-[50%] bg-no-repeat">
           <div
-            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-            style="background-color: rgba(0, 0, 0, 0.6)">
+            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
             <div class="flex h-full items-center justify-center">
-              <div class="text-white">
-                <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
-                <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
-                <a
-                  class="mb-1 inline-block rounded border-2 border-neutral-200 px-7 py-3 text-sm font-medium uppercase leading-snug text-neutral-200 transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
-                  href="#!"
-                  role="button"
+              <div class="px-6 text-center text-white md:px-12">
+                <h1 class="mb-6 text-5xl font-bold">Heading</h1>
+                <h3 class="mb-8 text-3xl font-bold">Subeading</h3>
+                <button
+                  type="button"
+                  class="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
                   data-te-ripple-init
-                  data-te-ripple-color="light"
-                  >Call to action</a
-                >
+                  data-te-ripple-color="light">
+                  Call to action
+                </button>
               </div>
             </div>
           </div>
         </div>
         <!-- Background image -->
-      </header>
+
+        <div class="text-center text-surface dark:text-white">
+          <p class="my-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+        </div>
+      </section>
 
       <br />
       <br />

@@ -35,14 +35,13 @@ menu:
   {{< twsnippet/demo id="example1">}}
   <!-- Jumbotron -->
   <div
-    class="rounded-lg bg-neutral-100 p-6 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
+    class="rounded-lg bg-white p-6 text-surface shadow-lg dark:bg-neutral-700 dark:text-white dark:shadow-black/30">
     <h2 class="mb-5 text-3xl font-semibold">Hello world!</h2>
     <p>
       This is a simple hero unit, a simple jumbotron-style component for calling
       extra attention to featured content or information.
     </p>
-    <hr
-      class="my-6 h-0.5 border-t-0 bg-neutral-200 opacity-100 dark:opacity-30" />
+    <hr class="my-6 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10" />
     <p class="mb-4">
       It uses utility classes for typography and spacing to space content out
       within the larger container.
@@ -51,7 +50,7 @@ menu:
       type="button"
       data-te-ripple-init
       data-te-ripple-color="light"
-      class="rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+      class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
       Learn more
     </button>
   </div>
@@ -65,14 +64,13 @@ menu:
       {{< twsnippet/code active=true lang="HTML" >}}
       <!-- Jumbotron -->
       <div
-        class="rounded-lg bg-neutral-100 p-6 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
+        class="rounded-lg bg-white p-6 text-surface shadow-lg dark:bg-neutral-700 dark:text-white dark:shadow-black/30">
         <h2 class="mb-5 text-3xl font-semibold">Hello world!</h2>
         <p>
           This is a simple hero unit, a simple jumbotron-style component for
           calling extra attention to featured content or information.
         </p>
-        <hr
-          class="my-6 h-0.5 border-t-0 bg-neutral-200 opacity-100 dark:opacity-30" />
+        <hr class="my-6 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10" />
         <p class="mb-4">
           It uses utility classes for typography and spacing to space content
           out within the larger container.
@@ -81,7 +79,7 @@ menu:
           type="button"
           data-te-ripple-init
           data-te-ripple-color="light"
-          class="rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+          class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
           Learn more
         </button>
       </div>
@@ -388,33 +386,26 @@ menu:
     image in the background. To provide a proper contrast it's highly
     recommended to use a
     <a
-      href="/docs/standard/components/mask/"
+      href="/docs/standard/content-styles/mask/"
       class="text-primary dark:text-primary-400"
       >mask</a
     >.
-  </p>
-
-  <p class="mb-3">
-    Use <code>.background-image: url('image_address')</code> within the
-    stylesheet.
   </p>
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example2">}}
   <!-- Jumbotron -->
   <div
-    class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
-    style="background-image: url('https://tecdn.b-cdn.net/img/new/slides/041.webp'); height: 400px">
+    class="relative h-[400px] overflow-hidden rounded-lg bg-[url('https://tecdn.b-cdn.net/img/new/slides/041.webp')] bg-cover bg-no-repeat p-12 text-center text-white">
     <div
-      class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-      style="background-color: rgba(0, 0, 0, 0.6)">
+      class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
       <div class="flex h-full items-center justify-center">
         <div class="text-white">
           <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
           <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
           <button
             type="button"
-            class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+            class="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
             data-te-ripple-init
             data-te-ripple-color="light">
             Call to action
@@ -433,18 +424,16 @@ menu:
       {{< twsnippet/code active=true lang="HTML" >}}
       <!-- Jumbotron -->
       <div
-        class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
-        style="background-image: url('https://tecdn.b-cdn.net/img/new/slides/041.webp'); height: 400px">
+        class="relative h-[400px] overflow-hidden rounded-lg bg-[url('https://tecdn.b-cdn.net/img/new/slides/041.webp')] bg-cover bg-no-repeat p-12 text-center text-white">
         <div
-          class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-          style="background-color: rgba(0, 0, 0, 0.6)">
+          class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
           <div class="flex h-full items-center justify-center">
             <div class="text-white">
               <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
               <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
               <button
                 type="button"
-                class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                class="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
                 data-te-ripple-init
                 data-te-ripple-color="light">
                 Call to action
@@ -482,47 +471,61 @@ menu:
   </h2>
 
   <!-- Description -->
-  <p class="mb-3"></p>
+  <p class="mb-3">
+    Since jumbotron is usually the first element of the page, it may be a good
+    idea to combine your jumbotron with a
+    <a
+      class="text-primary dark:text-primary-400"
+      href="/docs/standard/components/jumbotron/"
+      >navbar</a
+    >.
+  </p>
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example3">}}
   <header>
-    <!-- Navbar -->
+    <!-- Navigation bar -->
     <nav
-      class="relative flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start"
+      class="shadow-dark-mild relative flex w-full items-center justify-between bg-white py-2 dark:bg-body-dark lg:flex-wrap lg:justify-start lg:py-4"
       data-te-navbar-ref>
-      <div class="px-6">
-        <button
-          class="border-0 bg-transparent px-2 py-3 text-xl leading-none md:hidden"
-          type="button"
-          data-te-collapse-init
-          data-te-target="#navbarSupportedContentX"
-          aria-controls="navbarSupportedContentX"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="[&>svg]:w-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-6 w-6">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </span>
-        </button>
+      <div class="flex w-full flex-wrap items-center justify-between px-3">
+        <div class="flex items-center">
+          <!-- Hamburger menu button -->
+          <button
+            class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+            type="button"
+            data-te-collapse-init
+            data-te-target="#navbarSupportedContentY"
+            aria-controls="navbarSupportedContentY"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <!-- Hamburger menu icon -->
+            <span
+              class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        <!-- Navigation links -->
         <div
-          class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-          id="navbarSupportedContentX"
+          class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
+          id="navbarSupportedContentY"
           data-te-collapse-item>
-          <ul class="mr-auto flex flex-col md:flex-row" data-te-navbar-nav-ref>
-            <li data-te-nav-item-ref>
+          <ul class="mr-auto flex flex-col lg:flex-row" data-te-navbar-nav-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -530,9 +533,9 @@ menu:
                 >Home</a
               >
             </li>
-            <li data-te-nav-item-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -540,9 +543,9 @@ menu:
                 >Features</a
               >
             </li>
-            <li data-te-nav-item-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -550,9 +553,9 @@ menu:
                 >Pricing</a
               >
             </li>
-            <li data-te-nav-item-ref>
+            <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary "
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -564,22 +567,21 @@ menu:
         </div>
       </div>
     </nav>
-    <!-- Navbar -->
 
-    <!-- Jumbotron -->
+    <!-- Hero section with background image, heading, subheading and button -->
     <div
-      class="bg-neutral-100 p-12 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
-      <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
-      <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
-      <button
-        type="button"
+      class="bg-zinc-50 px-6 py-20 text-center text-surface dark:bg-neutral-700 dark:text-white">
+      <h1 class="mb-6 text-5xl font-bold">Heading</h1>
+      <h3 class="mb-8 text-3xl font-bold">Subeading</h3>
+      <a
+        class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
         data-te-ripple-init
         data-te-ripple-color="light"
-        class="rounded bg-primary px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-        Call to action
-      </button>
+        href="#!"
+        role="button"
+        >Call to action</a
+      >
     </div>
-    <!-- Jumbotron -->
   </header>
   {{< /twsnippet/demo >}}
 
@@ -589,48 +591,50 @@ menu:
       {{< twsnippet/wrapper "HTML,javascript" >}}
       {{< twsnippet/code active=true lang="html" >}}
       <header>
-        <!-- Navbar -->
+        <!-- Navigation bar -->
         <nav
-          class="relative flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start"
+          class="shadow-dark-mild relative flex w-full items-center justify-between bg-white py-2 dark:bg-body-dark lg:flex-wrap lg:justify-start lg:py-4"
           data-te-navbar-ref>
-          <div class="px-6">
-            <!-- Hamburger menu button -->
-            <button
-              class="border-0 bg-transparent px-2 py-3 text-xl leading-none md:hidden"
-              type="button"
-              data-te-collapse-init
-              data-te-target="#navbarSupportedContentX"
-              aria-controls="navbarSupportedContentX"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <!-- Hamburger menu icon -->
-              <span class="[&>svg]:w-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-              </span>
-            </button>
+          <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div class="flex items-center">
+              <!-- Hamburger menu button -->
+              <button
+                class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                type="button"
+                data-te-collapse-init
+                data-te-target="#navbarSupportedContentY"
+                aria-controls="navbarSupportedContentY"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- Hamburger menu icon -->
+                <span
+                  class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </span>
+              </button>
+            </div>
 
             <!-- Navigation links -->
             <div
-              class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-              id="navbarSupportedContentX"
+              class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
+              id="navbarSupportedContentY"
               data-te-collapse-item>
               <ul
-                class="mr-auto flex flex-col md:flex-row"
+                class="mr-auto flex flex-col lg:flex-row"
                 data-te-navbar-nav-ref>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -638,9 +642,9 @@ menu:
                     >Home</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -648,9 +652,9 @@ menu:
                     >Features</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -658,9 +662,9 @@ menu:
                     >Pricing</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary "
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -672,22 +676,21 @@ menu:
             </div>
           </div>
         </nav>
-        <!-- Navbar -->
 
-        <!-- Jumbotron -->
+        <!-- Hero section with background image, heading, subheading and button -->
         <div
-          class="bg-neutral-100 p-12 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
-          <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
-          <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
-          <button
-            type="button"
+          class="bg-zinc-50 px-6 py-20 text-center text-surface dark:bg-neutral-700 dark:text-white">
+          <h1 class="mb-6 text-5xl font-bold">Heading</h1>
+          <h3 class="mb-8 text-3xl font-bold">Subeading</h3>
+          <a
+            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
             data-te-ripple-init
             data-te-ripple-color="light"
-            class="rounded bg-primary px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-            Call to action
-          </button>
+            href="#!"
+            role="button"
+            >Call to action</a
+          >
         </div>
-        <!-- Jumbotron -->
       </header>
       {{< /twsnippet/code >}}
       <!-- prettier-ignore -->
@@ -718,47 +721,71 @@ menu:
   </h2>
 
   <!-- Description -->
-  <p class="mb-3"></p>
+  <p class="mb-3">
+    Header with background image might help to outstand your call to action
+    elements by catching the eyes to some beautiful image in the background.
+  </p>
+
+  <p class="mb-3">
+    To provide a proper contrast it's highly recommended to use a
+    <a
+      href="/docs/standard/content-styles/mask/"
+      class="text-primary dark:text-primary-400"
+      >mask</a
+    >.
+  </p>
+
+  <p class="mb-3">
+    <strong>You also must set the height</strong> of the background image,
+    otherwise, the component will collapse. In the example below, we set the
+    height to <code>400px</code>.
+  </p>
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example4" title_id="section-v-4" >}}
   <header>
-    <!-- Navbar -->
+    <!-- Navigation bar -->
     <nav
-      class="relative flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start"
+      class="shadow-dark-mild relative flex w-full items-center justify-between bg-white py-2 dark:bg-body-dark lg:flex-wrap lg:justify-start lg:py-4"
       data-te-navbar-ref>
-      <div class="px-6">
-        <button
-          class="border-0 bg-transparent px-2 py-3 text-xl leading-none md:hidden"
-          type="button"
-          data-te-collapse-init
-          data-te-target="#navbarSupportedContentY"
-          aria-controls="navbarSupportedContentY"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="[&>svg]:w-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-6 w-6">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </span>
-        </button>
+      <div class="flex w-full flex-wrap items-center justify-between px-3">
+        <div class="flex items-center">
+          <!-- Hamburger menu button -->
+          <button
+            class="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+            type="button"
+            data-te-collapse-init
+            data-te-target="#navbarSupportedContentX"
+            aria-controls="navbarSupportedContentX"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <!-- Hamburger menu icon -->
+            <span
+              class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        <!-- Navigation links -->
         <div
-          class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-          id="navbarSupportedContentY"
+          class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
+          id="navbarSupportedContentX"
           data-te-collapse-item>
-          <ul class="mr-auto flex flex-col md:flex-row" data-te-navbar-nav-ref>
-            <li data-te-nav-item-ref>
+          <ul class="mr-auto flex flex-col lg:flex-row" data-te-navbar-nav-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -766,9 +793,9 @@ menu:
                 >Home</a
               >
             </li>
-            <li data-te-nav-item-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -776,9 +803,9 @@ menu:
                 >Features</a
               >
             </li>
-            <li data-te-nav-item-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -786,9 +813,9 @@ menu:
                 >Pricing</a
               >
             </li>
-            <li data-te-nav-item-ref>
+            <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary "
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -800,25 +827,19 @@ menu:
         </div>
       </div>
     </nav>
-    <!-- Navbar -->
 
-    <!-- Background image -->
+    <!-- Hero section with background image, heading, subheading and button -->
     <div
-      class="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
-      style="
-        background-image: url('https://tecdn.b-cdn.net/img/new/slides/041.webp');
-        height: 400px;
-      ">
+      class="relative h-[350px] overflow-hidden bg-[url('https://tecdn.b-cdn.net/img/new/slides/041.webp')] bg-cover bg-[50%] bg-no-repeat">
       <div
-        class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-        style="background-color: rgba(0, 0, 0, 0.6)">
+        class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
         <div class="flex h-full items-center justify-center">
-          <div class="text-white">
-            <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
-            <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
+          <div class="px-6 text-center text-white md:px-12">
+            <h1 class="mb-6 text-5xl font-bold">Heading</h1>
+            <h3 class="mb-8 text-3xl font-bold">Subeading</h3>
             <button
               type="button"
-              class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+              class="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
               data-te-ripple-init
               data-te-ripple-color="light">
               Call to action
@@ -827,7 +848,6 @@ menu:
         </div>
       </div>
     </div>
-    <!-- Background image -->
   </header>
   {{< /twsnippet/demo >}}
 
@@ -837,48 +857,50 @@ menu:
       {{< twsnippet/wrapper "HTML,javascript" >}}
       {{< twsnippet/code active=true lang="html" >}}
       <header>
-        <!-- Navbar -->
+        <!-- Navigation bar -->
         <nav
-          class="relative flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start"
+          class="shadow-dark-mild relative flex w-full items-center justify-between bg-white py-2 dark:bg-body-dark lg:flex-wrap lg:justify-start lg:py-4"
           data-te-navbar-ref>
-          <div class="px-6">
-            <!-- Hamburger menu button -->
-            <button
-              class="border-0 bg-transparent px-2 py-3 text-xl leading-none md:hidden"
-              type="button"
-              data-te-collapse-init
-              data-te-target="#navbarSupportedContentY"
-              aria-controls="navbarSupportedContentY"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <!-- Hamburger menu icon -->
-              <span class="[&>svg]:w-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-              </span>
-            </button>
+          <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div class="flex items-center">
+              <!-- Hamburger menu button -->
+              <button
+                class="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+                type="button"
+                data-te-collapse-init
+                data-te-target="#navbarSupportedContentX"
+                aria-controls="navbarSupportedContentX"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- Hamburger menu icon -->
+                <span
+                  class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </span>
+              </button>
+            </div>
 
             <!-- Navigation links -->
             <div
-              class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-              id="navbarSupportedContentY"
+              class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
+              id="navbarSupportedContentX"
               data-te-collapse-item>
               <ul
-                class="mr-auto flex flex-col md:flex-row"
+                class="mr-auto flex flex-col lg:flex-row"
                 data-te-navbar-nav-ref>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -886,9 +908,9 @@ menu:
                     >Home</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -896,9 +918,9 @@ menu:
                     >Features</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -906,9 +928,9 @@ menu:
                     >Pricing</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary "
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -920,25 +942,19 @@ menu:
             </div>
           </div>
         </nav>
-        <!-- Navbar -->
 
         <!-- Hero section with background image, heading, subheading and button -->
         <div
-          class="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
-          style="
-            background-image: url('https://tecdn.b-cdn.net/img/new/slides/041.webp');
-            height: 400px;
-          ">
+          class="relative h-[350px] overflow-hidden bg-[url('https://tecdn.b-cdn.net/img/new/slides/041.webp')] bg-cover bg-[50%] bg-no-repeat">
           <div
-            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-            style="background-color: rgba(0, 0, 0, 0.6)">
+            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
             <div class="flex h-full items-center justify-center">
-              <div class="text-white">
-                <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
-                <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
+              <div class="px-6 text-center text-white md:px-12">
+                <h1 class="mb-6 text-5xl font-bold">Heading</h1>
+                <h3 class="mb-8 text-3xl font-bold">Subeading</h3>
                 <button
                   type="button"
-                  class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                  class="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
                   data-te-ripple-init
                   data-te-ripple-color="light">
                   Call to action
@@ -977,50 +993,53 @@ menu:
   </h2>
 
   <!-- Description -->
-  <p class="mb-3">
-    To get full page jumbotron, you have to add the .w-full class and a
-    .container or .container-fluid inside it.
-  </p>
+  <p class="mb-3">Here is an example of a full page navbar.</p>
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example5">}}
   <header>
-    <!-- Navbar -->
+    <!--Navbar -->
     <nav
-      class="relative flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200 md:flex-wrap md:justify-start"
+      class="shadow-dark-mild relative flex w-full items-center justify-between bg-white py-2 dark:bg-body-dark lg:flex-wrap lg:justify-start lg:py-4"
       data-te-navbar-ref>
-      <div class="px-6">
-        <button
-          class="border-0 bg-transparent px-2 py-3 text-xl leading-none md:hidden"
-          type="button"
-          data-te-collapse-init
-          data-te-target="#navbarSupportedContentO"
-          aria-controls="navbarSupportedContentO"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="[&>svg]:w-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-6 w-6">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </span>
-        </button>
+      <div class="flex w-full flex-wrap items-center justify-between px-3">
+        <div class="flex items-center">
+          <!-- Hamburger menu button -->
+          <button
+            class="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+            type="button"
+            data-te-collapse-init
+            data-te-target="#navbarSupportedContent3"
+            aria-controls="navbarSupportedContent3"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <!-- Hamburger menu icon -->
+            <span
+              class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        <!-- Navigation links -->
         <div
-          class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-          id="navbarSupportedContentO"
+          class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
+          id="navbarSupportedContent3"
           data-te-collapse-item>
-          <ul class="mr-auto flex flex-col md:flex-row" data-te-navbar-nav-ref>
-            <li data-te-nav-item-ref>
+          <ul class="mr-auto flex flex-col lg:flex-row" data-te-navbar-nav-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -1028,9 +1047,9 @@ menu:
                 >Home</a
               >
             </li>
-            <li data-te-nav-item-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -1038,9 +1057,9 @@ menu:
                 >Features</a
               >
             </li>
-            <li data-te-nav-item-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -1048,9 +1067,9 @@ menu:
                 >Pricing</a
               >
             </li>
-            <li data-te-nav-item-ref>
+            <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary "
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -1066,11 +1085,9 @@ menu:
 
     <!-- Background image -->
     <div
-      class="relative h-96 overflow-hidden bg-cover bg-no-repeat p-12 text-center lg:h-screen"
-      style="background-image: url('https://tecdn.b-cdn.net/img/Photos/Inne/ostia.jpg')">
+      class="relative h-96 overflow-hidden bg-[url('https://tecdn.b-cdn.net/img/Photos/Inne/ostia.jpg')] bg-cover bg-no-repeat p-12 text-center lg:h-screen">
       <div
-        class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-        style="background-color: rgba(2, 56, 53, 0.7)">
+        class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-teal-950/70 bg-fixed">
         <div class="flex h-full items-center justify-center">
           <div class="text-white">
             <h2 class="mb-4 text-4xl font-semibold">
@@ -1079,13 +1096,14 @@ menu:
             <h4 class="mb-6 text-xl font-semibold">
               It is a coastal town in Italy that is part of Rome
             </h4>
-            <button
-              type="button"
-              class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+            <a
+              class="mb-1 inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
+              href="#!"
+              role="button"
               data-te-ripple-init
-              data-te-ripple-color="light">
-              Learn more about Rome
-            </button>
+              data-te-ripple-color="light"
+              >Learn more about Rome</a
+            >
           </div>
         </div>
       </div>
@@ -1100,48 +1118,50 @@ menu:
       {{< twsnippet/wrapper "HTML,javascript" >}}
       {{< twsnippet/code active=true lang="html" >}}
       <header>
-        <!-- Navbar -->
+        <!--Navbar -->
         <nav
-          class="relative flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200 md:flex-wrap md:justify-start"
+          class="shadow-dark-mild relative flex w-full items-center justify-between bg-white py-2 dark:bg-body-dark lg:flex-wrap lg:justify-start lg:py-4"
           data-te-navbar-ref>
-          <div class="px-6">
-            <!-- Hamburger menu button -->
-            <button
-              class="border-0 bg-transparent px-2 py-3 text-xl leading-none md:hidden"
-              type="button"
-              data-te-collapse-init
-              data-te-target="#navbarSupportedContentO"
-              aria-controls="navbarSupportedContentO"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <!-- Hamburger menu icon -->
-              <span class="[&>svg]:w-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-              </span>
-            </button>
+          <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div class="flex items-center">
+              <!-- Hamburger menu button -->
+              <button
+                class="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+                type="button"
+                data-te-collapse-init
+                data-te-target="#navbarSupportedContent3"
+                aria-controls="navbarSupportedContent3"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- Hamburger menu icon -->
+                <span
+                  class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </span>
+              </button>
+            </div>
 
             <!-- Navigation links -->
             <div
-              class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-              id="navbarSupportedContentO"
+              class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
+              id="navbarSupportedContent3"
               data-te-collapse-item>
               <ul
-                class="mr-auto flex flex-col md:flex-row"
+                class="mr-auto flex flex-col lg:flex-row"
                 data-te-navbar-nav-ref>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -1149,9 +1169,9 @@ menu:
                     >Home</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -1159,9 +1179,9 @@ menu:
                     >Features</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -1169,9 +1189,9 @@ menu:
                     >Pricing</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary "
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -1183,14 +1203,13 @@ menu:
             </div>
           </div>
         </nav>
+        <!-- Navbar -->
 
-        <!-- Hero section with background image, heading, subheading and button -->
+        <!-- Background image -->
         <div
-          class="relative h-96 overflow-hidden bg-cover bg-no-repeat p-12 text-center lg:h-screen"
-          style="background-image: url('https://tecdn.b-cdn.net/img/Photos/Inne/ostia.jpg')">
+          class="relative h-96 overflow-hidden bg-[url('https://tecdn.b-cdn.net/img/Photos/Inne/ostia.jpg')] bg-cover bg-no-repeat p-12 text-center lg:h-screen">
           <div
-            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-            style="background-color: rgba(2, 56, 53, 0.7)">
+            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-teal-950/70 bg-fixed">
             <div class="flex h-full items-center justify-center">
               <div class="text-white">
                 <h2 class="mb-4 text-4xl font-semibold">
@@ -1199,17 +1218,19 @@ menu:
                 <h4 class="mb-6 text-xl font-semibold">
                   It is a coastal town in Italy that is part of Rome
                 </h4>
-                <button
-                  type="button"
-                  class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                <a
+                  class="mb-1 inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
+                  href="#!"
+                  role="button"
                   data-te-ripple-init
-                  data-te-ripple-color="light">
-                  Learn more about Rome
-                </button>
+                  data-te-ripple-color="light"
+                  >Learn more about Rome</a
+                >
               </div>
             </div>
           </div>
         </div>
+        <!-- Background image -->
       </header>
       {{< /twsnippet/code >}}
       <!-- prettier-ignore -->
@@ -1242,55 +1263,57 @@ menu:
   <!-- Description -->
   <p class="mb-3">
     Stick the navbar to the top of the window by using
-    <code>fixed top-0 right-0 left-0</code> classes. Thanks to this whenever you
-    scroll the page the navbar will be always visible
+    <code>fixed top-0</code> classes. Thanks to this whenever you scroll the
+    page the navbar will be always visible.
   </p>
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example6">}}
   <section class="w-100 text-center" style="overflow-y: scroll; height: 400px">
-    <!-- Warning! Only for the demo purpose, we use sticky-top instead of the fixed-top class, because when using fixed-top in the demo the navbar will stick to the window instead of the demo box. That's why we also remove <header> tags from the demo-->
+    <!-- Warning! Only for the demo purpose, we use sticky instead of the fixed class, because when using fixed-top in the demo the navbar will stick to the window instead of the demo box. That's why we also remove <header> tags from the demo-->
 
-    <!-- Navbar -->
+    <!--Navbar -->
     <nav
-      class="sticky top-0 flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start"
+      class="shadow-dark-mild sticky top-0 z-10 flex w-full items-center justify-between bg-white py-2 dark:bg-body-dark lg:flex-wrap lg:justify-start lg:py-4"
       data-te-navbar-ref>
-      <div class="px-6">
-        <!-- Hamburger menu button -->
-        <button
-          class="border-0 bg-transparent px-2 py-3 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:hidden"
-          type="button"
-          data-te-collapse-init
-          data-te-target="#navbarSupportedContentU"
-          aria-controls="navbarSupportedContentU"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <!-- Hamburger menu icon -->
-          <span class="[&>svg]:w-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-6 w-6">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </span>
-        </button>
+      <div class="flex w-full flex-wrap items-center justify-between px-3">
+        <div class="flex items-center">
+          <!-- Hamburger menu button -->
+          <button
+            class="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+            type="button"
+            data-te-collapse-init
+            data-te-target="#navbarSupportedContent4"
+            aria-controls="navbarSupportedContent4"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <!-- Hamburger menu icon -->
+            <span
+              class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </span>
+          </button>
+        </div>
 
         <!-- Navigation links -->
         <div
-          class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-          id="navbarSupportedContentU"
+          class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
+          id="navbarSupportedContent4"
           data-te-collapse-item>
-          <ul class="mr-auto flex flex-col md:flex-row" data-te-navbar-nav-ref>
-            <li data-te-nav-item-ref>
+          <ul class="mr-auto flex flex-col lg:flex-row" data-te-navbar-nav-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -1298,9 +1321,9 @@ menu:
                 >Home</a
               >
             </li>
-            <li data-te-nav-item-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -1308,9 +1331,9 @@ menu:
                 >Features</a
               >
             </li>
-            <li data-te-nav-item-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -1318,9 +1341,9 @@ menu:
                 >Pricing</a
               >
             </li>
-            <li data-te-nav-item-ref>
+            <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary "
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -1334,22 +1357,22 @@ menu:
     </nav>
     <!-- Navbar -->
 
-    <!-- Hero section with background image, heading, subheading and button -->
+    <!-- Jumbotron -->
     <div
-      class="bg-neutral-100 p-12 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
+      class="bg-zinc-50 p-12 text-center text-surface dark:bg-neutral-700 dark:text-white">
       <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
       <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
       <button
         type="button"
+        class="mb-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
         data-te-ripple-init
-        data-te-ripple-color="light"
-        class="rounded bg-primary px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+        data-te-ripple-color="light">
         Call to action
       </button>
     </div>
+    <!-- Jumbotron -->
 
-    <!--Content-->
-    <div class="text-neutral-700 dark:text-neutral-200">
+    <div class="text-surface dark:text-white">
       <p class="my-4">Scroll down</p>
       <p class="mb-4">Scroll down</p>
       <p class="mb-4">Scroll down</p>
@@ -1368,48 +1391,50 @@ menu:
       {{< twsnippet/wrapper "HTML,javascript" >}}
       {{< twsnippet/code active=true lang="html" >}}
       <header>
-        <!-- Navbar -->
+        <!--Navbar -->
         <nav
-          class="sticky top-0 flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start"
+          class="shadow-dark-mild fixed top-0 z-10 flex w-full items-center justify-between bg-white py-2 dark:bg-body-dark lg:flex-wrap lg:justify-start lg:py-4"
           data-te-navbar-ref>
-          <div class="px-6">
-            <!-- Hamburger menu button -->
-            <button
-              class="border-0 bg-transparent px-2 py-3 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:hidden"
-              type="button"
-              data-te-collapse-init
-              data-te-target="#navbarSupportedContentU"
-              aria-controls="navbarSupportedContentU"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <!-- Hamburger menu icon -->
-              <span class="[&>svg]:w-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-              </span>
-            </button>
+          <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div class="flex items-center">
+              <!-- Hamburger menu button -->
+              <button
+                class="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+                type="button"
+                data-te-collapse-init
+                data-te-target="#navbarSupportedContent4"
+                aria-controls="navbarSupportedContent4"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- Hamburger menu icon -->
+                <span
+                  class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </span>
+              </button>
+            </div>
 
             <!-- Navigation links -->
             <div
-              class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-              id="navbarSupportedContentU"
+              class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
+              id="navbarSupportedContent4"
               data-te-collapse-item>
               <ul
-                class="mr-auto flex flex-col md:flex-row"
+                class="mr-auto flex flex-col lg:flex-row"
                 data-te-navbar-nav-ref>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -1417,9 +1442,9 @@ menu:
                     >Home</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -1427,9 +1452,9 @@ menu:
                     >Features</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -1437,9 +1462,9 @@ menu:
                     >Pricing</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary "
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -1453,22 +1478,22 @@ menu:
         </nav>
         <!-- Navbar -->
 
-        <!-- Hero section with heading, subheading and button -->
+        <!-- Jumbotron -->
         <div
-          class="bg-neutral-100 p-12 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
+          class="bg-zinc-50 p-12 text-center text-surface dark:bg-neutral-700 dark:text-white">
           <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
           <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
           <button
             type="button"
+            class="mb-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
             data-te-ripple-init
-            data-te-ripple-color="light"
-            class="rounded bg-primary px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+            data-te-ripple-color="light">
             Call to action
           </button>
         </div>
+        <!-- Jumbotron -->
 
-        <!--Content-->
-        <div class="text-neutral-700 dark:text-neutral-200">
+        <div class="text-surface dark:text-white">
           <p class="my-4">Scroll down</p>
           <p class="mb-4">Scroll down</p>
           <p class="mb-4">Scroll down</p>
@@ -1512,45 +1537,51 @@ menu:
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example7">}}
-  <section class="w-100 text-center" style="overflow-y: scroll; height: 400px">
-    <!-- Warning! Only for the demo purpose, we use sticky-top instead of the fixed-top class, because when using fixed-top in the demo the navbar will stick to the window instead of the demo box. That's why we also remove <header> tags from the demo-->
+  <section class="w-100" style="overflow-y: scroll; height: 400px">
+    <!-- Warning! Only for the demo purpose, we use sticky instead of the fixed class, because when using fixed-top in the demo the navbar will stick to the window instead of the demo box. That's why we also remove <header> tags from the demo-->
 
-    <!-- Navbar -->
+    <!--Navbar -->
     <nav
-      class="sticky top-0 z-10 flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start"
+      class="shadow-dark-mild sticky top-0 z-10 flex w-full items-center justify-between bg-white py-2 dark:bg-body-dark lg:flex-wrap lg:justify-start lg:py-4"
       data-te-navbar-ref>
-      <div class="px-6">
-        <button
-          class="border-0 bg-transparent px-2 py-3 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:hidden"
-          type="button"
-          data-te-collapse-init
-          data-te-target="#navbarSupportedContentE"
-          aria-controls="navbarSupportedContentE"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="[&>svg]:w-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-6 w-6">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </span>
-        </button>
+      <div class="flex w-full flex-wrap items-center justify-between px-3">
+        <div class="flex items-center">
+          <!-- Hamburger menu button -->
+          <button
+            class="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+            type="button"
+            data-te-collapse-init
+            data-te-target="#navbarSupportedContent5"
+            aria-controls="navbarSupportedContent5"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <!-- Hamburger menu icon -->
+            <span
+              class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        <!-- Navigation links -->
         <div
-          class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-          id="navbarSupportedContentE"
+          class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
+          id="navbarSupportedContent5"
           data-te-collapse-item>
-          <ul class="mr-auto flex flex-col md:flex-row" data-te-navbar-nav-ref>
-            <li data-te-nav-item-ref>
+          <ul class="mr-auto flex flex-col lg:flex-row" data-te-navbar-nav-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -1558,9 +1589,9 @@ menu:
                 >Home</a
               >
             </li>
-            <li data-te-nav-item-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -1568,9 +1599,9 @@ menu:
                 >Features</a
               >
             </li>
-            <li data-te-nav-item-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -1578,9 +1609,9 @@ menu:
                 >Pricing</a
               >
             </li>
-            <li data-te-nav-item-ref>
+            <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
               <a
-                class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary "
+                class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 href="#!"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -1596,21 +1627,16 @@ menu:
 
     <!-- Background image -->
     <div
-      class="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
-      style="
-        background-image: url('https://tecdn.b-cdn.net/img/new/slides/041.webp');
-        height: 400px;
-      ">
+      class="relative h-[400px] overflow-hidden bg-[url('https://tecdn.b-cdn.net/img/new/slides/041.webp')] bg-cover bg-[50%] bg-no-repeat">
       <div
-        class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-        style="background-color: rgba(0, 0, 0, 0.6)">
+        class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
         <div class="flex h-full items-center justify-center">
-          <div class="text-white">
-            <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
-            <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
+          <div class="px-6 text-center text-white md:px-12">
+            <h1 class="mb-6 text-5xl font-bold">Heading</h1>
+            <h3 class="mb-8 text-3xl font-bold">Subeading</h3>
             <button
               type="button"
-              class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+              class="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
               data-te-ripple-init
               data-te-ripple-color="light">
               Call to action
@@ -1621,7 +1647,7 @@ menu:
     </div>
     <!-- Background image -->
 
-    <div class="text-neutral-700 dark:text-neutral-200">
+    <div class="text-center text-surface dark:text-white">
       <p class="my-4">Scroll down</p>
       <p class="mb-4">Scroll down</p>
       <p class="mb-4">Scroll down</p>
@@ -1632,6 +1658,7 @@ menu:
       <p class="mb-4">Scroll down</p>
     </div>
   </section>
+
   {{< /twsnippet/demo >}}
 
 
@@ -1640,48 +1667,50 @@ menu:
       {{< twsnippet/wrapper "HTML,javascript" >}}
       {{< twsnippet/code active=true lang="html" >}}
       <header>
-        <!-- Navbar -->
+        <!--Navbar -->
         <nav
-          class="sticky top-0 z-10 flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start"
+          class="shadow-dark-mild fixed top-0 z-10 flex w-full items-center justify-between bg-white py-2 dark:bg-body-dark lg:flex-wrap lg:justify-start lg:py-4"
           data-te-navbar-ref>
-          <div class="px-6">
-            <!-- Hamburger menu button -->
-            <button
-              class="border-0 bg-transparent px-2 py-3 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:hidden"
-              type="button"
-              data-te-collapse-init
-              data-te-target="#navbarSupportedContentE"
-              aria-controls="navbarSupportedContentE"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <!-- Hamburger menu icon -->
-              <span class="[&>svg]:w-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-              </span>
-            </button>
+          <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div class="flex items-center">
+              <!-- Hamburger menu button -->
+              <button
+                class="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+                type="button"
+                data-te-collapse-init
+                data-te-target="#navbarSupportedContent5"
+                aria-controls="navbarSupportedContent5"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- Hamburger menu icon -->
+                <span
+                  class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </span>
+              </button>
+            </div>
 
             <!-- Navigation links -->
             <div
-              class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto"
-              id="navbarSupportedContentE"
+              class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
+              id="navbarSupportedContent5"
               data-te-collapse-item>
               <ul
-                class="mr-auto flex flex-col md:flex-row"
+                class="mr-auto flex flex-col lg:flex-row"
                 data-te-navbar-nav-ref>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -1689,9 +1718,9 @@ menu:
                     >Home</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -1699,9 +1728,9 @@ menu:
                     >Features</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary"
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -1709,9 +1738,9 @@ menu:
                     >Pricing</a
                   >
                 </li>
-                <li data-te-nav-item-ref>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary "
+                    class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -1723,24 +1752,20 @@ menu:
             </div>
           </div>
         </nav>
+        <!-- Navbar -->
 
-        <!-- Hero section with background image, heading, subheading and button -->
+        <!-- Background image -->
         <div
-          class="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
-          style="
-            background-image: url('https://tecdn.b-cdn.net/img/new/slides/041.webp');
-            height: 400px;
-          ">
+          class="relative h-[350px] overflow-hidden bg-[url('https://tecdn.b-cdn.net/img/new/slides/041.webp')] bg-cover bg-[50%] bg-no-repeat">
           <div
-            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-            style="background-color: rgba(0, 0, 0, 0.6)">
+            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
             <div class="flex h-full items-center justify-center">
-              <div class="text-white">
-                <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
-                <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
+              <div class="px-6 text-center text-white md:px-12">
+                <h1 class="mb-6 text-5xl font-bold">Heading</h1>
+                <h3 class="mb-8 text-3xl font-bold">Subeading</h3>
                 <button
                   type="button"
-                  class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                  class="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
                   data-te-ripple-init
                   data-te-ripple-color="light">
                   Call to action
@@ -1748,6 +1773,18 @@ menu:
               </div>
             </div>
           </div>
+        </div>
+        <!-- Background image -->
+
+        <div class="text-center text-surface dark:text-white">
+          <p class="my-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
+          <p class="mb-4">Scroll down</p>
         </div>
       </header>
       {{< /twsnippet/code >}}
