@@ -35,7 +35,7 @@ const ATTR_SELECTOR_CHIP_CLOSE = `[${ATTR_CHIP_CLOSE}]`;
 const EVENT_DELETE = "delete.te.chips";
 const EVENT_SELECT = "select.te.chip";
 
-const defaultIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>`;
+const defaultIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>`;
 
 const DefaultType = {
   text: "string",
@@ -56,7 +56,7 @@ const DefaultClasses = {
   chipElement:
     "flex justify-between items-center h-8 leading-loose py-[5px] px-3 mr-4 my-[5px] text-[13px] font-normal text-surface cursor-pointer bg-zinc-50 dark:text-white dark:bg-neutral-700 rounded-2xl transition-[opacity] duration-300 ease-linear [word-wrap: break-word] shadow-none normal-case hover:!shadow-none inline-block font-medium leading-normal text-center no-underline align-middle cursor-pointer select-none border-[.125rem] border-solid border-transparent py-1.5 px-3 text-xs rounded",
   chipCloseIcon:
-    "w-4 float-right cursor-pointer pl-2 text-[16px] dark:text-white/30 opacity-[.53] transition-all duration-200 ease-in-out hover:text-black/50 text-black/30 dark:hover:text-white/50 [&>svg]:h-3 [&>svg]:w-3",
+    "w-4 float-right cursor-pointer pl-1 text-[16px] dark:text-white/30 opacity-[.53] transition-all duration-200 ease-in-out hover:text-black/50 text-black/30 dark:hover:text-white/50 [&>svg]:h-4 [&>svg]:w-4",
 };
 
 const DefaultClassesType = {
