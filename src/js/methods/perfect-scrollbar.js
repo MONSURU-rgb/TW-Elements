@@ -76,18 +76,19 @@ const DefaultClasses = {
   railX:
     "group/x absolute bottom-0 h-[0.9375rem] hidden opacity-0 transition-[background-color,_opacity] duration-200 ease-linear motion-reduce:transition-none z-[1035] group-[&.ps--active-x]/ps:block group-hover/ps:opacity-60 group-focus/ps:opacity-60 group-[&.ps--scrolling-x]/ps:opacity-60 hover:!opacity-90 focus:!opacity-90 [&.ps--clicking]:!opacity-90 outline-none",
   railXColors:
-    "group-[&.ps--active-x]/ps:bg-transparent hover:!bg-[#eee] focus:!bg-[#eee] [&.ps--clicking]:!bg-[#eee] dark:hover:!bg-[#555] dark:focus:!bg-[#555] dark:[&.ps--clicking]:!bg-[#555]",
+    "group-[&.ps--active-x]/ps:bg-transparent hover:!bg-[#eee] focus:!bg-[#eee] [&.ps--clicking]:!bg-[#eee] dark:hover:!bg-[#9e9e9e] dark:focus:!bg-[#9e9e9e] dark:[&.ps--clicking]:!bg-[#9e9e9e]",
   railXThumb:
     "absolute bottom-0.5 rounded-md h-1.5 group-focus/ps:opacity-100 group-active/ps:opacity-100 [transition:background-color_.2s_linear,_height_.2s_ease-in-out] group-hover/x:h-[11px] group-focus/x:h-[0.6875rem] group-[&.ps--clicking]/x:bg-[#999] group-[&.ps--clicking]/x:h-[11px] outline-none",
-  railXThumbColors: "bg-[#aaa] group-hover/x:bg-[#999] group-focus/x:bg-[#999]",
+  railXThumbColors:
+    "bg-[#9e9e9e] group-hover/x:bg-[#9e9e9e] group-focus/x:bg-[#9e9e9e] group-[&.ps--clicking]/x:bg-[#9e9e9e] dark:bg-[#eee] dark:group-hover/x:bg-[#eee] dark:group-focus/x:bg-[#eee] dark:group-[&.ps--clicking]/x:bg-[#eee]",
   railY:
     "group/y absolute right-0 w-[0.9375rem] hidden opacity-0 transition-[background-color,_opacity] duration-200 ease-linear motion-reduce:transition-none z-[1035] group-[&.ps--active-y]/ps:block group-hover/ps:opacity-60 group-focus/ps:opacity-60 group-[&.ps--scrolling-y]/ps:opacity-60 hover:!opacity-90 focus:!opacity-90 [&.ps--clicking]:!opacity-90 outline-none",
   railYColors:
-    "group-[&.ps--active-y]/ps:bg-transparent hover:!bg-[#eee] focus:!bg-[#eee] [&.ps--clicking]:!bg-[#eee] dark:hover:!bg-[#555] dark:focus:!bg-[#555] dark:[&.ps--clicking]:!bg-[#555]",
+    "group-[&.ps--active-y]/ps:bg-transparent hover:!bg-[#eee] focus:!bg-[#eee] [&.ps--clicking]:!bg-[#eee] dark:hover:!bg-[#9e9e9e] dark:focus:!bg-[#9e9e9e] dark:[&.ps--clicking]:!bg-[#9e9e9e]",
   railYThumb:
     "absolute right-0.5 rounded-md w-1.5 group-focus/ps:opacity-100 group-active/ps:opacity-100 [transition:background-color_.2s_linear,_width_.2s_ease-in-out,_opacity] group-hover/y:w-[11px] group-focus/y:w-[0.6875rem] group-[&.ps--clicking]/y:w-[11px] outline-none",
   railYThumbColors:
-    "bg-[#aaa] group-hover/y:bg-[#999] group-focus/y:bg-[#999] group-[&.ps--clicking]/y:bg-[#999]",
+    "bg-[#9e9e9e] group-hover/y:bg-[#9e9e9e] group-focus/y:bg-[#9e9e9e] group-[&.ps--clicking]/y:bg-[#9e9e9e] dark:bg-[#eee] dark:group-hover/y:bg-[#eee] dark:group-focus/y:bg-[#eee] dark:group-[&.ps--clicking]/y:bg-[#eee]",
 };
 
 const DefaultClassesType = {
