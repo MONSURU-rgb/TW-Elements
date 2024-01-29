@@ -358,6 +358,42 @@
                   class="border-b dark:border-neutral-500 [&:nth-child(even)]:bg-white dark:[&:nth-child(even)]:bg-neutral-600 [&:nth-child(odd)]:bg-gray-100 dark:[&:nth-child(odd)]:bg-neutral-700">
                   <td
                     class="border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <code class="text-red-500 dark:text-red-300">offset</code>
+                  </td>
+                  <td
+                    class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
+                    Array | String | Function
+                  </td>
+                  <td
+                    class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
+                    <code class="text-red-500 dark:text-red-300">[0,1]</code>
+                  </td>
+                  <td class="px-6 py-4 max-lg:whitespace-nowrap">
+                    <p class="mb-4">
+                      Offset of the dropdown relative to its target.
+                    </p>
+                    <p class="mb-4">
+                      When a function is used to determine the offset, it is
+                      called with an object containing the offset data as its
+                      first argument. The function must return an object with
+                      the same structure. The triggering element DOM node is
+                      passed as the second argument.
+                    </p>
+                    <p>
+                      For more information refer to Popper's
+                      <a
+                        class="mb-4 text-primary-700 transition duration-300 ease-in-out hover:text-primary-400"
+                        href="https://popper.js.org/docs/v2/modifiers/offset/#options"
+                        >offset docs</a
+                      >.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr
+                  class="border-b dark:border-neutral-500 [&:nth-child(even)]:bg-white dark:[&:nth-child(even)]:bg-neutral-600 [&:nth-child(odd)]:bg-gray-100 dark:[&:nth-child(odd)]:bg-neutral-700">
+                  <td
+                    class="border-r px-6 py-4 font-medium dark:border-neutral-500">
                     <code class="text-red-500 dark:text-red-300"
                       >threshold</code
                     >
