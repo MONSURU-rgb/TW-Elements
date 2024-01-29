@@ -41,7 +41,7 @@ const BOOTSTRAP_COLORS = [
   },
   {
     name: "secondary",
-    gradientColor: getStyle("text-secondary", { defaultValue: "#9FA6B2", inherit: false }),
+    gradientColor: getStyle("text-primary-100", { defaultValue: "#9FA6B2", inherit: false }),
   },
   {
     name: "success",
@@ -68,6 +68,8 @@ const BOOTSTRAP_COLORS = [
     gradientColor: "#262626",
   },
 ];
+
+console.log(BOOTSTRAP_COLORS);
 
 // Sets value when run opacity transition
 // Hide element after 50% (0.5) time of animation and finish on 100%
