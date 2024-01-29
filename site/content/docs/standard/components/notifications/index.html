@@ -38,23 +38,26 @@ menu:
   </p>
 
   {{< twsnippet/demo id="example1" >}}
-  <div class="relative m-6 inline-flex w-fit">
-    <div
-      class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-red-600 p-2.5 text-xs"></div>
-    <div
-      class="flex items-center justify-center rounded-lg bg-primary-500 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        class="h-10 w-10">
-        <path
-          d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
-        <path
-          d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
-      </svg>
+  <section class="flex w-full justify-center">
+    <div class="relative m-6 inline-flex w-fit">
+      <div
+        class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-red-600 p-2.5 text-xs"></div>
+      <div
+        class="flex items-center justify-center rounded-lg bg-primary-500 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
+        <span class="[&>svg]:h-10 [&>svg]:w-10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+            <path
+              d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+          </svg>
+        </span>
+      </div>
     </div>
-  </div>
+  </section>
   {{< /twsnippet/demo >}}
 
 
@@ -67,16 +70,17 @@ menu:
           class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-red-600 p-2.5 text-xs"></div>
         <div
           class="flex items-center justify-center rounded-lg bg-primary-500 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="h-10 w-10">
-            <path
-              d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
-            <path
-              d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
-          </svg>
+          <span class="[&>svg]:h-10 [&>svg]:w-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+              <path
+                d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+            </svg>
+          </span>
         </div>
       </div>
       {{< /twsnippet/code >}}
@@ -373,23 +377,25 @@ menu:
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example2">}}
-  <div class="relative m-6 inline-flex w-fit">
-    <div
-      class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-indigo-700 px-2.5 py-1 text-center align-baseline text-xs font-bold leading-none text-white">
-      New
+  <section class="flex w-full justify-center">
+    <div class="relative m-6 inline-flex w-fit">
+      <div
+        class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-indigo-700 px-2.5 py-1 text-center align-baseline text-xs font-bold leading-none text-white">
+        New
+      </div>
+      <div
+        class="flex items-center justify-center rounded-lg bg-pink-500 px-8 py-6 text-center shadow-lg">
+        <span
+          class="[&>svg]:w-10 [&>svg]:fill-white dark:[&>svg]:fill-gray-200">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+          </svg>
+        </span>
+      </div>
     </div>
-    <div
-      class="flex items-center justify-center rounded-lg bg-pink-500 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-10 w-10"
-        fill="currentColor"
-        viewBox="0 0 24 24">
-        <path
-          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-      </svg>
-    </div>
-  </div>
+  </section>
   {{< /twsnippet/demo >}}
 
 
@@ -403,15 +409,15 @@ menu:
           New
         </div>
         <div
-          class="flex items-center justify-center rounded-lg bg-pink-500 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-10 w-10"
-            fill="currentColor"
-            viewBox="0 0 24 24">
-            <path
-              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-          </svg>
+          class="flex items-center justify-center rounded-lg bg-pink-500 px-8 py-6 text-center shadow-lg">
+          <span
+            class="[&>svg]:w-10 [&>svg]:fill-white dark:[&>svg]:fill-gray-200">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
+          </span>
         </div>
       </div>
       {{< /twsnippet/code >}}
@@ -443,13 +449,13 @@ menu:
 
   {{< twsnippet/demo id="example3" >}}
   <ul
-    class="mb-5 flex list-none flex-col flex-wrap border-b-0 pl-0 md:flex-row"
+    class="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0"
     role="tablist"
     data-te-nav-ref>
     <li role="presentation">
       <a
         href="#tabs-news"
-        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-6 py-3 text-xs font-medium uppercase leading-tight text-[#4b5563] hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-[#2563eb] data-[te-nav-active]:text-[#2563eb] dark:hover:bg-transparent"
+        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-zinc-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[te-nav-active]:text-primary"
         data-te-toggle="pill"
         data-te-target="#tabs-news"
         data-te-nav-active
@@ -459,36 +465,36 @@ menu:
         >News</a
       >
     </li>
-    <li role="presentation">
+    <li role="presentation" class="z-20">
       <a
-        href="#tabs-notification"
-        class="relative my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-6 py-3 text-xs font-medium uppercase leading-tight text-[#4b5563] hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-[#2563eb] data-[te-nav-active]:text-[#2563eb] dark:hover:bg-transparent"
+        href="#tabs-notifications"
+        class="relative my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-zinc-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[te-nav-active]:text-primary"
         data-te-toggle="pill"
-        data-te-target="#tabs-notification"
+        data-te-target="#tabs-notifications"
         role="tab"
-        aria-controls="tabs-notification"
-        aria-selected="true"
+        aria-controls="tabs-notifications"
+        aria-selected="false"
         >Notifications
         <div
-          class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-neutral-700 px-2.5 py-1 text-center align-baseline text-xs font-bold leading-none text-white">
+          class="absolute bottom-auto left-auto right-0 top-0 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-neutral-800 px-2.5 py-1 text-center align-baseline text-xs font-bold leading-none text-white">
           7
-        </div>
-      </a>
+        </div></a
+      >
     </li>
-    <li role="presentation">
+    <li role="presentation" class="z-10">
       <a
         href="#tabs-messages"
-        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-6 py-3 text-xs font-medium uppercase leading-tight text-[#4b5563] hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-[#2563eb] data-[te-nav-active]:text-[#2563eb] dark:hover:bg-transparent"
+        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-zinc-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[te-nav-active]:text-primary"
         data-te-toggle="pill"
         data-te-target="#tabs-messages"
         role="tab"
         aria-controls="tabs-messages"
-        aria-selected="true"
-        >Messages</a
-      >
+        aria-selected="false"
+        >Messages
+      </a>
     </li>
   </ul>
-  <div class="tab-content" id="tabs-tabContent">
+  <div class="mb-6">
     <div
       class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
       id="tabs-news"
@@ -499,16 +505,16 @@ menu:
     </div>
     <div
       class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-      id="tabs-notification"
+      id="tabs-notifications"
       role="tabpanel"
-      aria-labelledby="tabs-notification-tab">
+      aria-labelledby="tabs-notifications-tab">
       Tab 2 content
     </div>
     <div
       class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
       id="tabs-messages"
       role="tabpanel"
-      aria-labelledby="tabs-messages-tab">
+      aria-labelledby="tabs-notifications-tab">
       Tab 3 content
     </div>
   </div>
@@ -521,13 +527,13 @@ menu:
       <!-- prettier-ignore -->
       {{< twsnippet/code active=true lang="HTML" >}}
       <ul
-        class="mb-4 flex list-none flex-col flex-wrap border-b-0 pl-0 md:flex-row"
+        class="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0"
         role="tablist"
         data-te-nav-ref>
         <li role="presentation">
           <a
             href="#tabs-news"
-            class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-6 py-3 text-xs font-medium uppercase leading-tight text-[#4b5563] hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-[#2563eb] data-[te-nav-active]:text-[#2563eb] dark:hover:bg-transparent"
+            class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-zinc-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[te-nav-active]:text-primary"
             data-te-toggle="pill"
             data-te-target="#tabs-news"
             data-te-nav-active
@@ -537,56 +543,56 @@ menu:
             >News</a
           >
         </li>
-        <li role="presentation">
+        <li role="presentation" class="z-20">
           <a
-            href="#tabs-notification"
-            class="relative my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-6 py-3 text-xs font-medium uppercase leading-tight text-[#4b5563] hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-[#2563eb] data-[te-nav-active]:text-[#2563eb] dark:hover:bg-transparent"
+            href="#tabs-notifications"
+            class="relative my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-zinc-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[te-nav-active]:text-primary"
             data-te-toggle="pill"
-            data-te-target="#tabs-notification"
+            data-te-target="#tabs-notifications"
             role="tab"
-            aria-controls="tabs-notification"
-            aria-selected="true"
+            aria-controls="tabs-notifications"
+            aria-selected="false"
             >Notifications
             <div
-              class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-neutral-700 px-2.5 py-1 text-center align-baseline text-xs font-bold leading-none text-white">
+              class="absolute bottom-auto left-auto right-0 top-0 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-neutral-800 px-2.5 py-1 text-center align-baseline text-xs font-bold leading-none text-white">
               7
-            </div>
-          </a>
+            </div></a
+          >
         </li>
-        <li role="presentation">
+        <li role="presentation" class="z-10">
           <a
             href="#tabs-messages"
-            class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-6 py-3 text-xs font-medium uppercase leading-tight text-[#4b5563] hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-[#2563eb] data-[te-nav-active]:text-[#2563eb] dark:hover:bg-transparent"
+            class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-zinc-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[te-nav-active]:text-primary"
             data-te-toggle="pill"
             data-te-target="#tabs-messages"
             role="tab"
             aria-controls="tabs-messages"
-            aria-selected="true"
-            >Messages</a
-          >
+            aria-selected="false"
+            >Messages
+          </a>
         </li>
       </ul>
-      <div class="tab-content" id="tabs-tabContent">
+      <div class="mb-6">
         <div
           class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
           id="tabs-news"
           role="tabpanel"
-          aria-labelledby="tabs-home-tab"
+          aria-labelledby="tabs-news-tab"
           data-te-tab-active>
           Tab 1 content
         </div>
         <div
           class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-          id="tabs-notification"
+          id="tabs-notifications"
           role="tabpanel"
-          aria-labelledby="tabs-home-tab">
+          aria-labelledby="tabs-notifications-tab">
           Tab 2 content
         </div>
         <div
           class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
           id="tabs-messages"
           role="tabpanel"
-          aria-labelledby="tabs-home-tab">
+          aria-labelledby="tabs-notifications-tab">
           Tab 3 content
         </div>
       </div>
@@ -629,19 +635,22 @@ menu:
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example4">}}
-  <div class="relative inline-flex w-fit">
-    <div
-      class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-indigo-700 px-2.5 py-1 text-center align-baseline text-xs font-bold leading-none text-white">
-      99+
+  <section class="flex w-full justify-center">
+    <div class="relative inline-flex w-fit">
+      <div
+        class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-indigo-700 px-2.5 py-1 text-center align-baseline text-xs font-bold leading-none text-white">
+        99+
+      </div>
+      <button
+        type="button"
+        class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+        data-te-ripple-init
+        data-te-ripple-color="light">
+        E-mails
+      </button>
     </div>
-    <button
-      type="button"
-      class="inline-block rounded bg-primary px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-      data-te-ripple-init
-      data-te-ripple-color="light">
-      E-mails
-    </button>
-  </div>
+  </section>
+
   {{< /twsnippet/demo >}}
 
 
@@ -656,7 +665,7 @@ menu:
         </div>
         <button
           type="button"
-          class="inline-block rounded bg-primary px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+          class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
           data-te-ripple-init
           data-te-ripple-color="light">
           E-mails
@@ -706,17 +715,19 @@ menu:
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example6">}}
-  <div class="relative my-6 inline-flex w-fit">
-    <div
-      class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-primary-500 px-2.5 py-1 text-center align-baseline text-xs font-bold leading-none text-white">
-      writing…
+  <section class="flex w-full justify-center">
+    <div class="relative my-6 inline-flex w-fit">
+      <div
+        class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-primary-100 px-2.5 py-1 text-center align-baseline text-xs font-bold leading-none text-primary-700 dark:bg-slate-900 dark:text-primary-500">
+        writing…
+      </div>
+      <div class="h-24 w-24">
+        <img
+          src="https://tecdn.b-cdn.net/img/new/avatars/8.jpg"
+          class="h-full w-full max-w-full rounded-lg object-cover" />
+      </div>
     </div>
-    <div class="h-24 w-24">
-      <img
-        src="https://tecdn.b-cdn.net/img/new/avatars/8.jpg"
-        class="h-full w-full max-w-full rounded-lg object-cover" />
-    </div>
-  </div>
+  </section>
   {{< /twsnippet/demo >}}
 
 
@@ -726,7 +737,7 @@ menu:
       {{< twsnippet/code active=true lang="HTML" >}}
       <div class="relative my-6 inline-flex w-fit">
         <div
-          class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-primary-500 px-2.5 py-1 text-center align-baseline text-xs font-bold leading-none text-white">
+          class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-primary-100 px-2.5 py-1 text-center align-baseline text-xs font-bold leading-none text-primary-700 dark:bg-slate-900 dark:text-primary-500">
           writing…
         </div>
         <div class="h-24 w-24">
@@ -760,23 +771,26 @@ menu:
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example9">}}
-  <div class="relative m-6 inline-flex w-fit">
-    <div
-      class="absolute bottom-auto left-0 right-auto top-0 z-10 inline-block -translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
-    <div
-      class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        class="h-10 w-10">
-        <path
-          fill-rule="evenodd"
-          d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
-          clip-rule="evenodd" />
-      </svg>
+  <section class="flex w-full justify-center">
+    <div class="relative m-6 inline-flex w-fit">
+      <div
+        class="absolute bottom-auto left-0 right-auto top-0 z-10 inline-block -translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
+      <div
+        class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
+        <span class="[&>svg]:h-10 [&>svg]:w-10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+      </div>
     </div>
-  </div>
+  </section>
   {{< /twsnippet/demo >}}
 
 
@@ -789,16 +803,17 @@ menu:
           class="absolute bottom-auto left-0 right-auto top-0 z-10 inline-block -translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
         <div
           class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="h-10 w-10">
-            <path
-              fill-rule="evenodd"
-              d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
-              clip-rule="evenodd" />
-          </svg>
+          <span class="[&>svg]:h-10 [&>svg]:w-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
         </div>
       </div>
       {{< /twsnippet/code >}}
@@ -826,23 +841,27 @@ menu:
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example10">}}
-  <div class="relative m-6 inline-flex w-fit">
-    <div
-      class="absolute bottom-auto left-2/4 right-2/4 top-0 z-10 inline-block -translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
-    <div
-      class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        class="h-10 w-10">
-        <path
-          fill-rule="evenodd"
-          d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
-          clip-rule="evenodd" />
-      </svg>
+  <section class="flex w-full justify-center">
+    <div class="relative m-6 inline-flex w-fit">
+      <div
+        class="absolute bottom-auto left-2/4 right-2/4 top-0 z-10 inline-block -translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
+      <div
+        class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
+        <span class="[&>svg]:h-10 [&>svg]:w-10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+      </div>
     </div>
-  </div>
+  </section>
+
   {{< /twsnippet/demo >}}
 
 
@@ -855,16 +874,17 @@ menu:
           class="absolute bottom-auto left-2/4 right-2/4 top-0 z-10 inline-block -translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
         <div
           class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="h-10 w-10">
-            <path
-              fill-rule="evenodd"
-              d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
-              clip-rule="evenodd" />
-          </svg>
+          <span class="[&>svg]:h-10 [&>svg]:w-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
         </div>
       </div>
       {{< /twsnippet/code >}}
@@ -892,23 +912,26 @@ menu:
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example11">}}
-  <div class="relative m-6 inline-flex w-fit">
-    <div
-      class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
-    <div
-      class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        class="h-10 w-10">
-        <path
-          fill-rule="evenodd"
-          d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
-          clip-rule="evenodd" />
-      </svg>
+  <section class="flex w-full justify-center">
+    <div class="relative m-6 inline-flex w-fit">
+      <div
+        class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
+      <div
+        class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
+        <span class="[&>svg]:h-10 [&>svg]:w-10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+      </div>
     </div>
-  </div>
+  </section>
   {{< /twsnippet/demo >}}
 
 
@@ -921,16 +944,17 @@ menu:
           class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
         <div
           class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="h-10 w-10">
-            <path
-              fill-rule="evenodd"
-              d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
-              clip-rule="evenodd" />
-          </svg>
+          <span class="[&>svg]:h-10 [&>svg]:w-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
         </div>
       </div>
       {{< /twsnippet/code >}}
@@ -958,28 +982,28 @@ menu:
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example12">}}
-  <div class="relative m-6 inline-flex w-fit">
-    <div
-      class="absolute bottom-2/4 left-0 right-auto top-2/4 z-10 inline-block -translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
-    <div
-      class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center shadow-lg">
-      <div>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="bell"
-          class="mx-auto w-10 text-white"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512">
-          <path
-            fill="currentColor"
-            d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path>
-        </svg>
+  <section class="flex w-full justify-center">
+    <div class="relative m-6 inline-flex w-fit">
+      <div
+        class="absolute bottom-2/4 left-0 right-auto top-2/4 z-10 inline-block -translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
+      <div
+        class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
+        <div>
+          <span class="[&>svg]:h-10 [&>svg]:w-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   {{< /twsnippet/demo >}}
 
 
@@ -991,21 +1015,19 @@ menu:
         <div
           class="absolute bottom-2/4 left-0 right-auto top-2/4 z-10 inline-block -translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
         <div
-          class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center shadow-lg">
+          class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
           <div>
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fas"
-              data-icon="bell"
-              class="mx-auto w-10 text-white"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512">
-              <path
-                fill="currentColor"
-                d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path>
-            </svg>
+            <span class="[&>svg]:h-10 [&>svg]:w-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
           </div>
         </div>
       </div>
@@ -1034,28 +1056,28 @@ menu:
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example13">}}
-  <div class="relative m-6 inline-flex w-fit">
-    <div
-      class="absolute bottom-2/4 left-2/4 right-auto top-2/4 z-10 inline-block -translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
-    <div
-      class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center shadow-lg">
-      <div>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="bell"
-          class="mx-auto w-10 text-white"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512">
-          <path
-            fill="currentColor"
-            d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path>
-        </svg>
+  <section class="flex w-full justify-center">
+    <div class="relative m-6 inline-flex w-fit">
+      <div
+        class="absolute bottom-2/4 left-2/4 right-auto top-2/4 z-10 inline-block -translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
+      <div
+        class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
+        <div>
+          <span class="[&>svg]:h-10 [&>svg]:w-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   {{< /twsnippet/demo >}}
 
 
@@ -1067,21 +1089,19 @@ menu:
         <div
           class="absolute bottom-2/4 left-2/4 right-auto top-2/4 z-10 inline-block -translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
         <div
-          class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center shadow-lg">
+          class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
           <div>
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fas"
-              data-icon="bell"
-              class="mx-auto w-10 text-white"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512">
-              <path
-                fill="currentColor"
-                d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path>
-            </svg>
+            <span class="[&>svg]:h-10 [&>svg]:w-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
           </div>
         </div>
       </div>
@@ -1110,28 +1130,28 @@ menu:
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example14">}}
-  <div class="relative m-6 inline-flex w-fit">
-    <div
-      class="absolute bottom-2/4 left-auto right-0 top-2/4 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
-    <div
-      class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center shadow-lg">
-      <div>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="bell"
-          class="mx-auto w-10 text-white"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512">
-          <path
-            fill="currentColor"
-            d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path>
-        </svg>
+  <section class="flex w-full justify-center">
+    <div class="relative m-6 inline-flex w-fit">
+      <div
+        class="absolute bottom-2/4 left-auto right-0 top-2/4 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
+      <div
+        class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
+        <div>
+          <span class="[&>svg]:h-10 [&>svg]:w-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   {{< /twsnippet/demo >}}
 
 
@@ -1143,21 +1163,19 @@ menu:
         <div
           class="absolute bottom-2/4 left-auto right-0 top-2/4 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
         <div
-          class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center shadow-lg">
+          class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
           <div>
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fas"
-              data-icon="bell"
-              class="mx-auto w-10 text-white"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512">
-              <path
-                fill="currentColor"
-                d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path>
-            </svg>
+            <span class="[&>svg]:h-10 [&>svg]:w-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
           </div>
         </div>
       </div>
@@ -1186,28 +1204,28 @@ menu:
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example15">}}
-  <div class="relative m-6 inline-flex w-fit">
-    <div
-      class="absolute bottom-0 left-0 right-auto top-auto z-10 inline-block -translate-x-2/4 translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
-    <div
-      class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center shadow-lg">
-      <div>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="bell"
-          class="mx-auto w-10 text-white"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512">
-          <path
-            fill="currentColor"
-            d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path>
-        </svg>
+  <section class="flex w-full justify-center">
+    <div class="relative m-6 inline-flex w-fit">
+      <div
+        class="absolute bottom-0 left-0 right-auto top-auto z-10 inline-block -translate-x-2/4 translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
+      <div
+        class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
+        <div>
+          <span class="[&>svg]:h-10 [&>svg]:w-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   {{< /twsnippet/demo >}}
 
 
@@ -1219,21 +1237,19 @@ menu:
         <div
           class="absolute bottom-0 left-0 right-auto top-auto z-10 inline-block -translate-x-2/4 translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
         <div
-          class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center shadow-lg">
+          class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
           <div>
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fas"
-              data-icon="bell"
-              class="mx-auto w-10 text-white"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512">
-              <path
-                fill="currentColor"
-                d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path>
-            </svg>
+            <span class="[&>svg]:h-10 [&>svg]:w-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
           </div>
         </div>
       </div>
@@ -1262,28 +1278,28 @@ menu:
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example16">}}
-  <div class="relative m-6 inline-flex w-fit">
-    <div
-      class="absolute bottom-0 left-2/4 right-2/4 top-auto z-10 inline-block -translate-x-2/4 translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
-    <div
-      class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center shadow-lg">
-      <div>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="bell"
-          class="mx-auto w-10 text-white"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512">
-          <path
-            fill="currentColor"
-            d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path>
-        </svg>
+  <section class="flex w-full justify-center">
+    <div class="relative m-6 inline-flex w-fit">
+      <div
+        class="absolute bottom-0 left-2/4 right-2/4 top-auto z-10 inline-block -translate-x-2/4 translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
+      <div
+        class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
+        <div>
+          <span class="[&>svg]:h-10 [&>svg]:w-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   {{< /twsnippet/demo >}}
 
 
@@ -1295,21 +1311,19 @@ menu:
         <div
           class="absolute bottom-0 left-2/4 right-2/4 top-auto z-10 inline-block -translate-x-2/4 translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
         <div
-          class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center shadow-lg">
+          class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
           <div>
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fas"
-              data-icon="bell"
-              class="mx-auto w-10 text-white"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512">
-              <path
-                fill="currentColor"
-                d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path>
-            </svg>
+            <span class="[&>svg]:h-10 [&>svg]:w-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
           </div>
         </div>
       </div>
@@ -1338,28 +1352,28 @@ menu:
 
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example17">}}
-  <div class="relative m-6 inline-flex w-fit">
-    <div
-      class="absolute bottom-0 left-auto right-0 top-auto z-10 inline-block translate-x-2/4 translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
-    <div
-      class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center shadow-lg">
-      <div>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="bell"
-          class="mx-auto w-10 text-white"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512">
-          <path
-            fill="currentColor"
-            d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path>
-        </svg>
+  <section class="flex w-full justify-center">
+    <div class="relative m-6 inline-flex w-fit">
+      <div
+        class="absolute bottom-0 left-auto right-0 top-auto z-10 inline-block translate-x-2/4 translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
+      <div
+        class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
+        <div>
+          <span class="[&>svg]:h-10 [&>svg]:w-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   {{< /twsnippet/demo >}}
 
 
@@ -1371,21 +1385,19 @@ menu:
         <div
           class="absolute bottom-0 left-auto right-0 top-auto z-10 inline-block translate-x-2/4 translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 rounded-full bg-pink-700 p-2.5 text-xs"></div>
         <div
-          class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center shadow-lg">
+          class="flex items-center justify-center rounded-lg bg-indigo-400 px-8 py-6 text-center text-white shadow-lg dark:text-gray-200">
           <div>
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fas"
-              data-icon="bell"
-              class="mx-auto w-10 text-white"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512">
-              <path
-                fill="currentColor"
-                d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path>
-            </svg>
+            <span class="[&>svg]:h-10 [&>svg]:w-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
           </div>
         </div>
       </div>

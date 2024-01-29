@@ -40,7 +40,7 @@ menu:
   {{< twsnippet/demo id="example1">}}
   <div class="flex items-center justify-center">
     <div
-      class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+      class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
       role="status">
       <span
         class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
@@ -48,7 +48,6 @@ menu:
       >
     </div>
   </div>
-
   {{< /twsnippet/demo >}}
 
 
@@ -57,7 +56,7 @@ menu:
       {{< twsnippet/wrapper "HTML" >}}
       {{< twsnippet/code active=true lang="HTML" >}}
       <div
-        class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+        class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
         role="status">
         <span
           class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
@@ -406,7 +405,15 @@ menu:
       >
     </div>
     <div
-      class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-neutral-100 motion-reduce:animate-[spin_1.5s_linear_infinite]"
+      class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-neutral-50 motion-reduce:animate-[spin_1.5s_linear_infinite]"
+      role="status">
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Loading...</span
+      >
+    </div>
+    <div
+      class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-[#332d2d] motion-reduce:animate-[spin_1.5s_linear_infinite]"
       role="status">
       <span
         class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
@@ -470,7 +477,15 @@ menu:
         >
       </div>
       <div
-        class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-neutral-100 motion-reduce:animate-[spin_1.5s_linear_infinite]"
+        class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-neutral-50 motion-reduce:animate-[spin_1.5s_linear_infinite]"
+        role="status">
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+          >Loading...</span
+        >
+      </div>
+      <div
+        class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-[#332d2d] motion-reduce:animate-[spin_1.5s_linear_infinite]"
         role="status">
         <span
           class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
@@ -503,7 +518,7 @@ menu:
   {{< twsnippet/demo id="example3">}}
   <div class="flex items-center justify-center">
     <div
-      class="inline-block h-8 w-8 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
+      class="inline-block h-8 w-8 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] text-surface opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite] dark:text-white"
       role="status">
       <span
         class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
@@ -519,7 +534,7 @@ menu:
       {{< twsnippet/wrapper "HTML" >}}
       {{< twsnippet/code active=true lang="HTML" >}}
       <div
-        class="inline-block h-8 w-8 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
+        class="inline-block h-8 w-8 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] text-surface opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite] dark:text-white"
         role="status">
         <span
           class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
@@ -530,19 +545,7 @@ menu:
       {{< /twsnippet/wrapper >}}
     </div>
   </section>
-</section>
-<!-- Section: Growing spinner -->
 
-<!-- Section: Colors of growing spinner -->
-<section>
-  <!-- Title -->
-  <h2
-    class="mb-5 mt-0 text-3xl font-semibold leading-normal"
-    id="colors_growing"
-    data-te-spy-item>
-    Colors of growing spinner
-  </h2>
-  <!-- Description -->
   <p class="mb-3">
     Use any text color utilities to add a color to growing spinner.
   </p>
@@ -599,7 +602,15 @@ menu:
       >
     </div>
     <div
-      class="inline-block h-8 w-8 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] text-neutral-100 opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
+      class="inline-block h-8 w-8 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] text-neutral-50 opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
+      role="status">
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Loading...</span
+      >
+    </div>
+    <div
+      class="inline-block h-8 w-8 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] text-[#332d2d] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
       role="status">
       <span
         class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
@@ -663,7 +674,15 @@ menu:
         >
       </div>
       <div
-        class="inline-block h-8 w-8 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] text-neutral-100 opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
+        class="inline-block h-8 w-8 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] text-neutral-50 opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
+        role="status">
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+          >Loading...</span
+        >
+      </div>
+      <div
+        class="inline-block h-8 w-8 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] text-[#332d2d] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
         role="status">
         <span
           class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
@@ -675,200 +694,220 @@ menu:
     </div>
   </section>
 </section>
-<!-- Section: Colors of growing spinner -->
+<!-- Section: Growing spinner -->
 
-<!-- Section: Margin -->
+<!-- Section: Alignment -->
 <section>
   <!-- Title -->
   <h2
     class="mb-5 mt-0 text-3xl font-semibold leading-normal"
-    id="margin"
+    id="alignment"
     data-te-spy-item>
-    Margin
+    Alignment
   </h2>
   <!-- Description -->
   <p class="mb-3">
-    Use margin utilities like <code>.m-12</code> for easy spacing.
+    Spinners can easily be resized, recolored, and quickly aligned.
   </p>
 
-  <!-- prettier-ignore -->
-  {{< twsnippet/demo id="example5">}}
-  <div class="flex items-center">
-    <div
-      class="m-12 inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-      role="status">
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Loading...</span
-      >
-    </div>
-  </div>
+  <!-- Section: Margin -->
+  <section>
+    <!-- Title -->
+    <h2
+      class="mb-5 mt-0 text-2xl font-semibold leading-normal"
+      id="margin"
+      data-te-spy-item>
+      Margin
+    </h2>
+    <!-- Description -->
+    <p class="mb-3">
+      Use margin utilities like <code>.m-12</code> for easy spacing.
+    </p>
 
-  {{< /twsnippet/demo >}}
-  <section class="!visible hidden" data-te-collapse-item id="example5">
-    <div class="pt-4">
-      {{< twsnippet/wrapper "HTML" >}}
-      {{< twsnippet/code active=true lang="HTML" >}}
+    <!-- prettier-ignore -->
+    {{< twsnippet/demo id="example5">}}
+    <div class="flex items-center">
       <div
-        class="m-12 inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+        class="m-12 inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
         role="status">
         <span
           class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
           >Loading...</span
         >
       </div>
-      {{< /twsnippet/code >}}
-      {{< /twsnippet/wrapper >}}
     </div>
+    {{< /twsnippet/demo >}}
+
+
+    <section class="!visible hidden" data-te-collapse-item id="example5">
+      <div class="pt-4">
+        {{< twsnippet/wrapper "HTML" >}}
+        {{< twsnippet/code active=true lang="HTML" >}}
+        <div
+          class="m-12 inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
+          role="status">
+          <span
+            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+            >Loading...</span
+          >
+        </div>
+        {{< /twsnippet/code >}}
+        {{< /twsnippet/wrapper >}}
+      </div>
+    </section>
   </section>
-</section>
-<!-- Section: Margin -->
+  <!-- Section: Margin -->
 
-<!-- Section: Flex -->
-<section>
-  <!-- Title -->
-  <h2
-    class="mb-5 mt-0 text-3xl font-semibold leading-normal"
-    id="flex"
-    data-te-spy-item>
-    Flex
-  </h2>
-  <!-- Description -->
-  <p class="mb-3">
-    Use flexbox utilities to place spinners exactly where you need them in any
-    situation.
-  </p>
+  <!-- Section: Flex -->
+  <section>
+    <!-- Title -->
+    <h2
+      class="mb-5 mt-0 text-2xl font-semibold leading-normal"
+      id="flex"
+      data-te-spy-item>
+      Flex
+    </h2>
+    <!-- Description -->
+    <p class="mb-3">
+      Use flexbox utilities to place spinners exactly where you need them in any
+      situation.
+    </p>
 
-  <!-- prettier-ignore -->
-  {{< twsnippet/demo id="example6">}}
-  <div class="flex items-center justify-center">
-    <div
-      class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-      role="status">
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Loading...</span
-      >
-    </div>
-  </div>
-
-  {{< /twsnippet/demo >}}
-
-
-  <section class="!visible hidden" data-te-collapse-item id="example6">
-    <div class="pt-4">
-      {{< twsnippet/wrapper "HTML" >}}
-      {{< twsnippet/code active=true lang="HTML" >}}
+    <!-- prettier-ignore -->
+    {{< twsnippet/demo id="example6">}}
+    <div class="flex items-center justify-center">
       <div
-        class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+        class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
         role="status">
         <span
           class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
           >Loading...</span
         >
       </div>
-      {{< /twsnippet/code >}}
-      {{< /twsnippet/wrapper >}}
     </div>
+    {{< /twsnippet/demo >}}
+
+
+    <section class="!visible hidden" data-te-collapse-item id="example6">
+      <div class="pt-4">
+        {{< twsnippet/wrapper "HTML" >}}
+        {{< twsnippet/code active=true lang="HTML" >}}
+        <div class="flex items-center justify-center">
+          <div
+            class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
+            role="status">
+            <span
+              class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+              >Loading...</span
+            >
+          </div>
+        </div>
+        {{< /twsnippet/code >}}
+        {{< /twsnippet/wrapper >}}
+      </div>
+    </section>
   </section>
-</section>
-<!-- Section: Flex -->
+  <!-- Section: Flex -->
 
-<!-- Section: Floats -->
-<section>
-  <!-- Title -->
-  <h2
-    class="mb-5 mt-0 text-3xl font-semibold leading-normal"
-    id="floats"
-    data-te-spy-item>
-    Floats
-  </h2>
-  <!-- Description -->
-  <p class="mb-3">
-    Use the flexbox, text alignment, or float utility classes to easily align
-    the spinners to left, right or center.
-  </p>
+  <!-- Section: Floats -->
+  <section>
+    <!-- Title -->
+    <h2
+      class="mb-5 mt-0 text-2xl font-semibold leading-normal"
+      id="floats"
+      data-te-spy-item>
+      Floats
+    </h2>
+    <!-- Description -->
+    <p class="mb-3">
+      Use the flexbox, text alignment, or float utility classes to easily align
+      the spinners to left, right or center.
+    </p>
 
-  <!-- prettier-ignore -->
-  {{< twsnippet/demo id="example10">}}
-  <div class="flow-root">
-    <div
-      class="float-right inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-      role="status">
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Loading...</span
-      >
-    </div>
-  </div>
-
-  {{< /twsnippet/demo >}}
-  <section class="!visible hidden" data-te-collapse-item id="example10">
-    <div class="pt-4">
-      {{< twsnippet/wrapper "HTML" >}}
-      {{< twsnippet/code active=true lang="HTML" >}}
+    <!-- prettier-ignore -->
+    {{< twsnippet/demo id="example10">}}
+    <div class="flow-root">
       <div
-        class="float-right inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+        class="float-right inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
         role="status">
         <span
           class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
           >Loading...</span
         >
       </div>
-      {{< /twsnippet/code >}}
-      {{< /twsnippet/wrapper >}}
     </div>
+    {{< /twsnippet/demo >}}
+
+
+    <section class="!visible hidden" data-te-collapse-item id="example10">
+      <div class="pt-4">
+        {{< twsnippet/wrapper "HTML" >}}
+        {{< twsnippet/code active=true lang="HTML" >}}
+        <div
+          class="float-right inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
+          role="status">
+          <span
+            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+            >Loading...</span
+          >
+        </div>
+        {{< /twsnippet/code >}}
+        {{< /twsnippet/wrapper >}}
+      </div>
+    </section>
   </section>
-</section>
-<!-- Section: Floats -->
+  <!-- Section: Floats -->
 
-<!-- Section: Text -->
-<section>
-  <!-- Title -->
-  <h2
-    class="mb-5 mt-0 text-3xl font-semibold leading-normal"
-    id="text"
-    data-te-spy-item>
-    Text
-  </h2>
-  <!-- Description -->
-  <p class="mb-3">Use the following code to add spinner a text.</p>
+  <!-- Section: Text align -->
+  <section>
+    <!-- Title -->
+    <h2
+      class="mb-5 mt-0 text-2xl font-semibold leading-normal"
+      id="text"
+      data-te-spy-item>
+      Text align
+    </h2>
+    <!-- Description -->
+    <p class="mb-3">Use the following code to add spinner a text.</p>
 
-  <!-- prettier-ignore -->
-  {{< twsnippet/demo id="example7">}}
-  <div class="flex items-center">
-    <strong>Loading...</strong>
-    <div
-      class="ml-auto inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-      role="status"></div>
-  </div>
-
-  {{< /twsnippet/demo >}}
-
-
-  <section class="!visible hidden" data-te-collapse-item id="example7">
-    <div class="pt-4">
-      {{< twsnippet/wrapper "HTML" >}}
-      {{< twsnippet/code active=true lang="HTML" >}}
+    <!-- prettier-ignore -->
+    {{< twsnippet/demo id="example7">}}
+    <div class="flex items-center text-surface dark:text-white">
       <strong>Loading...</strong>
       <div
-        class="ml-auto inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+        class="ml-auto inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
         role="status"></div>
-      {{< /twsnippet/code >}}
-      {{< /twsnippet/wrapper >}}
     </div>
-  </section>
-</section>
-<!-- Section: Text -->
+    {{< /twsnippet/demo >}}
 
-<!-- Section: Size small -->
+
+    <section class="!visible hidden" data-te-collapse-item id="example7">
+      <div class="pt-4">
+        {{< twsnippet/wrapper "HTML" >}}
+        {{< twsnippet/code active=true lang="HTML" >}}
+        <div class="flex items-center text-surface dark:text-white">
+          <strong>Loading...</strong>
+          <div
+            class="ml-auto inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
+            role="status"></div>
+        </div>
+        {{< /twsnippet/code >}}
+        {{< /twsnippet/wrapper >}}
+      </div>
+    </section>
+  </section>
+  <!-- Section: Text align -->
+</section>
+<!-- Section: Alignment -->
+
+<!-- Section: Size -->
 <section>
   <!-- Title -->
   <h2
     class="mb-5 mt-0 text-3xl font-semibold leading-normal"
-    id="small"
+    id="size"
     data-te-spy-item>
-    Size small
+    Size
   </h2>
   <!-- Description -->
   <p class="mb-3">
@@ -880,7 +919,7 @@ menu:
   {{< twsnippet/demo id="example8">}}
   <div class="flex items-center justify-center space-x-2">
     <div
-      class="inline-block h-4 w-4 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+      class="inline-block h-4 w-4 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
       role="status">
       <span
         class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
@@ -888,7 +927,7 @@ menu:
       >
     </div>
     <div
-      class="inline-block h-4 w-4 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
+      class="inline-block h-4 w-4 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] text-surface opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite] dark:text-white"
       role="status">
       <span
         class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
@@ -896,7 +935,6 @@ menu:
       >
     </div>
   </div>
-
   {{< /twsnippet/demo >}}
 
 
@@ -905,7 +943,7 @@ menu:
       {{< twsnippet/wrapper "HTML" >}}
       {{< twsnippet/code active=true lang="HTML" >}}
       <div
-        class="inline-block h-4 w-4 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+        class="inline-block h-4 w-4 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
         role="status">
         <span
           class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
@@ -913,7 +951,61 @@ menu:
         >
       </div>
       <div
-        class="inline-block h-4 w-4 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
+        class="inline-block h-4 w-4 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] text-surface opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite] dark:text-white"
+        role="status">
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+          >Loading...</span
+        >
+      </div>
+      {{< /twsnippet/code >}}
+      {{< /twsnippet/wrapper >}}
+    </div>
+  </section>
+
+  <!-- Description -->
+  <p class="mb-3">
+    Use <code>h-{*}</code> and <code>w-{*}</code> utility classes to create a
+    bigger spinner.
+  </p>
+
+  {{< twsnippet/demo id="example9" >}}
+  <div class="flex items-center justify-center space-x-2">
+    <div
+      class="inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
+      role="status">
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Loading...</span
+      >
+    </div>
+    <div
+      class="inline-block h-12 w-12 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] text-surface opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite] dark:text-white"
+      role="status">
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Loading...</span
+      >
+    </div>
+  </div>
+  {{< /twsnippet/demo >}}
+
+
+  <!-- prettier-ignore -->
+  <section class="!visible hidden" data-te-collapse-item id="example9">
+    <div class="pt-4">
+      {{< twsnippet/wrapper "HTML" >}}
+      {{< twsnippet/code active=true lang="HTML" >}}
+      <div
+        class="inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
+        role="status">
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+          >Loading...</span
+        >
+      </div>
+      <div
+        class="inline-block h-12 w-12 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] text-surface opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite] dark:text-white"
         role="status">
         <span
           class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
@@ -927,69 +1019,167 @@ menu:
 </section>
 <!-- Section: Size small -->
 
-<!-- Section: Size large -->
+<!-- Section: Buttons -->
 <section>
   <!-- Title -->
   <h2
     class="mb-5 mt-0 text-3xl font-semibold leading-normal"
-    id="large"
+    id="buttons"
     data-te-spy-item>
-    Size large
+    Buttons
   </h2>
   <!-- Description -->
   <p class="mb-3">
-    Use <code>h-{*}</code> and <code>w-{*}</code> utility classes to create a
-    bigger spinner.
+    Use spinners within buttons to indicate an action is currently processing or
+    taking place. You may also swap the text out of the spinner element and
+    utilize button text as needed.
   </p>
 
-  <!-- prettier-ignore -->
-  {{< twsnippet/demo id="example9">}}
-  <div class="flex items-center justify-center space-x-2">
-    <div
-      class="inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-      role="status">
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Loading...</span
-      >
-    </div>
-    <div
-      class="inline-block h-12 w-12 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
-      role="status">
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Loading...</span
-      >
-    </div>
-  </div>
+  <!-- Section: Border spinner -->
+  <section>
+    <h2
+      class="mb-5 mt-0 text-2xl font-semibold leading-normal"
+      id="border-spinner"
+      data-te-spy-item>
+      Border spinner
+    </h2>
+    <!-- Description -->
+    <p class="mb-3">Add spinners to the button, with or without text:</p>
 
-  {{< /twsnippet/demo >}}
-  <section class="!visible hidden" data-te-collapse-item id="example9">
-    <div class="pt-4">
-      {{< twsnippet/wrapper "HTML" >}}
-      {{< twsnippet/code active=true lang="HTML" >}}
-      <div
-        class="inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-        role="status">
-        <span
-          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-          >Loading...</span
-        >
-      </div>
-      <div
-        class="inline-block h-12 w-12 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
-        role="status">
-        <span
-          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-          >Loading...</span
-        >
-      </div>
-      {{< /twsnippet/code >}}
-      {{< /twsnippet/wrapper >}}
+    {{< twsnippet/demo id="example10" >}}
+    <div class="flex justify-center space-x-1">
+      <button
+        type="button"
+        class="pointer-events-none inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 disabled:opacity-70 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+        disabled>
+        <div
+          class="inline-block h-4 w-4 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+          role="status">
+          <span
+            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+            >Loading...</span
+          >
+        </div>
+      </button>
+      <button
+        type="button"
+        class="pointer-events-none inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 disabled:opacity-70 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+        disabled>
+        <div
+          class="inline-block h-4 w-4 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+          role="status"></div>
+        <span>Loading...</span>
+      </button>
     </div>
+    {{< /twsnippet/demo >}}
+
+
+    <section class="!visible hidden" data-te-collapse-item id="example10">
+      <div class="pt-4">
+        {{< twsnippet/wrapper "HTML" >}}
+        {{< twsnippet/code active=true lang="HTML" >}}
+        <button
+          type="button"
+          class="pointer-events-none inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 disabled:opacity-70 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+          disabled>
+          <div
+            class="inline-block h-4 w-4 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+            role="status">
+            <span
+              class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+              >Loading...</span
+            >
+          </div>
+        </button>
+        <button
+          type="button"
+          class="pointer-events-none inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 disabled:opacity-70 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+          disabled>
+          <div
+            class="inline-block h-4 w-4 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+            role="status"></div>
+          <span>Loading...</span>
+        </button>
+        {{< /twsnippet/code >}}
+        {{< /twsnippet/wrapper >}}
+      </div>
+    </section>
   </section>
+  <!-- Section: Border spinner -->
+
+  <!-- Section: Growing spinner -->
+  <section>
+    <h2
+      class="mb-5 mt-0 text-2xl font-semibold leading-normal"
+      id="growing-spinner"
+      data-te-spy-item>
+      Growing spinner
+    </h2>
+    <!-- Description -->
+    <p class="mb-3">You can also use growing spinner in buttons:</p>
+
+    {{< twsnippet/demo id="example11" >}}
+    <div class="flex justify-center space-x-1">
+      <button
+        type="button"
+        class="pointer-events-none inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 disabled:opacity-70 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+        disabled>
+        <div
+          class="inline-block h-4 w-4 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
+          role="status">
+          <span
+            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+            >Loading...</span
+          >
+        </div>
+      </button>
+      <button
+        type="button"
+        class="pointer-events-none inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 disabled:opacity-70 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+        disabled>
+        <div
+          class="inline-block h-4 w-4 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
+          role="status"></div>
+        <span>Loading...</span>
+      </button>
+    </div>
+    {{< /twsnippet/demo >}}
+
+
+    <section class="!visible hidden" data-te-collapse-item id="example11">
+      <div class="pt-4">
+        {{< twsnippet/wrapper "HTML" >}}
+        {{< twsnippet/code active=true lang="HTML" >}}
+        <button
+          type="button"
+          class="pointer-events-none inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 disabled:opacity-70 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+          disabled>
+          <div
+            class="inline-block h-4 w-4 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
+            role="status">
+            <span
+              class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+              >Loading...</span
+            >
+          </div>
+        </button>
+        <button
+          type="button"
+          class="pointer-events-none inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 disabled:opacity-70 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+          disabled>
+          <div
+            class="inline-block h-4 w-4 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
+            role="status"></div>
+          <span>Loading...</span>
+        </button>
+        {{< /twsnippet/code >}}
+        {{< /twsnippet/wrapper >}}
+      </div>
+    </section>
+  </section>
+  <!-- Section: Growing spinner -->
 </section>
-<!-- Section: Size large -->
+<!-- Section: Buttons -->
 
 <hr class="mb-5 dark:border-neutral-600" />
 
