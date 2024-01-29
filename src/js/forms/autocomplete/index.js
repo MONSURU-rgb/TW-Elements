@@ -68,6 +68,7 @@ const Default = {
   listHeight: 190,
   loaderCloseDelay: 300,
   noResults: "No results found",
+  offset: [0, 1],
   threshold: 0,
 };
 
@@ -82,6 +83,7 @@ const DefaultType = {
   listHeight: "number",
   loaderCloseDelay: "number",
   noResults: "string",
+  offset: "(array|string|function)",
   threshold: "number",
 };
 
@@ -212,6 +214,20 @@ class Autocomplete {
     this._listenToInputFocus();
     this._listenToUserInput();
     this._listenToKeydown();
+  }
+
+  _getOffset() {
+    const { offset } = this._options;
+
+    if (typeof offset === "string") {
+      return offset.split(",").map((val) => Number.parseInt(val, 10));
+    }
+
+    if (typeof offset === "function") {
+      return (popperData) => offset(popperData, this._element);
+    }
+
+    return offset;
   }
 
   _initDropdown() {
@@ -569,7 +585,7 @@ class Autocomplete {
         {
           name: "offset",
           options: {
-            offset: [0, 1],
+            offset: this._getOffset(),
           },
         },
       ],
