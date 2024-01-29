@@ -323,7 +323,34 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
         Window
       </h2>
 
-      <div id="window-example"></div>
+      <div class="flex w-full justify-center">
+        <a
+          href="/demo/sites/methods/preview/infinite-scroll-1.html"
+          target="_blank"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+          class="flex items-center rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+          View full screen demo
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="ml-2 h-5 w-5">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- <div id="window-example"></div> -->
 
       <br />
       <br />
@@ -615,7 +642,7 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
 
       spinnersElement.addEventListener("complete.te.infiniteScroll", loadItems);
     </script>
-    <script type="module">
+    <!-- <script type="module">
       import * as te from "../../../src/js/index.umd.js";
 
       const container = document.getElementById("window-example");
@@ -642,6 +669,6 @@ If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please che
           iterator++;
         }
       });
-    </script>
+    </script> -->
   </body>
 </html>
