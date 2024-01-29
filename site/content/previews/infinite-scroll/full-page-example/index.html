@@ -1,0 +1,243 @@
+---
+title: "Infinite Scroll Full Page example"
+date: 2021-04-29T16:00:58+02:00
+draft: false
+main_title: "Tailwind Infinite Scroll Full Page example"
+subheading: ""
+seo_title: "Tailwind CSS InfiniteScroll - fullscreen example 1"
+description: "This feature adds a scroll event listener (to the window or the component it's attached to if it has the overflow-y property set to scroll) and calls a callback method every time a user reaches an end of a page/container."
+image: "https://tecdn.b-cdn.net/img/components-big.jpg"
+video: "https://www.youtube.com/watch?v=-GmnyjgI4Jc&ab_channel=Keepcoding"
+url: "previews/infinite-scroll/full-page-example"
+---
+
+<!--Main layout-->
+<main class="my-5">
+  <!--Section: Posts-->
+  <section class="container mx-auto mb-4 text-center xl:w-[60%]" id="posts">
+    <div class="grid grid-cols-1 place-items-center gap-4 md:grid-cols-2">
+      <div class="flex flex-col items-center">
+        <div
+          class="block rounded-lg bg-white shadow-1-strong dark:bg-neutral-700">
+          <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <img
+              class="rounded-lg"
+              data-te-lazy-load-init
+              data-te-lazy-src="https://tecdn.b-cdn.net/img/Photos/Others/images/29.jpg"
+              data-te-lazy-placeholder="https://placehold.it/1321x583?text=Loading"
+              alt="" />
+            <a href="#!">
+              <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+            </a>
+          </div>
+        </div>
+        <h5 class="mb-3 mt-5 text-xl text-surface dark:text-white">
+          This is the title of an article
+        </h5>
+        <p class="mb-3 text-center text-surface dark:text-neutral-200">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          cupiditate veniam voluptatibus laudantium cum dolorem illo. Quos
+          architecto deserunt saepe.
+        </p>
+        <button
+          type="button"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+          class="mb-3 inline-block rounded-full bg-info px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-info-3 transition duration-150 ease-in-out hover:bg-info-accent-300 hover:shadow-info-2 focus:bg-info-accent-300 focus:shadow-info-2 focus:outline-none focus:ring-0 active:bg-info-600 active:shadow-info-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+          Read more
+        </button>
+      </div>
+      <div class="flex flex-col items-center">
+        <div
+          class="block rounded-lg bg-white shadow-1-strong dark:bg-neutral-700">
+          <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <img
+              class="rounded-lg"
+              data-te-lazy-load-init
+              data-te-lazy-src="https://tecdn.b-cdn.net/img/Photos/Others/images/27.jpg"
+              data-te-lazy-placeholder="https://placehold.it/1321x583?text=Loading"
+              alt="" />
+            <a href="#!">
+              <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+            </a>
+          </div>
+        </div>
+        <h5 class="mb-3 mt-5 text-xl font-normal text-surface dark:text-white">
+          This is the title of an article
+        </h5>
+        <p class="mb-3 text-center text-surface dark:text-neutral-200">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          cupiditate veniam voluptatibus laudantium cum dolorem illo. Quos
+          architecto deserunt saepe.
+        </p>
+        <button
+          type="button"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+          class="mb-3 inline-block rounded-full bg-info px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-info-3 transition duration-150 ease-in-out hover:bg-info-accent-300 hover:shadow-info-2 focus:bg-info-accent-300 focus:shadow-info-2 focus:outline-none focus:ring-0 active:bg-info-600 active:shadow-info-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+          Read more
+        </button>
+      </div>
+      <div class="flex flex-col items-center">
+        <div
+          class="block rounded-lg bg-white shadow-1-strong dark:bg-neutral-700">
+          <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <img
+              class="rounded-lg"
+              data-te-lazy-load-init
+              data-te-lazy-src="https://tecdn.b-cdn.net/img/Photos/Others/images/25.jpg"
+              data-te-lazy-placeholder="https://placehold.it/1321x583?text=Loading"
+              alt="" />
+            <a href="#!">
+              <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+            </a>
+          </div>
+        </div>
+        <h5 class="mb-3 mt-5 text-xl font-normal text-surface dark:text-white">
+          This is the title of an article
+        </h5>
+        <p class="mb-3 text-center text-surface dark:text-neutral-200">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          cupiditate veniam voluptatibus laudantium cum dolorem illo. Quos
+          architecto deserunt saepe.
+        </p>
+        <button
+          type="button"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+          class="mb-3 inline-block rounded-full bg-info px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-info-3 transition duration-150 ease-in-out hover:bg-info-accent-300 hover:shadow-info-2 focus:bg-info-accent-300 focus:shadow-info-2 focus:outline-none focus:ring-0 active:bg-info-600 active:shadow-info-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+          Read more
+        </button>
+      </div>
+      <div class="flex flex-col items-center">
+        <div
+          class="block rounded-lg bg-white shadow-1-strong dark:bg-neutral-700">
+          <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <img
+              class="rounded-lg"
+              data-te-lazy-load-init
+              data-te-lazy-src="https://tecdn.b-cdn.net/img/Photos/Others/images/24.jpg"
+              data-te-lazy-placeholder="https://placehold.it/1321x583?text=Loading"
+              alt="" />
+            <a href="#!">
+              <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+            </a>
+          </div>
+        </div>
+        <h5 class="mb-3 mt-5 text-xl font-normal text-surface dark:text-white">
+          This is the title of an article
+        </h5>
+        <p class="mb-3 text-center text-surface dark:text-neutral-200">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          cupiditate veniam voluptatibus laudantium cum dolorem illo. Quos
+          architecto deserunt saepe.
+        </p>
+        <button
+          type="button"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+          class="mb-3 inline-block rounded-full bg-info px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-info-3 transition duration-150 ease-in-out hover:bg-info-accent-300 hover:shadow-info-2 focus:bg-info-accent-300 focus:shadow-info-2 focus:outline-none focus:ring-0 active:bg-info-600 active:shadow-info-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+          Read more
+        </button>
+      </div>
+      <div class="flex flex-col items-center">
+        <div
+          class="block rounded-lg bg-white shadow-1-strong dark:bg-neutral-700">
+          <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <img
+              class="rounded-lg"
+              data-te-lazy-load-init
+              data-te-lazy-src="https://tecdn.b-cdn.net/img/Photos/Others/images/31.jpg"
+              data-te-lazy-placeholder="https://placehold.it/1321x583?text=Loading"
+              alt="" />
+            <a href="#!">
+              <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+            </a>
+          </div>
+        </div>
+        <h5 class="mb-3 mt-5 text-xl font-normal text-surface dark:text-white">
+          This is the title of an article
+        </h5>
+        <p class="mb-3 text-center text-surface dark:text-neutral-200">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          cupiditate veniam voluptatibus laudantium cum dolorem illo. Quos
+          architecto deserunt saepe.
+        </p>
+        <button
+          type="button"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+          class="mb-3 inline-block rounded-full bg-info px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-info-3 transition duration-150 ease-in-out hover:bg-info-accent-300 hover:shadow-info-2 focus:bg-info-accent-300 focus:shadow-info-2 focus:outline-none focus:ring-0 active:bg-info-600 active:shadow-info-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+          Read more
+        </button>
+      </div>
+      <div class="flex flex-col items-center">
+        <div
+          class="block rounded-lg bg-white shadow-1-strong dark:bg-neutral-700">
+          <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <img
+              class="rounded-lg"
+              data-te-lazy-load-init
+              data-te-lazy-src="https://tecdn.b-cdn.net/img/Photos/Others/images/23.jpg"
+              data-te-lazy-placeholder="https://placehold.it/1321x583?text=Loading"
+              alt="" />
+            <a href="#!">
+              <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+            </a>
+          </div>
+        </div>
+        <h5 class="mb-3 mt-5 text-xl font-normal text-surface dark:text-white">
+          This is the title of an article
+        </h5>
+        <p class="mb-3 text-center text-surface dark:text-neutral-200">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          cupiditate veniam voluptatibus laudantium cum dolorem illo. Quos
+          architecto deserunt saepe.
+        </p>
+        <button
+          type="button"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+          class="mb-3 inline-block rounded-full bg-info px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-info-3 transition duration-150 ease-in-out hover:bg-info-accent-300 hover:shadow-info-2 focus:bg-info-accent-300 focus:shadow-info-2 focus:outline-none focus:ring-0 active:bg-info-600 active:shadow-info-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+          Read more
+        </button>
+      </div>
+    </div>
+
+    <div
+      id="spinner"
+      class="hidden h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
+      role="status">
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Loading...</span
+      >
+    </div>
+  </section>
+  <!--Section: Posts-->
+</main>
+<!--Main layout-->

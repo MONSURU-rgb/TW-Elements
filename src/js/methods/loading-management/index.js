@@ -51,9 +51,9 @@ const Default = {
 const DefaultClasses = {
   loadingSpinner:
     "absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] flex flex-col justify-center items-center z-40",
-  spinnerColor: "text-primary dark:text-primary-400",
+  spinnerColor: "text-primary",
   backdrop: "w-full h-full fixed top-0 left-0 bottom-0 right-0 z-30",
-  backdropColor: "bg-[rgba(0,0,0,0.4)]",
+  backdropColor: "bg-black/40",
 };
 
 const DefaultClassesType = {

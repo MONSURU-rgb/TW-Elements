@@ -1,0 +1,153 @@
+---
+---
+
+<script type="module">
+  const postsContainer = document.getElementById("posts");
+  const spinner = document.getElementById("spinner");
+
+  const itemsImg = [
+    {
+      img: "https://tecdn.b-cdn.net/img/Photos/Others/images/31.jpg",
+      title: "This is an title of the article",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cupiditate veniam voluptatibus laudantium cum dolorem illo. Quos architecto deserunt saepe.",
+    },
+    {
+      img: "https://tecdn.b-cdn.net/img/Photos/Others/images/23.jpg",
+      title: "This is an title of the article",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cupiditate veniam voluptatibus laudantium cum dolorem illo. Quos architecto deserunt saepe.",
+    },
+    {
+      img: "https://tecdn.b-cdn.net/img/Photos/Others/images/29.jpg",
+      title: "This is an title of the article",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cupiditate veniam voluptatibus laudantium cum dolorem illo. Quos architecto deserunt saepe.",
+    },
+    {
+      img: "https://tecdn.b-cdn.net/img/Photos/Others/images/27.jpg",
+      title: "This is an title of the article",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cupiditate veniam voluptatibus laudantium cum dolorem illo. Quos architecto deserunt saepe.",
+    },
+    {
+      img: "https://tecdn.b-cdn.net/img/Photos/Others/images/25.jpg",
+      title: "This is an title of the article",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cupiditate veniam voluptatibus laudantium cum dolorem illo. Quos architecto deserunt saepe.",
+    },
+    {
+      img: "https://tecdn.b-cdn.net/img/Photos/Others/images/24.jpg",
+      title: "This is an title of the article",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cupiditate veniam voluptatibus laudantium cum dolorem illo. Quos architecto deserunt saepe.",
+    },
+    {
+      img: "https://tecdn.b-cdn.net/img/Photos/Others/images/31.jpg",
+      title: "This is an title of the article",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cupiditate veniam voluptatibus laudantium cum dolorem illo. Quos architecto deserunt saepe.",
+    },
+    {
+      img: "https://tecdn.b-cdn.net/img/Photos/Others/images/32.jpg",
+      title: "This is an title of the article",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cupiditate veniam voluptatibus laudantium cum dolorem illo. Quos architecto deserunt saepe.",
+    },
+  ];
+
+  const getPostTemplate = (post) => {
+    // returns the HTML template with post's title, image & text
+    return `
+    <div class="flex flex-col items-center">
+      <div
+        class="block rounded-lg bg-white shadow-shadow-1-strong dark:bg-neutral-700"
+      >
+        <div
+          class="relative overflow-hidden bg-cover bg-no-repeat"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+        >
+          <img
+            class="rounded-lg"
+            src="${post.img}"
+            alt=""
+          />
+          <a href="#!">
+            <div
+              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+            ></div>
+          </a>
+        </div>
+      </div>
+      <h5 class="mt-5 mb-3 text-xl font-normal text-surface dark:text-white">
+        ${post.title}
+      </h5>
+      <p class="text-center mb-3 text-surface dark:text-neutral-200">
+        ${post.text}
+      </p>
+      <button
+        type="button"
+        data-te-ripple-init
+        data-te-ripple-color="light"
+        class="mb-3 inline-block rounded-full bg-info px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-info-3 transition duration-150 ease-in-out hover:bg-info-accent-300 hover:shadow-info-2 focus:bg-info-accent-300 focus:shadow-info-2 focus:outline-none focus:ring-0 active:bg-info-600 active:shadow-info-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+      >
+        Read more
+      </button>
+    </div>
+    `;
+  };
+
+  // posts - array of templates
+  const posts = itemsImg.map((item) => getPostTemplate(item));
+
+  const generateRow = (firstPost, secondPost) => {
+    // Returns a div.row element with two columns generated based on arguments
+    let el = document.createElement("div");
+    let classes = ["grid", "grid-cols-1", "md:grid-cols-2", "gap-4"];
+
+    classes.forEach((className) => el.classList.add(className));
+
+    el.innerHTML = `
+      ${firstPost}
+      ${secondPost}
+    `;
+    return el;
+  };
+
+  // rows - array of rows with two posts each
+  const rows = [];
+
+  // iterates over posts and creates a row for every two of them
+  for (let i = 0; i < posts.length - 1; i += 2) {
+    rows.push(generateRow(posts[i], posts[i + 1]));
+  }
+
+  // renderedItems - number of items already rendered
+  let renderedItems = 0;
+
+  const renderItems = (index) => {
+    // timeout simulates delay in loading items (f.e. API call)
+    setTimeout(() => {
+      // hide spinner
+      spinner.classList.replace("inline-block", "hidden");
+
+      postsContainer.appendChild(rows[index]);
+    }, 1500);
+  };
+
+  const loadItems = () => {
+    if (renderedItems < rows.length) {
+      // show spinner
+      postsContainer.appendChild(spinner);
+      spinner.classList.replace("hidden", "inline-block");
+
+      renderItems(renderedItems);
+
+      renderedItems++;
+
+      // Removes event listener after all items have been loaded
+      if (renderedItems === rows.length) {
+        window.removeEventListener("complete.te.infiniteScroll", loadItems);
+      }
+    }
+  };
+
+  // load items when window is scrolled to the end
+  window.addEventListener("complete.te.infiniteScroll", loadItems);
+
+  // init infinite scroll
+  new te.InfiniteScroll(window);
+</script>
