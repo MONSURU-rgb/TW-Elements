@@ -964,7 +964,7 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    border-neutral-200 dark:border-neutral-500
+                    border-neutral-200 dark:border-white/10
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets border color of datatable.
@@ -995,11 +995,11 @@
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
                     relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem]
                     h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem]
-                    border-[0.125rem] border-solid border-neutral-300
+                    border-[0.125rem] border-solid border-secondary-500
                     outline-none before:pointer-events-none before:absolute
                     before:h-[0.875rem] before:w-[0.875rem] before:scale-0
                     before:rounded-full before:bg-transparent before:opacity-0
-                    before:shadow-[0px_0px_0px_13px_transparent]
+                    before:shadow-checkbox before:shadow-transparent
                     before:content-[''] checked:border-primary
                     checked:bg-primary checked:before:opacity-[0.16]
                     checked:after:absolute checked:after:-mt-px
@@ -1010,16 +1010,15 @@
                     checked:after:border-solid checked:after:border-white
                     checked:after:bg-transparent checked:after:content-['']
                     hover:cursor-pointer hover:before:opacity-[0.04]
-                    hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)]
-                    focus:shadow-none focus:transition-[border-color_0.2s]
-                    focus:before:scale-100 focus:before:opacity-[0.12]
-                    focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)]
+                    hover:before:shadow-black/60 focus:shadow-none
+                    focus:transition-[border-color_0.2s] focus:before:scale-100
+                    focus:before:opacity-[0.12] focus:before:shadow-black/60
                     focus:before:transition-[box-shadow_0.2s,transform_0.2s]
                     focus:after:absolute focus:after:z-[1] focus:after:block
                     focus:after:h-[0.875rem] focus:after:w-[0.875rem]
                     focus:after:rounded-[0.125rem] focus:after:content-['']
                     checked:focus:before:scale-100
-                    checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]
+                    checked:focus:before:shadow-checkbox
                     checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s]
                     checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem]
                     checked:focus:after:h-[0.8125rem]
@@ -1031,11 +1030,8 @@
                     checked:focus:after:border-t-0
                     checked:focus:after:border-solid
                     checked:focus:after:border-white
-                    checked:focus:after:bg-transparent dark:border-neutral-600
+                    checked:focus:after:bg-transparent dark:border-neutral-400
                     dark:checked:border-primary dark:checked:bg-primary
-                    dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)]
-                    dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]
-                    dark:border-neutral-400
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets checkbox header styles.
@@ -1049,8 +1045,7 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] ml-3 flex
-                    items-center
+                    mb-0.5 min-h-6 pl-6 ml-3 flex items-center
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets checkbox header wrapper styles.
@@ -1066,11 +1061,11 @@
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
                     relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem]
                     h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem]
-                    border-[0.125rem] border-solid border-neutral-300
+                    border-[0.125rem] border-solid border-secondary-500
                     outline-none before:pointer-events-none before:absolute
                     before:h-[0.875rem] before:w-[0.875rem] before:scale-0
                     before:rounded-full before:bg-transparent before:opacity-0
-                    before:shadow-[0px_0px_0px_13px_transparent]
+                    before:shadow-checkbox before:shadow-transparent
                     before:content-[''] checked:border-primary
                     checked:bg-primary checked:before:opacity-[0.16]
                     checked:after:absolute checked:after:-mt-px
@@ -1081,16 +1076,15 @@
                     checked:after:border-solid checked:after:border-white
                     checked:after:bg-transparent checked:after:content-['']
                     hover:cursor-pointer hover:before:opacity-[0.04]
-                    hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)]
-                    focus:shadow-none focus:transition-[border-color_0.2s]
-                    focus:before:scale-100 focus:before:opacity-[0.12]
-                    focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)]
+                    hover:before:shadow-black/60 focus:shadow-none
+                    focus:transition-[border-color_0.2s] focus:before:scale-100
+                    focus:before:opacity-[0.12] focus:before:shadow-black/60
                     focus:before:transition-[box-shadow_0.2s,transform_0.2s]
                     focus:after:absolute focus:after:z-[1] focus:after:block
                     focus:after:h-[0.875rem] focus:after:w-[0.875rem]
                     focus:after:rounded-[0.125rem] focus:after:content-['']
                     checked:focus:before:scale-100
-                    checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]
+                    checked:focus:before:shadow-checkbox
                     checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s]
                     checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem]
                     checked:focus:after:h-[0.8125rem]
@@ -1102,11 +1096,8 @@
                     checked:focus:after:border-t-0
                     checked:focus:after:border-solid
                     checked:focus:after:border-white
-                    checked:focus:after:bg-transparent dark:border-neutral-600
+                    checked:focus:after:bg-transparent dark:border-neutral-400
                     dark:checked:border-primary dark:checked:bg-primary
-                    dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)]
-                    dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]
-                    dark:border-neutral-400
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets checkbox row styles.
@@ -1120,8 +1111,7 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] ml-3 flex
-                    items-center
+                    mb-0.5 min-h-6 pl-6 ml-3 flex items-center
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets checkbox row wrapper styles.
@@ -1135,7 +1125,7 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    bg-white dark:bg-neutral-800
+                    bg-white dark:bg-body-dark
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets background styles of datatable.
@@ -1149,8 +1139,8 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    py-4 pl-1 text-clip overflow-hidden text-[#212529]
-                    dark:text-white
+                    py-4 pl-1 text-clip overflow-hidden dark:text-white
+                    text-surface
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets table columns styles.
@@ -1208,7 +1198,7 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    hover:bg-neutral-100 dark:hover:bg-neutral-700
+                    hover:bg-black/[0.02]
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets row hover styles when
@@ -1239,7 +1229,8 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    h-[2px] relative w-full overflow-hidden
+                    h-[2px] relative w-full overflow-hidden bg-white
+                    dark:bg-body-dark
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets loading items wrapper styles.
@@ -1253,8 +1244,8 @@
                   </td>
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    text-center text-neutral-500 font-ligh text-sm my-4
-                    dark:text-neutral-400
+                    text-center text-neutral-600 font-ligh text-sm py-4
+                    dark:text-neutral-300 bg-white dark:bg-body-dark
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets loading message styles.
@@ -1370,7 +1361,7 @@
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
                     flex md:flex-row justify-end items-center py-2 space-x-4
-                    text-sm flex-col leading-[1.6]
+                    text-sm flex-col leading-[1.6] dark:text-white text-surface
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets datatable pagination styles.
@@ -1417,10 +1408,10 @@
                     leading-normal transition duration-150 ease-in-out
                     hover:bg-neutral-100 hover:text-primary-600
                     focus:text-primary-600 focus:outline-none focus:ring-0
-                    active:text-primary-700 disabled:text-slate-300
-                    disabled:hover:bg-transparent dark:hover:bg-neutral-500
+                    active:text-primary-700 disabled:text-neutral-400
+                    disabled:hover:bg-transparent dark:hover:bg-[#404247]
                     dark:disabled:hover:bg-transparent
-                    dark:disabled:text-neutral-600
+                    dark:disabled:text-[#9e9e9e] dark:hover:text-secondary-500
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets pagination end button styles.
@@ -1438,10 +1429,10 @@
                     leading-normal transition duration-150 ease-in-out
                     hover:bg-neutral-100 hover:text-primary-600
                     focus:text-primary-600 focus:outline-none focus:ring-0
-                    active:text-primary-700 disabled:text-slate-300
-                    disabled:hover:bg-transparent dark:hover:bg-neutral-500
+                    active:text-primary-700 disabled:text-neutral-400
+                    disabled:hover:bg-transparent dark:hover:bg-[#404247]
                     dark:disabled:hover:bg-transparent
-                    dark:disabled:text-neutral-600
+                    dark:disabled:text-[#9e9e9e] dark:hover:text-secondary-500
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets pagination left button styles.
@@ -1473,10 +1464,10 @@
                     leading-normal transition duration-150 ease-in-out
                     hover:bg-neutral-100 hover:text-primary-600
                     focus:text-primary-600 focus:outline-none focus:ring-0
-                    active:text-primary-700 disabled:text-slate-300
-                    disabled:hover:bg-transparent dark:hover:bg-neutral-500
+                    active:text-primary-700 disabled:text-neutral-400
+                    disabled:hover:bg-transparent dark:hover:bg-[#404247]
                     dark:disabled:hover:bg-transparent
-                    dark:disabled:text-neutral-600
+                    dark:disabled:text-[#9e9e9e] dark:hover:text-secondary-500
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets pagination right button styles.
@@ -1508,10 +1499,10 @@
                     leading-normal transition duration-150 ease-in-out
                     hover:bg-neutral-100 hover:text-primary-600
                     focus:text-primary-600 focus:outline-none focus:ring-0
-                    active:text-primary-700 disabled:text-slate-300
-                    disabled:hover:bg-transparent dark:hover:bg-neutral-500
+                    active:text-primary-700 disabled:text-neutral-400
+                    disabled:hover:bg-transparent dark:hover:bg-[#404247]
                     dark:disabled:hover:bg-transparent
-                    dark:disabled:text-neutral-600
+                    dark:disabled:text-[#9e9e9e] dark:hover:text-secondary-500
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets pagination start button styles.
@@ -1572,20 +1563,6 @@
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets scroll position styles.
-                  </td>
-                </tr>
-                <tr
-                  class="border-b dark:border-neutral-500 [&:nth-child(even)]:bg-white dark:[&:nth-child(even)]:bg-neutral-600 [&:nth-child(odd)]:bg-gray-100 dark:[&:nth-child(odd)]:bg-neutral-700">
-                  <td
-                    class="border-r px-6 py-4 font-medium dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    <code>selectableRow</code>
-                  </td>
-                  <td
-                    class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
-                    !bg-neutral-100 dark:!bg-neutral-600
-                  </td>
-                  <td class="px-6 py-4 max-lg:whitespace-nowrap">
-                    Sets row background styles when it is selected.
                   </td>
                 </tr>
                 <tr
@@ -1716,6 +1693,7 @@
                   <td
                     class="border-r px-6 py-4 dark:border-neutral-500 max-lg:whitespace-nowrap">
                     text-left text-sm font-light w-full leading-[1.6]
+                    dark:text-white text-surface
                   </td>
                   <td class="px-6 py-4 max-lg:whitespace-nowrap">
                     Sets table styles.

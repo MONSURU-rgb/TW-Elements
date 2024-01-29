@@ -431,7 +431,7 @@ autoinits: "Datatable"
     easily used to display JSON data.
   </p>
   <div
-    class="rounded-lg bg-primary-100 px-6 py-4 text-base text-primary-700"
+    class="rounded-lg bg-primary-100 px-6 py-4 text-base text-primary-700 dark:bg-slate-900 dark:text-primary-500"
     role="alert">
     <p class="">
       You can also use a mixed version, where columns are an array of object and
@@ -541,17 +541,19 @@ autoinits: "Datatable"
   <!--Section: Demo-->
   <!-- prettier-ignore -->
   {{< twsnippet/demo id="example4">}}
-  <div class="mb-3">
-    <div class="relative mb-4 flex w-full flex-wrap items-stretch">
-      <input
-        id="datatable-search-input"
-        type="search"
-        class="relative m-0 -mr-0.5 block w-[1px] min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
-        placeholder="Search"
-        aria-label="Search"
-        aria-describedby="button-addon1" />
-    </div>
+  <div class="relative mb-3" data-te-input-wrapper-init>
+    <input
+      type="text"
+      class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+      id="exampleFormControlInput1"
+      placeholder="Search" />
+    <label
+      for="exampleFormControlInput1"
+      class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
+      >Search
+    </label>
   </div>
+
   <div id="datatable-search"></div>
   {{< /twsnippet/demo >}}
   <!--Section: Demo-->
@@ -561,18 +563,20 @@ autoinits: "Datatable"
     <div class="pt-4">
           {{< twsnippet/wrapper "HTML,javascript,umd" >}}
           {{< twsnippet/code active=true lang="HTML" >}}
-          <div class="mb-3">
-            <div class="relative mb-4 flex w-full flex-wrap items-stretch">
-              <input
-                id="datatable-search-input"
-                type="search"
-                class="relative m-0 -mr-0.5 block w-[1px] min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
-                placeholder="Search"
-                aria-label="Search"
-                aria-describedby="button-addon1" />
-            </div>
+          <div class="relative mb-3" data-te-input-wrapper-init>
+            <input
+              type="text"
+              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              id="exampleFormControlInput1"
+              placeholder="Search" />
+            <label
+              for="exampleFormControlInput1"
+              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
+              >Search
+            </label>
           </div>
-          <div id="datatable"></div>
+        
+          <div id="datatable-search"></div>
           {{< /twsnippet/code >}}
           {{< twsnippet/code lang="js" >}}
           // Initialization for ES Users
@@ -1394,7 +1398,7 @@ autoinits: "Datatable"
     string <code>right</code>.
   </p>
   <div
-    class="mb-2 rounded-lg bg-warning-100 px-6 py-4 text-base text-warning-700"
+    class="mb-2 rounded-lg bg-warning-100 px-6 py-4 text-base text-warning-800 dark:bg-[#2e2005] dark:text-warning-500"
     role="alert">
     <p class="">
       Using fixed columns in a vertically scrollable table, requires setting an
@@ -1402,7 +1406,7 @@ autoinits: "Datatable"
     </p>
   </div>
   <div
-    class="rounded-lg bg-primary-100 px-6 py-4 text-base text-primary-700"
+    class="rounded-lg bg-primary-100 px-6 py-4 text-base text-primary-700 dark:bg-slate-900 dark:text-primary-500"
     role="alert">
     <p class="">
       When using a HTML markup instead of a data structure you can still use
@@ -1526,7 +1530,7 @@ autoinits: "Datatable"
     type="button"
     data-te-ripple-init
     data-te-ripple-color="light"
-    class="flex items-center rounded bg-primary px-5 pb-2 pt-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+    class="flex items-center rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
     load data
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -1979,7 +1983,7 @@ autoinits: "Datatable"
   <!-- Description -->
   <p class="mb-3">Click on the row to preview the message.</p>
   <div
-    class="mb-2 rounded-lg bg-primary-100 px-6 py-4 text-base text-primary-700"
+    class="mb-2 rounded-lg bg-primary-100 px-6 py-4 text-base text-primary-700 dark:bg-slate-900 dark:text-primary-500"
     role="alert">
     <p class="">
       <strong>Note:</strong> To prevent this action with other clickable
@@ -1987,7 +1991,7 @@ autoinits: "Datatable"
     </p>
   </div>
   <div
-    class=" rounded-lg bg-warning-100 px-6 py-4 text-base text-warning-700"
+    class="rounded-lg bg-warning-100 px-6 py-4 text-base text-warning-800 dark:bg-[#2e2005] dark:text-warning-500"
     role="alert">
     <p class="">
       <strong>Note:</strong> This feature cannot be used simultaneously with

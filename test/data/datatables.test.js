@@ -658,7 +658,7 @@ describe("Datatable", () => {
 
       const tableBody = SelectorEngine.findOne("tbody", table);
       expect(tableBody.innerHTML).toEqual(
-        '<tr class="border-b border-neutral-200 dark:border-neutral-500"><td class="pl-2 py-3 font-light text-sm dark:text-neutral-300">test message</td></tr>'
+        '<tr class="border-b border-neutral-200 dark:border-white/10"><td class="pl-2 py-3 font-light text-sm dark:text-neutral-300">test message</td></tr>'
       );
       instance.dispose();
     });
@@ -1378,40 +1378,6 @@ describe("Datatable", () => {
       instance.dispose();
     });
 
-    it("should should add active class to a selected row", () => {
-      const instance = new Datatable(
-        table,
-        {
-          columns: ["Category", "University", "Articles"],
-          rows: [
-            ["Mathematics", "Imerial College", 12],
-            ["Astronomy", "Cambridge University", 1],
-            ["Physics", "MIT", 3],
-            ["Architecture", "ATH Zurich", 12],
-            ["Computer Science", "Cambridge University", 10],
-            ["Astrophysics", "Cambridge University", 4],
-          ],
-        },
-        {
-          selectable: true,
-        }
-      );
-
-      const checkbox = SelectorEngine.findOne(SELECTOR_ROW_CHECKBOX, table);
-      const row = SelectorEngine.findOne(SELECTOR_ROW, table);
-      checkbox.checked = true;
-
-      checkbox.dispatchEvent(new Event("input", { bubbles: true }));
-      expect(row.classList.contains("active")).toBe(true);
-
-      checkbox.checked = false;
-
-      checkbox.dispatchEvent(new Event("input", { bubbles: true }));
-      expect(row.classList.contains("active")).toBe(false);
-
-      instance.dispose();
-    });
-
     it("should allow only one row to be selected", () => {
       const instance = new Datatable(
         table,
@@ -1789,7 +1755,7 @@ describe("Datatable", () => {
       expect(row.classList.contains("[&:nth-child(odd)]:bg-neutral-50")).toBe(
         true
       );
-      expect(row.classList.contains("hover:bg-neutral-100")).toBe(true);
+      expect(row.classList.contains("hover:bg-black/[0.02]")).toBe(true);
 
       instance.dispose();
     });

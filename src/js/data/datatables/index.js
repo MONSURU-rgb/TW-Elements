@@ -67,28 +67,29 @@ const paginationEndIconTemplate = `<svg xmlns="http://www.w3.org/2000/svg" fill=
   <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"/>
 </svg>`;
 
-const BORDER_COLOR_CLASSES = "border-neutral-200 dark:border-neutral-500";
+const BORDER_COLOR_CLASSES = "border-neutral-200 dark:border-white/10";
 const BORDERLESS_CLASSES = "border-none";
 const CHECKBOX_HEADER_CLASSES =
-  "relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] dark:border-neutral-400";
+  "relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-secondary-500 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-checkbox before:shadow-transparent before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-black/60 focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-black/60 focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-checkbox checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-400 dark:checked:border-primary dark:checked:bg-primary";
 const CHECKBOX_HEADER_WRAPPER_CLASSES =
-  "mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] ml-3 flex items-center";
+  "mb-0.5 min-h-6 pl-6 ml-3 flex items-center";
 const CHECKBOX_ROW_CLASSES =
-  "relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] dark:border-neutral-400";
+  "relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-secondary-500 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-checkbox before:shadow-transparent before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-black/60 focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-black/60 focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-checkbox checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-400 dark:checked:border-primary dark:checked:bg-primary";
 const CHECKBOX_ROW_WRAPPER_CLASSES =
-  "mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] ml-3 flex items-center";
-const COLOR_CLASSES = "bg-white dark:bg-neutral-800";
+  "mb-0.5 min-h-6 pl-6 ml-3 flex items-center";
+const COLOR_CLASSES = "bg-white dark:bg-body-dark";
 const COLUMNS_CLASSES =
-  "py-4 pl-1 text-clip overflow-hidden text-[#212529] dark:text-white";
+  "py-4 pl-1 text-clip overflow-hidden dark:text-white text-surface";
 const EDIT_CLASSES = "focus:outline-none";
 const FIXED_HEADER_CLASSES = "sticky top-0 z-30";
 const FIXED_HEADER_BODY_CLASSES = "sticky z-10 bg-inherit";
-const HOVER_ROW_CLASSES = "hover:bg-neutral-100 dark:hover:bg-neutral-700";
+const HOVER_ROW_CLASSES = "hover:bg-black/[0.02]";
 const LOADING_COLUMN_CLASSES =
   "pointer-events-none cursor-none text-neutral-400 dark:text-neutral-300";
-const LOADING_ITEMS_WRAPPER_CLASSES = "h-[2px] relative w-full overflow-hidden";
+const LOADING_ITEMS_WRAPPER_CLASSES =
+  "h-[2px] relative w-full overflow-hidden bg-white dark:bg-body-dark";
 const LOADING_MESSAGE_CLASSES =
-  "text-center text-neutral-500 font-ligh text-sm my-4 dark:text-neutral-400";
+  "text-center text-neutral-600 font-ligh text-sm py-4 dark:text-neutral-300 bg-white dark:bg-body-dark";
 const LOADING_PAGINATION_NAV_CLASSES = "text-neutral-500 dark:text-neutral-300";
 const LOADING_PAGINATION_ROWS_TEXT_CLASSES =
   "text-neutral-500 dark:text-neutral-300";
@@ -102,27 +103,26 @@ const NO_FOUND_MESSAGE_CLASSES =
   "pl-2 py-3 font-light text-sm dark:text-neutral-300";
 const NO_FOUND_MESSAGE_WRAPPER_CLASSES = "border-b";
 const PAGINATION_CLASSES =
-  "flex md:flex-row justify-end items-center py-2 space-x-4 text-sm flex-col leading-[1.6]";
+  "flex md:flex-row justify-end items-center py-2 space-x-4 text-sm flex-col leading-[1.6] dark:text-white text-surface";
 const PAGINATION_BORDERED_CLASSES = "border border-t-0";
 const PAGINATION_BUTTONS_WRAPPER_CLASSES =
   "order-1 my-3 md:order-none md:my-0 md:pr-1";
 const PAGINATION_END_BUTTON_CLASSES =
-  "inline-block rounded p-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 disabled:text-slate-300 disabled:hover:bg-transparent dark:hover:bg-neutral-500 dark:disabled:hover:bg-transparent dark:disabled:text-neutral-600";
+  "inline-block rounded p-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 disabled:text-neutral-400 disabled:hover:bg-transparent dark:hover:bg-[#404247] dark:disabled:hover:bg-transparent dark:disabled:text-[#9e9e9e] dark:hover:text-secondary-500";
 const PAGINATION_LEFT_BUTTON_CLASSES =
-  "inline-block rounded p-2.5 font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 disabled:text-slate-300 disabled:hover:bg-transparent dark:hover:bg-neutral-500 dark:disabled:hover:bg-transparent dark:disabled:text-neutral-600";
+  "inline-block rounded p-2.5 font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 disabled:text-neutral-400 disabled:hover:bg-transparent dark:hover:bg-[#404247] dark:disabled:hover:bg-transparent dark:disabled:text-[#9e9e9e] dark:hover:text-secondary-500";
 const PAGINATION_NAV_CLASSES = "font-normal order-2 mb-3 md:order-none md:mb-0";
 const PAGINATION_RIGHT_BUTTON_CLASSES =
-  "inline-block rounded p-2.5 font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 disabled:text-slate-300 disabled:hover:bg-transparent dark:hover:bg-neutral-500 dark:disabled:hover:bg-transparent dark:disabled:text-neutral-600";
+  "inline-block rounded p-2.5 font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 disabled:text-neutral-400 disabled:hover:bg-transparent dark:hover:bg-[#404247] dark:disabled:hover:bg-transparent dark:disabled:text-[#9e9e9e] dark:hover:text-secondary-500";
 const PAGINATION_ROWS_TEXT_CLASSES = "font-light";
 const PAGINATION_START_BUTTON_CLASSES =
-  "inline-block rounded p-2.5 font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 disabled:text-slate-300 disabled:hover:bg-transparent dark:hover:bg-neutral-500 dark:disabled:hover:bg-transparent dark:disabled:text-neutral-600";
+  "inline-block rounded p-2.5 font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 disabled:text-neutral-400 disabled:hover:bg-transparent dark:hover:bg-[#404247] dark:disabled:hover:bg-transparent dark:disabled:text-[#9e9e9e] dark:hover:text-secondary-500";
 const ROW_CLASSES = "border-b";
 const ROW_ANIMATION_CLASSES =
   "transition ease-in-out duration-300 motion-reduce:transition-none";
 const ROW_ITEM_CLASSES =
   "whitespace-nowrap text-clip overflow-auto px-[1.4rem] py-4";
 const SCROLL_CLASSES = "relative";
-const SELECTABLE_ROW_CLASSES = "!bg-neutral-100 dark:!bg-neutral-600";
 const SELECT_ITEMS_WRAPPER_CLASSES =
   "flex items-center space-x-4 order-3 md:order-none";
 const SELECT_WRAPPER_CLASSES = "w-[70px]";
@@ -134,7 +134,8 @@ const STRIPED_CLASSES =
   "[&:nth-child(odd)]:bg-neutral-50 [&:nth-child(odd)]:dark:bg-neutral-700";
 const TABLE_BORDERED_CLASSES = "border";
 const TABLE_HEADER_CLASSES = "border-b font-normal px-[1.4rem]";
-const TABLE_CLASSES = "text-left text-sm font-light w-full leading-[1.6]";
+const TABLE_CLASSES =
+  "text-left text-sm font-light w-full leading-[1.6] dark:text-white text-surface";
 
 const TYPE_OPTIONS = {
   bordered: "boolean",
@@ -251,7 +252,6 @@ const DefaultClasses = {
   color: COLOR_CLASSES,
   fixedHeader: FIXED_HEADER_CLASSES,
   fixedHeaderBody: FIXED_HEADER_BODY_CLASSES,
-  selectableRow: SELECTABLE_ROW_CLASSES,
   rowAnimation: ROW_ANIMATION_CLASSES,
   sm: SM_CLASSES,
   edit: EDIT_CLASSES,
@@ -299,7 +299,6 @@ const DefaultClassesType = {
   color: "string",
   fixedHeader: "string",
   fixedHeaderBody: "string",
-  selectableRow: "string",
   rowAnimation: "string",
   sm: "string",
   edit: "string",
@@ -690,16 +689,6 @@ class Datatable {
     return config;
   }
 
-  _setActiveRows() {
-    SelectorEngine.find(ATTR_ROW, this._element).forEach((row) => {
-      if (this._selected.includes(Manipulator.getDataAttribute(row, "index"))) {
-        Manipulator.addClass(row, `active ${this._classes.selectableRow}`);
-      } else {
-        Manipulator.removeClass(row, `active ${this._classes.selectableRow}`);
-      }
-    });
-  }
-
   _setEntries(e) {
     this._options = this._getOptions({
       ...this._options,
@@ -722,8 +711,6 @@ class Datatable {
         checkbox.checked = this._selected.includes(index);
       }
     );
-
-    this._setActiveRows();
   }
 
   _setActiveSortIcon(active) {
@@ -1125,8 +1112,6 @@ class Datatable {
     if (this._options.multi && !e.target.checked) {
       this._headerCheckbox.checked = false;
     }
-
-    this._setActiveRows();
 
     this._emitSelectEvent();
   }
