@@ -69,8 +69,6 @@ const BOOTSTRAP_COLORS = [
   },
 ];
 
-console.log(BOOTSTRAP_COLORS);
-
 // Sets value when run opacity transition
 // Hide element after 50% (0.5) time of animation and finish on 100%
 const TRANSITION_BREAK_OPACITY = 0.5;
